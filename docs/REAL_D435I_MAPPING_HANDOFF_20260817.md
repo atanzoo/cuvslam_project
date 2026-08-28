@@ -1,12 +1,17 @@
 # Real D435i cuVSLAM Mapping Handoff
 
-Updated: 2026-08-17 (Asia/Taipei)
+Updated: 2026-08-28 (Asia/Taipei)
 
 > This is the original real-camera R0–R3 handoff and remains useful for the
 > procedure. The current real D435i result, IMU-fusion decision, R2 metrics and
 > correction record are maintained in
 > `docs/CUVSLAM_CURRENT_STATUS_20260825.md` and
 > `logs/real_d435i_quality/20260825_r2_correction_log.md`.
+
+For the next conversation, read `PROJECT_HANDOFF.md` first, then the current
+status document. This file remains the detailed real-camera procedure; the
+repository classification and the separate path-planning/navigation simulation
+workstream are documented in `docs/PROJECT_CONTENT_MAP.md`.
 
 This document is the entry point for the next task: measuring a real Intel
 RealSense D435i with cuVSLAM on the Jetson AGX Orin. It separates real-camera

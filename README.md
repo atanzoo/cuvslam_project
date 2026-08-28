@@ -23,6 +23,22 @@ Read [`docs/CUVSLAM_CURRENT_STATUS_20260825.md`](docs/CUVSLAM_CURRENT_STATUS_202
 and [`docs/REAL_D435I_MAPPING_HANDOFF_20260817.md`](docs/REAL_D435I_MAPPING_HANDOFF_20260817.md)
 before operating the hardware.
 
+## Workstreams
+
+The repository is intentionally split into independent workstreams:
+
+- **Real cuVSLAM / D435i:** physical-camera input, IMU fusion, odometry,
+  mapping, and localization readiness.
+- **cuVSLAM simulation/replay:** ROS contracts, frame/timestamp checks, and
+  controlled estimator experiments.
+- **Path planning / navigation simulation:** D1 Edu, PPO/IMM/MPPI, obstacle
+  simulation, and trajectory evaluation.
+- **Shared infrastructure:** Jetson connection, RViz/Foxglove monitoring,
+  datasets, logs, reports, and handoff documents.
+
+See [`docs/PROJECT_CONTENT_MAP.md`](docs/PROJECT_CONTENT_MAP.md) for the full
+classification and the boundary between the real-camera and navigation lines.
+
 ## Main entry points
 
 - `Real D435i R1.5 Axis Test.command` — starts the local monitoring GUI.

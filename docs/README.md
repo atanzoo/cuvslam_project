@@ -4,11 +4,13 @@
 
 1. [`CUVSLAM_CURRENT_STATUS_20260825.md`](CUVSLAM_CURRENT_STATUS_20260825.md) —
    目前唯一的實機建圖主索引、已知問題、品質門檻與下一步。
-2. [`REAL_D435I_MAPPING_HANDOFF_20260817.md`](REAL_D435I_MAPPING_HANDOFF_20260817.md) —
+2. [`PROJECT_CONTENT_MAP.md`](PROJECT_CONTENT_MAP.md) —
+   專案內容分類、cuVSLAM 主線與路徑規劃/導航模擬支線的邊界。
+3. [`REAL_D435I_MAPPING_HANDOFF_20260817.md`](REAL_D435I_MAPPING_HANDOFF_20260817.md) —
    實機 R0/R1/R2/R3 流程、資料契約與限制。
-3. [`sensor_and_frame_contract.md`](sensor_and_frame_contract.md) —
+4. [`sensor_and_frame_contract.md`](sensor_and_frame_contract.md) —
    frame、TF、CameraInfo 與 publisher ownership 契約。
-4. [`CUVSLAM_NVIDIA_REFERENCE_DEBUG_DESIGN.md`](CUVSLAM_NVIDIA_REFERENCE_DEBUG_DESIGN.md) —
+5. [`CUVSLAM_NVIDIA_REFERENCE_DEBUG_DESIGN.md`](CUVSLAM_NVIDIA_REFERENCE_DEBUG_DESIGN.md) —
    NVIDIA 官方輸入契約與 debug 原則。
 
 ## 實機 D435i
@@ -57,6 +59,9 @@ RealSense factory CameraInfo 或 TF。
 
 這些文件與目前實機建圖主線分開，不要在 R2 建圖尚未驗收前混入 D1 Max、
 Nav2 或避障決策。
+
+完整的資料夾分類與後續整合邊界請看
+[`PROJECT_CONTENT_MAP.md`](PROJECT_CONTENT_MAP.md)。
 
 ## 文件規則
 

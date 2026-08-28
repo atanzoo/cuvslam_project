@@ -5,19 +5,22 @@
 > It must not be used as the handoff for the existing LiDAR/Nav2 project. The
 > two projects are compared later through a controlled evaluation process.
 
-- Last historical update: 2026-08-17 (Asia/Taipei)
-- Project root: `/Users/tsengpochien/Desktop/cuvslam_project`
+- Last handoff update: 2026-08-28 (Asia/Taipei)
+- Project root: `<repository-root>`
 - Active current-state entry point: `docs/CUVSLAM_CURRENT_STATUS_20260825.md`
 - Latest real-camera correction record: `logs/real_d435i_quality/20260825_r2_correction_log.md`
+- GitHub repository: `https://github.com/atanzoo/cuvslam_project` (`main`,
+  commit `d53d08d`)
+- Content classification: `docs/PROJECT_CONTENT_MAP.md`
 - Note: sections below preserve the earlier simulation and project history. For
   the current real D435i R2 status, metrics, and next test, read the active
   current-state document first.
-- Status: NVIDIA reference passed; wheel odometry is isolated; the D435i
+- Historical simulation status: NVIDIA reference passed; wheel odometry is isolated; the D435i
   200 Hz IMU contract is verified; stereo-only in-place 90-degree pose now
   passes two independent cold starts in the dense-turn v3 world
 - Primary target: NVIDIA Jetson AGX Orin with Intel RealSense D435i
 - Real-camera mapping entry point: `docs/REAL_D435I_MAPPING_HANDOFF_20260817.md`
-- Current implementation status: Isaac ROS Visual SLAM 2.1.0 / cuVSLAM 11.4
+- Historical simulation implementation status: Isaac ROS Visual SLAM 2.1.0 / cuVSLAM 11.4
   runs in the isolated Jetson container. The official NVIDIA release-2.1
   stereo bag produces complete odometry output. A controlled baseline 1 m run
   proved that every in-motion stereo frame was unique while cuVSLAM still
@@ -27,6 +30,60 @@
   1.0189 m for 1.0176 m truth and 0.9708 m for 1.0152 m truth. The sparse
   far-field Gazebo scene, not stale pixels, was the root cause of the current
   1 m simulation failure.
+
+## Current handoff (2026-08-28 — read this first)
+
+### Completed
+
+- The repository was organized for GitHub and pushed to
+  `https://github.com/atanzoo/cuvslam_project` on branch `main` at commit
+  `d53d08d`.
+- Real D435i R1/R1.5 transport, IMU qualification, axis checks, and R2
+  stereo+IMU mapping workflow are operational.
+- The macOS GUI provides live odometry, complete retained XY path, image
+  quality diagnostics, IMU display, R2 quality scoring, process log, trace
+  record, and copy/download helpers.
+- The default real-camera profile is NVIDIA-style official input at
+  `640x360x30` with IMU fusion, denoise, auto exposure, emitter, and mapping
+  enabled.
+- Good-image straight, turn, and closed-loop trials have passed the current
+  engineering gate. The GUI and handoff keep the special-scene false-
+  translation case visible instead of hiding it behind the overall score.
+
+### Current limitation
+
+The remaining real-camera risk is scene-dependent false translation during a
+turn, especially when the view contains weak, changing, or difficult stereo
+observability. A high VO-validity percentage and a completed yaw change do not
+prove that every intermediate XY displacement is correct. This is treated as a
+known special-scene limitation, not as evidence that IMU fusion is disabled.
+
+### Next conversation: recommended order
+
+1. Read `docs/CUVSLAM_CURRENT_STATUS_20260825.md` and
+   `docs/PROJECT_CONTENT_MAP.md`.
+2. Confirm the Jetson is reachable and the D435i is enumerated before starting
+   a new session.
+3. Use the GUI to start a clean R2 session, verify the real profile, and keep
+   the full trace and process log for the run.
+4. Prefer a controlled localization/map save-load test before adding Nav2 or
+   path-planning decisions.
+5. If investigating the special turn, compare the complete trace and image
+   quality timeline rather than relying only on the final score or final yaw.
+6. Treat the D1/path-planning material as a separate simulation workstream;
+   do not mix it into the real-camera acceptance gate.
+
+### Stable entry points
+
+- Real-camera status: `docs/CUVSLAM_CURRENT_STATUS_20260825.md`
+- Real-camera procedure: `docs/REAL_D435I_MAPPING_HANDOFF_20260817.md`
+- Repository classification: `docs/PROJECT_CONTENT_MAP.md`
+- macOS GUI: `tools/real_d435i_axis_web_gui.py`
+- Real R2 launcher: `tools/run_real_d435i_r2.sh`
+- RViz viewer helper: `tools/open_real_d435i_rviz_view.sh`
+- GitHub policy: `docs/GITHUB_REPOSITORY_GUIDE.md`
+
+## Historical simulation record
 
 The later geometry investigation refined this conclusion: scene
 observability fixed forward translation, but low-disparity far features still

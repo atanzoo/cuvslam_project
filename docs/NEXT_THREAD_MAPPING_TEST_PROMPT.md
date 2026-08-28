@@ -1,4 +1,8 @@
-# Prompt: Locate the Gazebo Stereo Image-Freeze Boundary
+# Historical prompt: Locate the Gazebo Stereo Image-Freeze Boundary
+
+> Historical simulation prompt. Do not use this as the default next-task
+> instruction for the physical D435i mapping line. Read
+> `PROJECT_HANDOFF.md` and `CUVSLAM_CURRENT_STATUS_20260825.md` first.
 
 請先閱讀並遵循：
 
