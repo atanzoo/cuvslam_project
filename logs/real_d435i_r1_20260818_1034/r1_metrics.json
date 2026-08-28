@@ -1,0 +1,360 @@
+{
+  "failures": [],
+  "imu": {
+    "accel_mean_m_s2": [
+      -0.023949373662420843,
+      -9.577881675587888,
+      0.3738148387238862
+    ],
+    "accel_norm_median_m_s2": 9.58798492572078,
+    "accel_norm_p05_m_s2": 9.568044043940976,
+    "accel_norm_p95_m_s2": 9.607944476584303,
+    "frames": {
+      "camera_imu_optical_frame": 11704
+    },
+    "gyro_mean_rad_s": [
+      -0.004421629976772118,
+      -0.0006193055645406745,
+      0.0011118570405045194
+    ],
+    "gyro_norm_median_rad_s": 0.005519215660466187,
+    "gyro_norm_p95_rad_s": 0.010026153149250523
+  },
+  "imu_timing": {
+    "duration_s": 58.6529984,
+    "messages": 11704,
+    "non_monotonic": 0,
+    "period_max_ms": 5.023232,
+    "period_median_ms": 5.011456,
+    "period_p95_ms": 5.012992,
+    "rate_hz": 199.52944127746417
+  },
+  "left_camera_info": {
+    "d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "distortion_model": "plumb_bob",
+    "frame_id": "camera_infra1_optical_frame",
+    "height": 480,
+    "k": [
+      428.3863220214844,
+      0.0,
+      429.7032165527344,
+      0.0,
+      428.3863220214844,
+      243.1602020263672,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "p": [
+      428.3863220214844,
+      0.0,
+      429.7032165527344,
+      0.0,
+      0.0,
+      428.3863220214844,
+      243.1602020263672,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "projected_baseline_m": -0.0,
+    "r": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "width": 848
+  },
+  "left_image": {
+    "encoding": "mono8",
+    "frame_id": "camera_infra1_optical_frame",
+    "height": 480,
+    "step": 848,
+    "width": 848
+  },
+  "left_timing": {
+    "duration_s": 58.614620849,
+    "messages": 1759,
+    "non_monotonic": 0,
+    "period_max_ms": 33.411133,
+    "period_median_ms": 33.340332,
+    "period_p95_ms": 33.349365,
+    "rate_hz": 29.99251679079986
+  },
+  "right_camera_info": {
+    "d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "distortion_model": "plumb_bob",
+    "frame_id": "camera_infra1_optical_frame",
+    "height": 480,
+    "k": [
+      428.3863220214844,
+      0.0,
+      429.7032165527344,
+      0.0,
+      428.3863220214844,
+      243.1602020263672,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "p": [
+      428.3863220214844,
+      0.0,
+      429.7032165527344,
+      -21.450237274169922,
+      0.0,
+      428.3863220214844,
+      243.1602020263672,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "projected_baseline_m": 0.05007218057978553,
+    "r": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "width": 848
+  },
+  "right_image": {
+    "encoding": "mono8",
+    "frame_id": "camera_infra2_optical_frame",
+    "height": 480,
+    "step": 848,
+    "width": 848
+  },
+  "right_timing": {
+    "duration_s": 58.614620849,
+    "messages": 1759,
+    "non_monotonic": 0,
+    "period_max_ms": 33.411133,
+    "period_median_ms": 33.340332,
+    "period_p95_ms": 33.349365,
+    "rate_hz": 29.99251679079986
+  },
+  "status": "PASS",
+  "stereo_skew_ms": {
+    "exact_fraction": 1.0,
+    "max": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "tf_edges": [
+    {
+      "child": "camera_accel_optical_frame",
+      "messages": 1,
+      "parent": "camera_accel_frame",
+      "rotation_xyzw": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "child": "camera_infra1_optical_frame",
+      "messages": 1,
+      "parent": "camera_aligned_depth_to_infra1_frame",
+      "rotation_xyzw": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "child": "camera_gyro_optical_frame",
+      "messages": 1,
+      "parent": "camera_gyro_frame",
+      "rotation_xyzw": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "child": "camera_imu_frame",
+      "messages": 1,
+      "parent": "camera_gyro_frame",
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "child": "camera_imu_optical_frame",
+      "messages": 1,
+      "parent": "camera_imu_frame",
+      "rotation_xyzw": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "child": "camera_infra2_optical_frame",
+      "messages": 1,
+      "parent": "camera_infra2_frame",
+      "rotation_xyzw": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "child": "camera_accel_frame",
+      "messages": 1,
+      "parent": "camera_link",
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        -0.011739999987185001,
+        -0.005520000122487545,
+        0.005100000184029341
+      ]
+    },
+    {
+      "child": "camera_aligned_depth_to_infra1_frame",
+      "messages": 1,
+      "parent": "camera_link",
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "child": "camera_gyro_frame",
+      "messages": 1,
+      "parent": "camera_link",
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        -0.011739999987185001,
+        -0.005520000122487545,
+        0.005100000184029341
+      ]
+    },
+    {
+      "child": "camera_infra1_frame",
+      "messages": 1,
+      "parent": "camera_link",
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        0.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "child": "camera_infra2_frame",
+      "messages": 1,
+      "parent": "camera_link",
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "topic": "/tf_static",
+      "translation": [
+        0.0,
+        -0.05007218196988106,
+        -0.0
+      ]
+    }
+  ]
+}

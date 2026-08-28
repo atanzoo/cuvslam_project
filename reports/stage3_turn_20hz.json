@@ -1,0 +1,60 @@
+{
+  "cuvslam": {
+    "callback_time_max_ms": 30.225852,
+    "status_samples": 184,
+    "track_time_max_ms": 23.507827,
+    "track_time_mean_ms": 4.36875793478261,
+    "track_time_p95_ms": 10.059465449999998,
+    "vo_states": [
+      1
+    ]
+  },
+  "duration_s": 10.0,
+  "expected_rate_hz": 20.0,
+  "failure_reasons": [],
+  "flow": {
+    "maximum_px": 82.58650207519531,
+    "median_px": 1.7557742595672607,
+    "moving_frame_pairs": 97,
+    "p95_px": 2.6059009313583372,
+    "tracked_points": 2585
+  },
+  "gazebo": {
+    "real_time_factor": 0.9596135995377202
+  },
+  "left": {
+    "arrival_interval_max_ms": 71.479463,
+    "arrival_interval_p95_ms": 61.6237364,
+    "bright_fraction_median": 0.0,
+    "dark_fraction_median": 0.00017688679245283018,
+    "frames": 194,
+    "intensity_mean_median": 108.71687794811321,
+    "intensity_stddev_median": 18.364673266360015,
+    "stamp_interval_max_ms": 50.0,
+    "stamp_interval_mean_ms": 50.0,
+    "stamp_interval_p95_ms": 50.0,
+    "stamp_rate_hz": 20.0,
+    "temporal_difference_p95": 0.4304697327044025
+  },
+  "phase": "turn",
+  "right": {
+    "arrival_interval_max_ms": 69.849965,
+    "arrival_interval_p95_ms": 63.2039776,
+    "bright_fraction_median": 0.0,
+    "dark_fraction_median": 0.00019654088050314466,
+    "frames": 193,
+    "intensity_mean_median": 108.23307783018868,
+    "intensity_stddev_median": 18.34634415218007,
+    "stamp_interval_max_ms": 50.0,
+    "stamp_interval_mean_ms": 50.0,
+    "stamp_interval_p95_ms": 50.0,
+    "stamp_rate_hz": 20.0,
+    "temporal_difference_p95": 0.43296236242138364
+  },
+  "status": "PASS",
+  "stereo": {
+    "exact_pair_fraction": 0.9948453608247423,
+    "interior_unmatched_frames": 0,
+    "max_pair_skew_ms": 0.0
+  }
+}

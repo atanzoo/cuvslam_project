@@ -1,0 +1,28 @@
+{
+  "duration_s": 45.00121062400012,
+  "counts": {
+    "/camera/imu": 8982,
+    "/camera/infra1/image_rect_raw": 1242,
+    "/camera/infra2/image_rect_raw": 1350,
+    "/visual_slam/status": 1168,
+    "/visual_slam/tracking/vo_pose": 1168
+  },
+  "imu_timing": {
+    "messages": 8982,
+    "rate_hz": 199.51356909728767,
+    "period_median_ms": 5.012224,
+    "period_p95_ms": 5.01376,
+    "period_max_ms": 5.014528,
+    "non_monotonic": 0
+  },
+  "status": {
+    "messages": 1168,
+    "vo_state_values": [1]
+  },
+  "pose_stability": {
+    "max_position_displacement_m": 0.003291690606595227,
+    "p95_position_displacement_m": 0.003291690606595227,
+    "max_orientation_change_rad": 0.0012200832790392204,
+    "p95_orientation_change_rad": 0.0011713882460143688
+  }
+}

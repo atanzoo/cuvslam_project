@@ -1,0 +1,129 @@
+{
+  "hardware": "Intel RealSense D435i",
+  "mode": "imu",
+  "mapping": "odom",
+  "profile": "640x360x30",
+  "lighting": "robust",
+  "duration_s": 2.4909662919817492,
+  "displacement_m": 0.0,
+  "path_length_m": 0.0,
+  "max_displacement_m": 0.0,
+  "odom_samples": 71,
+  "quality_samples": [
+    {
+      "elapsed_s": 0.24702029197942466,
+      "flags": [
+        "left:clipped",
+        "right:clipped"
+      ],
+      "left": {
+        "mean": 109.80726019541423,
+        "std": 88.22313683827718,
+        "dark_pct": 0.0,
+        "bright_pct": 22.35960648148148,
+        "gradient": 11.9760942141215,
+        "frame_delta": 0.49976678217450776
+      },
+      "right": {
+        "mean": 110.83385893503825,
+        "std": 88.46116975148519,
+        "dark_pct": 0.0,
+        "bright_pct": 22.41724537037037,
+        "gradient": 12.435152808825174,
+        "frame_delta": 0.5031765046219031
+      }
+    },
+    {
+      "elapsed_s": 0.7474947089795023,
+      "flags": [
+        "left:clipped",
+        "right:clipped"
+      ],
+      "left": {
+        "mean": 109.80752404530843,
+        "std": 88.2230021794637,
+        "dark_pct": 0.0,
+        "bright_pct": 22.360011574074072,
+        "gradient": 11.976501258214315,
+        "frame_delta": 0.5000445601840814
+      },
+      "right": {
+        "mean": 110.83419984181722,
+        "std": 88.46091499328614,
+        "dark_pct": 0.0,
+        "bright_pct": 22.41724537037037,
+        "gradient": 12.435120352109273,
+        "frame_delta": 0.5033223383128643
+      }
+    },
+    {
+      "elapsed_s": 1.277840208960697,
+      "flags": [
+        "left:clipped",
+        "right:clipped"
+      ],
+      "left": {
+        "mean": 109.80805657704671,
+        "std": 88.22283617655437,
+        "dark_pct": 0.0,
+        "bright_pct": 22.360127314814815,
+        "gradient": 11.976549402872722,
+        "frame_delta": 0.5000439815223217
+      },
+      "right": {
+        "mean": 110.83471145629883,
+        "std": 88.46049346923829,
+        "dark_pct": 0.0,
+        "bright_pct": 22.416724537037037,
+        "gradient": 12.435197750727335,
+        "frame_delta": 0.5031059041619301
+      }
+    },
+    {
+      "elapsed_s": 1.7787216670112684,
+      "flags": [
+        "left:clipped",
+        "right:clipped"
+      ],
+      "left": {
+        "mean": 109.8088482538859,
+        "std": 88.22249240875244,
+        "dark_pct": 0.0,
+        "bright_pct": 22.360358796296296,
+        "gradient": 11.97679951985677,
+        "frame_delta": 0.4998472218712171
+      },
+      "right": {
+        "mean": 110.83547013600668,
+        "std": 88.46017239888509,
+        "dark_pct": 0.0,
+        "bright_pct": 22.41695601851852,
+        "gradient": 12.435209544499715,
+        "frame_delta": 0.5029924777646859
+      }
+    },
+    {
+      "elapsed_s": 2.279008209006861,
+      "flags": [
+        "left:clipped",
+        "right:clipped"
+      ],
+      "left": {
+        "mean": 109.80878454844157,
+        "std": 88.22239449818929,
+        "dark_pct": 0.0,
+        "bright_pct": 22.360590277777778,
+        "gradient": 11.976901030540466,
+        "frame_delta": 0.4998998838166396
+      },
+      "right": {
+        "mean": 110.83487230936686,
+        "std": 88.46018244425456,
+        "dark_pct": 0.0,
+        "bright_pct": 22.41701388888889,
+        "gradient": 12.43482321103414,
+        "frame_delta": 0.5027771999438604
+      }
+    }
+  ]
+}

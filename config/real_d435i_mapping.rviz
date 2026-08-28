@@ -1,0 +1,127 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Enabled: true
+      Name: Ground grid
+      Reference Frame: map
+      Plane: XY
+      Plane Cell Count: 20
+      Cell Size: 0.1
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Color: 160; 160; 160
+      Alpha: 0.35
+    - Class: rviz_default_plugins/TF
+      Enabled: false
+      Name: TF
+      Frame Timeout: 15
+      Marker Scale: 0.25
+      Show Axes: true
+      Show Names: true
+      Update Interval: 0
+    - Class: rviz_default_plugins/Path
+      Enabled: true
+      Name: cuVSLAM SLAM path
+      Topic: /visual_slam/tracking/slam_path
+      Color: 0; 255; 0
+      Line Style: Lines
+      Line Width: 0.04
+      Buffer Length: 1
+      Pose Style: None
+      Pose Size: 0.1
+      Head Diameter: 0.1
+      Shaft Diameter: 0.03
+    - Class: rviz_default_plugins/Odometry
+      Enabled: true
+      Name: cuVSLAM odometry
+      Topic: /visual_slam/tracking/odometry
+      Keep: 1
+      Shape: Arrow
+      Axes Length: 0.18
+      Axes Radius: 0.02
+      Shaft Length: 0.12
+      Shaft Radius: 0.01
+      Head Length: 0.08
+      Head Radius: 0.03
+      Color: 0; 210; 255
+      Alpha: 1
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Name: cuVSLAM landmarks
+      Topic: /visual_slam/vis/landmarks_cloud
+      Style: Points
+      Size (Pixels): 2
+      Size (m): 0.02
+      Color Transformer: RGB8
+      Use Fixed Frame: true
+      Selectable: true
+      Queue Size: 5
+      Decay Time: 0
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: false
+      Name: cuVSLAM observations
+      Topic: /visual_slam/vis/observations_cloud
+      Style: Points
+      Size (Pixels): 3
+      Size (m): 0.02
+      Color Transformer: RGB8
+      Use Fixed Frame: true
+      Selectable: false
+      Queue Size: 2
+      Decay Time: 0
+    - Class: rviz_default_plugins/Image
+      Enabled: false
+      Name: Left IR image
+      Topic: /camera/infra1/image_rect_raw
+      Transport Hint: raw
+      Normalize Range: true
+      Queue Size: 2
+    - Class: rviz_default_plugins/Image
+      Enabled: false
+      Name: Right IR image
+      Topic: /camera/infra2/image_rect_raw
+      Transport Hint: raw
+      Normalize Range: true
+      Queue Size: 2
+  Enabled: true
+  Global Options:
+    Fixed Frame: map
+    Frame Rate: 30
+    Background Color: 48; 48; 48
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/PublishPoint
+  Views:
+    Current:
+      Angle: -1.5708
+      Class: rviz_default_plugins/TopDownOrtho
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.01
+      Scale: 10
+      Target Frame: <Fixed Frame>
+      Value: TopDownOrtho (rviz_default_plugins)
+      X: 0
+      Y: 0
+Window Geometry:
+  Height: 440
+  Hide Left Dock: true
+  Hide Right Dock: true
+  Width: 620
+  X: 10
+  Y: 10

@@ -1,0 +1,566 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.7">
+  <world name="cuvslam_mapping_simple">
+    <physics name="5ms" type="ignored">
+      <max_step_size>0.005</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics" />
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands" />
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster" />
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu" />
+
+    <light name="ceiling_light" type="point">
+      <pose>0 0 4 0 0 0</pose>
+      <diffuse>0.95 0.95 0.92 1</diffuse>
+      <specular>0.15 0.15 0.15 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.5</constant>
+        <linear>0.02</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+    </light>
+
+    <model name="floor">
+      <static>true</static>
+      <pose>0 0 -0.05 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>6 6 0.1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>6 6 0.1</size></box></geometry>
+          <material>
+            <ambient>0.42 0.42 0.40 1</ambient>
+            <diffuse>0.55 0.55 0.52 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="north_wall">
+      <static>true</static>
+      <pose>0 3 0.6 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>6 0.12 1.2</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>6 0.12 1.2</size></box></geometry>
+          <material><ambient>0.72 0.72 0.70 1</ambient><diffuse>0.82 0.82 0.80 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="south_wall">
+      <static>true</static>
+      <pose>0 -3 0.6 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>6 0.12 1.2</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>6 0.12 1.2</size></box></geometry>
+          <material><ambient>0.68 0.68 0.66 1</ambient><diffuse>0.78 0.78 0.76 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="east_wall">
+      <static>true</static>
+      <pose>3 0 0.6 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.12 6 1.2</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.12 6 1.2</size></box></geometry>
+          <material><ambient>0.76 0.76 0.74 1</ambient><diffuse>0.86 0.86 0.84 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="west_wall">
+      <static>true</static>
+      <pose>-3 0 0.6 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.12 6 1.2</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.12 6 1.2</size></box></geometry>
+          <material><ambient>0.64 0.64 0.62 1</ambient><diffuse>0.74 0.74 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    
+    <model name="east_landmark_stack">
+      <static>true</static>
+      <pose>2.90 -0.9 0 0 0 0</pose>
+      <link name="link">
+        <visual name="lower">
+          <pose>0 0 0.22 0 0 0</pose>
+          <geometry><box><size>0.10 0.75 0.22</size></box></geometry>
+          <material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.08 0.08 0.08 1</diffuse></material>
+        </visual>
+        <visual name="middle">
+          <pose>0 0.18 0.55 0 0 0</pose>
+          <geometry><box><size>0.10 0.38 0.20</size></box></geometry>
+          <material><ambient>0.95 0.95 0.95 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="upper">
+          <pose>0 -0.16 0.88 0 0 0</pose>
+          <geometry><box><size>0.10 0.28 0.26</size></box></geometry>
+          <material><ambient>0.12 0.12 0.12 1</ambient><diffuse>0.16 0.16 0.16 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="north_landmark_bars">
+      <static>true</static>
+      <pose>-0.8 2.90 0 0 0 0</pose>
+      <link name="link">
+        <visual name="bar_a">
+          <pose>-0.55 0 0.32 0 0 0</pose>
+          <geometry><box><size>0.18 0.10 0.48</size></box></geometry>
+          <material><ambient>0.08 0.08 0.08 1</ambient><diffuse>0.10 0.10 0.10 1</diffuse></material>
+        </visual>
+        <visual name="bar_b">
+          <pose>-0.10 0 0.55 0 0 0</pose>
+          <geometry><box><size>0.20 0.10 0.72</size></box></geometry>
+          <material><ambient>0.92 0.92 0.92 1</ambient><diffuse>0.98 0.98 0.98 1</diffuse></material>
+        </visual>
+        <visual name="bar_c">
+          <pose>0.42 0 0.40 0 0 0</pose>
+          <geometry><box><size>0.28 0.10 0.36</size></box></geometry>
+          <material><ambient>0.06 0.06 0.06 1</ambient><diffuse>0.09 0.09 0.09 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="west_landmark_cross">
+      <static>true</static>
+      <pose>-2.90 1.0 0.60 0 0 0</pose>
+      <link name="link">
+        <visual name="vertical">
+          <geometry><box><size>0.10 0.22 0.78</size></box></geometry>
+          <material><ambient>0.04 0.04 0.04 1</ambient><diffuse>0.07 0.07 0.07 1</diffuse></material>
+        </visual>
+        <visual name="horizontal">
+          <geometry><box><size>0.10 0.82 0.20</size></box></geometry>
+          <material><ambient>0.04 0.04 0.04 1</ambient><diffuse>0.07 0.07 0.07 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="center_crate">
+      <static>true</static>
+      <pose>0.15 0.10 0.32 0 0 0.35</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.70 0.55 0.64</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.70 0.55 0.64</size></box></geometry>
+          <material><ambient>0.22 0.48 0.72 1</ambient><diffuse>0.28 0.60 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="short_column">
+      <static>true</static>
+      <pose>-0.65 0.55 0.42 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><cylinder><radius>0.18</radius><length>0.84</length></cylinder></geometry></collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.18</radius><length>0.84</length></cylinder></geometry>
+          <material><ambient>0.72 0.24 0.18 1</ambient><diffuse>0.86 0.30 0.22 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    
+    <model name="near_field_observability_boards">
+      <static>true</static>
+      <link name="link">
+        <visual name="left_board">
+          <pose>-0.30 -0.75 0.55 0 0 0</pose>
+          <geometry><box><size>0.05 0.95 0.95</size></box></geometry>
+          <material><ambient>0.88 0.88 0.88 1</ambient><diffuse>0.95 0.95 0.95 1</diffuse></material>
+        </visual>
+        <visual name="left_black_a">
+          <pose>-0.328 -0.98 0.34 0 0 0</pose>
+          <geometry><box><size>0.012 0.28 0.24</size></box></geometry>
+          <material><ambient>0.02 0.02 0.02 1</ambient><diffuse>0.02 0.02 0.02 1</diffuse></material>
+        </visual>
+        <visual name="left_black_b">
+          <pose>-0.328 -0.58 0.68 0 0 0</pose>
+          <geometry><box><size>0.012 0.22 0.32</size></box></geometry>
+          <material><ambient>0.02 0.02 0.02 1</ambient><diffuse>0.02 0.02 0.02 1</diffuse></material>
+        </visual>
+        <visual name="left_black_c">
+          <pose>-0.328 -0.90 0.90 0 0 0</pose>
+          <geometry><box><size>0.012 0.16 0.12</size></box></geometry>
+          <material><ambient>0.02 0.02 0.02 1</ambient><diffuse>0.02 0.02 0.02 1</diffuse></material>
+        </visual>
+
+        <visual name="right_board">
+          <pose>0.20 -2.65 0.55 0 0 0</pose>
+          <geometry><box><size>0.05 0.90 0.95</size></box></geometry>
+          <material><ambient>0.18 0.18 0.18 1</ambient><diffuse>0.22 0.22 0.22 1</diffuse></material>
+        </visual>
+        <visual name="right_white_a">
+          <pose>0.172 -2.87 0.30 0 0 0</pose>
+          <geometry><box><size>0.012 0.24 0.18</size></box></geometry>
+          <material><ambient>0.98 0.98 0.98 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="right_white_b">
+          <pose>0.172 -2.48 0.58 0 0 0</pose>
+          <geometry><box><size>0.012 0.30 0.20</size></box></geometry>
+          <material><ambient>0.98 0.98 0.98 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="right_white_c">
+          <pose>0.172 -2.78 0.86 0 0 0</pose>
+          <geometry><box><size>0.012 0.18 0.16</size></box></geometry>
+          <material><ambient>0.98 0.98 0.98 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+
+        
+        <visual name="north_inner_board">
+          <pose>0.75 -0.10 0.55 0 0 0</pose>
+          <geometry><box><size>0.95 0.05 0.95</size></box></geometry>
+          <material><ambient>0.86 0.86 0.86 1</ambient><diffuse>0.94 0.94 0.94 1</diffuse></material>
+        </visual>
+        <visual name="north_inner_black_a">
+          <pose>0.52 -0.128 0.34 0 0 0</pose>
+          <geometry><box><size>0.26 0.012 0.22</size></box></geometry>
+          <material><ambient>0.02 0.02 0.02 1</ambient><diffuse>0.02 0.02 0.02 1</diffuse></material>
+        </visual>
+        <visual name="north_inner_black_b">
+          <pose>0.92 -0.128 0.70 0 0 0</pose>
+          <geometry><box><size>0.20 0.012 0.30</size></box></geometry>
+          <material><ambient>0.02 0.02 0.02 1</ambient><diffuse>0.02 0.02 0.02 1</diffuse></material>
+        </visual>
+        <visual name="north_outer_board">
+          <pose>2.65 0.30 0.55 0 0 0</pose>
+          <geometry><box><size>0.90 0.05 0.95</size></box></geometry>
+          <material><ambient>0.16 0.16 0.16 1</ambient><diffuse>0.20 0.20 0.20 1</diffuse></material>
+        </visual>
+        <visual name="north_outer_white_a">
+          <pose>2.43 0.272 0.32 0 0 0</pose>
+          <geometry><box><size>0.24 0.012 0.18</size></box></geometry>
+          <material><ambient>0.98 0.98 0.98 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="north_outer_white_b">
+          <pose>2.82 0.272 0.67 0 0 0</pose>
+          <geometry><box><size>0.28 0.012 0.24</size></box></geometry>
+          <material><ambient>0.98 0.98 0.98 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+
+        
+        <visual name="west_inner_board">
+          <pose>0.30 0.75 0.55 0 0 0</pose>
+          <geometry><box><size>0.05 0.95 0.95</size></box></geometry>
+          <material><ambient>0.84 0.84 0.84 1</ambient><diffuse>0.92 0.92 0.92 1</diffuse></material>
+        </visual>
+        <visual name="west_inner_black_a">
+          <pose>0.328 0.52 0.33 0 0 0</pose>
+          <geometry><box><size>0.012 0.25 0.20</size></box></geometry>
+          <material><ambient>0.02 0.02 0.02 1</ambient><diffuse>0.02 0.02 0.02 1</diffuse></material>
+        </visual>
+        <visual name="west_inner_black_b">
+          <pose>0.328 0.92 0.70 0 0 0</pose>
+          <geometry><box><size>0.012 0.19 0.30</size></box></geometry>
+          <material><ambient>0.02 0.02 0.02 1</ambient><diffuse>0.02 0.02 0.02 1</diffuse></material>
+        </visual>
+        <visual name="west_outer_board">
+          <pose>-0.20 2.65 0.55 0 0 0</pose>
+          <geometry><box><size>0.05 0.90 0.95</size></box></geometry>
+          <material><ambient>0.15 0.15 0.15 1</ambient><diffuse>0.19 0.19 0.19 1</diffuse></material>
+        </visual>
+        <visual name="west_outer_white_a">
+          <pose>-0.172 2.43 0.31 0 0 0</pose>
+          <geometry><box><size>0.012 0.24 0.18</size></box></geometry>
+          <material><ambient>0.98 0.98 0.98 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="west_outer_white_b">
+          <pose>-0.172 2.82 0.70 0 0 0</pose>
+          <geometry><box><size>0.012 0.26 0.26</size></box></geometry>
+          <material><ambient>0.98 0.98 0.98 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+
+        
+        <visual name="south_inner_board">
+          <pose>-0.75 0.20 0.55 0 0 0</pose>
+          <geometry><box><size>0.95 0.05 0.95</size></box></geometry>
+          <material><ambient>0.82 0.82 0.82 1</ambient><diffuse>0.90 0.90 0.90 1</diffuse></material>
+        </visual>
+        <visual name="south_inner_black_a">
+          <pose>-0.98 0.228 0.35 0 0 0</pose>
+          <geometry><box><size>0.27 0.012 0.22</size></box></geometry>
+          <material><ambient>0.02 0.02 0.02 1</ambient><diffuse>0.02 0.02 0.02 1</diffuse></material>
+        </visual>
+        <visual name="south_inner_black_b">
+          <pose>-0.58 0.228 0.72 0 0 0</pose>
+          <geometry><box><size>0.20 0.012 0.28</size></box></geometry>
+          <material><ambient>0.02 0.02 0.02 1</ambient><diffuse>0.02 0.02 0.02 1</diffuse></material>
+        </visual>
+        <visual name="south_outer_board">
+          <pose>-2.65 -0.30 0.55 0 0 0</pose>
+          <geometry><box><size>0.90 0.05 0.95</size></box></geometry>
+          <material><ambient>0.14 0.14 0.14 1</ambient><diffuse>0.18 0.18 0.18 1</diffuse></material>
+        </visual>
+        <visual name="south_outer_white_a">
+          <pose>-2.87 -0.272 0.30 0 0 0</pose>
+          <geometry><box><size>0.23 0.012 0.17</size></box></geometry>
+          <material><ambient>0.98 0.98 0.98 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="south_outer_white_b">
+          <pose>-2.48 -0.272 0.68 0 0 0</pose>
+          <geometry><box><size>0.29 0.012 0.25</size></box></geometry>
+          <material><ambient>0.98 0.98 0.98 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+
+        
+        <visual name="floor_marker_a">
+          <pose>-1.10 -1.35 0.008 0 0 0</pose>
+          <geometry><box><size>0.24 0.18 0.012</size></box></geometry>
+          <material><ambient>0.03 0.03 0.03 1</ambient><diffuse>0.03 0.03 0.03 1</diffuse></material>
+        </visual>
+        <visual name="floor_marker_b">
+          <pose>1.35 -1.10 0.008 0 0 0.35</pose>
+          <geometry><box><size>0.30 0.16 0.012</size></box></geometry>
+          <material><ambient>0.94 0.94 0.94 1</ambient><diffuse>0.98 0.98 0.98 1</diffuse></material>
+        </visual>
+        <visual name="floor_marker_c">
+          <pose>1.05 1.35 0.008 0 0 -0.25</pose>
+          <geometry><box><size>0.20 0.28 0.012</size></box></geometry>
+          <material><ambient>0.03 0.03 0.03 1</ambient><diffuse>0.03 0.03 0.03 1</diffuse></material>
+        </visual>
+        <visual name="floor_marker_d">
+          <pose>-1.35 1.05 0.008 0 0 0.55</pose>
+          <geometry><box><size>0.32 0.14 0.012</size></box></geometry>
+          <material><ambient>0.94 0.94 0.94 1</ambient><diffuse>0.98 0.98 0.98 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="slam_bot">
+      <pose>-1.8 -1.8 0.06 0 0 0</pose>
+
+      <link name="base_link">
+        <inertial>
+          <pose>-0.01 0 0 0 0 0</pose>
+          <mass>8.0</mass>
+          <inertia><ixx>0.05</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.07</iyy><iyz>0</iyz><izz>0.08</izz></inertia>
+        </inertial>
+        <collision name="collision">
+          <pose>0 0 0.04 0 0 0</pose>
+          <geometry><box><size>0.34 0.26 0.12</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <pose>0 0 0.04 0 0 0</pose>
+          <geometry><box><size>0.34 0.26 0.12</size></box></geometry>
+          <material><ambient>0.12 0.26 0.38 1</ambient><diffuse>0.16 0.34 0.50 1</diffuse></material>
+        </visual>
+      </link>
+
+      <link name="left_wheel">
+        <pose>0 0.13 0 1.57079632679 0 0</pose>
+        <inertial>
+          <mass>0.35</mass>
+          <inertia><ixx>0.0007</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.0007</iyy><iyz>0</iyz><izz>0.0012</izz></inertia>
+        </inertial>
+        <collision name="collision"><geometry><cylinder><radius>0.06</radius><length>0.035</length></cylinder></geometry></collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.06</radius><length>0.035</length></cylinder></geometry>
+          <material><ambient>0.04 0.04 0.04 1</ambient><diffuse>0.04 0.04 0.04 1</diffuse></material>
+        </visual>
+      </link>
+
+      <link name="right_wheel">
+        <pose>0 -0.13 0 1.57079632679 0 0</pose>
+        <inertial>
+          <mass>0.35</mass>
+          <inertia><ixx>0.0007</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.0007</iyy><iyz>0</iyz><izz>0.0012</izz></inertia>
+        </inertial>
+        <collision name="collision"><geometry><cylinder><radius>0.06</radius><length>0.035</length></cylinder></geometry></collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.06</radius><length>0.035</length></cylinder></geometry>
+          <material><ambient>0.04 0.04 0.04 1</ambient><diffuse>0.04 0.04 0.04 1</diffuse></material>
+        </visual>
+      </link>
+
+      <link name="caster">
+        <pose>-0.13 0 -0.035 0 0 0</pose>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia><ixx>0.0001</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.0001</iyy><iyz>0</iyz><izz>0.0001</izz></inertia>
+        </inertial>
+        <collision name="collision"><geometry><sphere><radius>0.025</radius></sphere></geometry></collision>
+        <visual name="visual"><geometry><sphere><radius>0.025</radius></sphere></geometry></visual>
+      </link>
+
+      <link name="laser_frame">
+        <pose>0 0 0.13 0 0 0</pose>
+        <inertial>
+          <mass>0.15</mass>
+          <inertia><ixx>0.0002</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.0002</iyy><iyz>0</iyz><izz>0.0002</izz></inertia>
+        </inertial>
+        <collision name="collision"><geometry><cylinder><radius>0.045</radius><length>0.035</length></cylinder></geometry></collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.045</radius><length>0.035</length></cylinder></geometry>
+          <material><ambient>0.02 0.02 0.025 1</ambient><diffuse>0.02 0.02 0.025 1</diffuse></material>
+        </visual>
+        <sensor name="lidar" type="gpu_lidar">
+          <topic>/scan</topic>
+          <update_rate>10</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>720</samples>
+                <resolution>1</resolution>
+                <min_angle>-3.14159265359</min_angle>
+                <max_angle>3.14159265359</max_angle>
+              </horizontal>
+            </scan>
+            <range>
+              <min>0.10</min>
+              <max>10.0</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.005</stddev>
+            </noise>
+          </ray>
+          <visualize>true</visualize>
+        </sensor>
+      </link>
+
+      <link name="camera_link">
+        <pose>0 0 0.20 0 0 0</pose>
+        <inertial>
+          <mass>0.072</mass>
+          <inertia><ixx>0.00006</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.00002</iyy><iyz>0</iyz><izz>0.00006</izz></inertia>
+        </inertial>
+        <visual name="visual">
+          <geometry><box><size>0.025 0.09 0.025</size></box></geometry>
+          <material><ambient>0.08 0.08 0.08 1</ambient><diffuse>0.12 0.12 0.12 1</diffuse></material>
+        </visual>
+      </link>
+
+      <link name="camera_infra1_frame">
+        <pose>0 0.025 0.20 0 0 0</pose>
+        <inertial>
+          <mass>0.001</mass>
+          <inertia><ixx>1e-7</ixx><ixy>0</ixy><ixz>0</ixz><iyy>1e-7</iyy><iyz>0</iyz><izz>1e-7</izz></inertia>
+        </inertial>
+        <sensor name="d435i_infra1" type="camera">
+          <always_on>true</always_on>
+          <update_rate>30</update_rate>
+          <topic>/d435i/infra1/image_rect_raw</topic>
+          <camera>
+            <camera_info_topic>/d435i/infra1/camera_info</camera_info_topic>
+            <optical_frame_id>camera_infra1_optical_frame</optical_frame_id>
+            <horizontal_fov>1.58825</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>360</height>
+              <format>L8</format>
+            </image>
+            <clip><near>0.10</near><far>2.5</far></clip>
+          </camera>
+        </sensor>
+      </link>
+
+      <link name="camera_infra2_frame">
+        <pose>0 -0.025 0.20 0 0 0</pose>
+        <inertial>
+          <mass>0.001</mass>
+          <inertia><ixx>1e-7</ixx><ixy>0</ixy><ixz>0</ixz><iyy>1e-7</iyy><iyz>0</iyz><izz>1e-7</izz></inertia>
+        </inertial>
+        <sensor name="d435i_infra2" type="camera">
+          <always_on>true</always_on>
+          <update_rate>30</update_rate>
+          <topic>/d435i/infra2/image_rect_raw</topic>
+          <camera>
+            <camera_info_topic>/d435i/infra2/camera_info</camera_info_topic>
+            <optical_frame_id>camera_infra2_optical_frame</optical_frame_id>
+            <horizontal_fov>1.58825</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>360</height>
+              <format>L8</format>
+            </image>
+            <clip><near>0.10</near><far>2.5</far></clip>
+          </camera>
+        </sensor>
+      </link>
+
+      <link name="camera_imu_frame">
+        <pose>0 0 0.20 0 0 0</pose>
+        <inertial>
+          <mass>0.001</mass>
+          <inertia><ixx>1e-7</ixx><ixy>0</ixy><ixz>0</ixz><iyy>1e-7</iyy><iyz>0</iyz><izz>1e-7</izz></inertia>
+        </inertial>
+        <sensor name="d435i_imu" type="imu">
+          <always_on>true</always_on>
+          <update_rate>200</update_rate>
+          <topic>/d435i/imu</topic>
+        </sensor>
+      </link>
+
+      <joint name="left_wheel_joint" type="revolute">
+        <parent>base_link</parent>
+        <child>left_wheel</child>
+        <axis>
+          <xyz expressed_in="__model__">0 1 0</xyz>
+          <limit><lower>-1e16</lower><upper>1e16</upper></limit>
+        </axis>
+      </joint>
+      <joint name="right_wheel_joint" type="revolute">
+        <parent>base_link</parent>
+        <child>right_wheel</child>
+        <axis>
+          <xyz expressed_in="__model__">0 1 0</xyz>
+          <limit><lower>-1e16</lower><upper>1e16</upper></limit>
+        </axis>
+      </joint>
+      <joint name="caster_joint" type="fixed">
+        <parent>base_link</parent>
+        <child>caster</child>
+      </joint>
+      <joint name="laser_joint" type="fixed">
+        <parent>base_link</parent>
+        <child>laser_frame</child>
+      </joint>
+      <joint name="camera_joint" type="fixed">
+        <parent>base_link</parent>
+        <child>camera_link</child>
+      </joint>
+      <joint name="camera_infra1_joint" type="fixed">
+        <parent>camera_link</parent>
+        <child>camera_infra1_frame</child>
+      </joint>
+      <joint name="camera_infra2_joint" type="fixed">
+        <parent>camera_link</parent>
+        <child>camera_infra2_frame</child>
+      </joint>
+      <joint name="camera_imu_joint" type="fixed">
+        <parent>camera_link</parent>
+        <child>camera_imu_frame</child>
+      </joint>
+
+      <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+        <left_joint>left_wheel_joint</left_joint>
+        <right_joint>right_wheel_joint</right_joint>
+        <wheel_separation>0.23</wheel_separation>
+        <wheel_radius>0.06</wheel_radius>
+        <odom_publish_frequency>20</odom_publish_frequency>
+        <max_linear_acceleration>1.0</max_linear_acceleration>
+        <min_linear_acceleration>-1.0</min_linear_acceleration>
+        <max_angular_acceleration>2.0</max_angular_acceleration>
+        <min_angular_acceleration>-2.0</min_angular_acceleration>
+        <max_linear_velocity>0.5</max_linear_velocity>
+        <min_linear_velocity>-0.5</min_linear_velocity>
+        <max_angular_velocity>1.2</max_angular_velocity>
+        <min_angular_velocity>-1.2</min_angular_velocity>
+      </plugin>
+    </model>
+  </world>
+</sdf>

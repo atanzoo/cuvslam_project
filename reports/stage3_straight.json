@@ -1,0 +1,62 @@
+{
+  "cuvslam": {
+    "callback_time_max_ms": 60.065171,
+    "status_samples": 203,
+    "track_time_max_ms": 59.684205,
+    "track_time_mean_ms": 4.998756596059113,
+    "track_time_p95_ms": 10.764343400000001,
+    "vo_states": [
+      1
+    ]
+  },
+  "duration_s": 10.0,
+  "failure_reasons": [
+    "pair_skew",
+    "real_time_factor",
+    "track_frame_budget"
+  ],
+  "flow": {
+    "maximum_px": 23.50042152404785,
+    "median_px": 0.23654916882514954,
+    "moving_frame_pairs": 120,
+    "p95_px": 3.677120268344879,
+    "tracked_points": 4348
+  },
+  "gazebo": {
+    "real_time_factor": 0.7603761901107606
+  },
+  "left": {
+    "arrival_interval_max_ms": 95.903593,
+    "arrival_interval_p95_ms": 61.08412170000001,
+    "bright_fraction_median": 0.0,
+    "dark_fraction_median": 0.0,
+    "frames": 204,
+    "intensity_mean_median": 125.62838541666666,
+    "intensity_stddev_median": 35.89163644207136,
+    "stamp_interval_max_ms": 35.0,
+    "stamp_interval_mean_ms": 32.98029556650246,
+    "stamp_interval_p95_ms": 35.0,
+    "stamp_rate_hz": 30.321135175504107,
+    "temporal_difference_p95": 3.0905444182389936
+  },
+  "phase": "straight",
+  "right": {
+    "arrival_interval_max_ms": 87.935179,
+    "arrival_interval_p95_ms": 64.16440044999999,
+    "bright_fraction_median": 0.0,
+    "dark_fraction_median": 4.9135220125786166e-05,
+    "frames": 203,
+    "intensity_mean_median": 125.9774174528302,
+    "intensity_stddev_median": 35.101260188636886,
+    "stamp_interval_max_ms": 35.0,
+    "stamp_interval_mean_ms": 32.995049504950494,
+    "stamp_interval_p95_ms": 35.0,
+    "stamp_rate_hz": 30.307576894223555,
+    "temporal_difference_p95": 3.059258549528302
+  },
+  "status": "FAIL",
+  "stereo": {
+    "exact_pair_fraction": 0.9950980392156863,
+    "max_pair_skew_ms": 30.0
+  }
+}

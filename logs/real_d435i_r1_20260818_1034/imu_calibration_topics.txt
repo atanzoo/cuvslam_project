@@ -1,0 +1,35 @@
+ACCEL_IMU_INFO
+WARNING: topic [/camera/accel/imu_info] does not appear to be published yet
+GYRO_IMU_INFO
+DEPTH_TO_ACCEL
+rotation:
+- 1.0
+- 0.0
+- 0.0
+- 0.0
+- 1.0
+- 0.0
+- 0.0
+- 0.0
+- 1.0
+translation:
+- -0.005520000122487545
+- 0.005100000184029341
+- 0.011739999987185001
+---
+DEPTH_TO_GYRO
+rotation:
+- 1.0
+- 0.0
+- 0.0
+- 0.0
+- 1.0
+- 0.0
+- 0.0
+- 0.0
+- 1.0
+translation:
+- -0.005520000122487545
+- 0.005100000184029341
+- 0.011739999987185001
+---

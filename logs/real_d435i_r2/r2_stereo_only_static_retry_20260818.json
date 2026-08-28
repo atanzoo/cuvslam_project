@@ -1,0 +1,2075 @@
+{
+  "counts": {
+    "/camera/imu": 4049,
+    "/camera/infra1/image_rect_raw": 704,
+    "/camera/infra2/image_rect_raw": 834,
+    "/visual_slam/status": 670,
+    "/visual_slam/tracking/odometry": 671,
+    "/visual_slam/tracking/slam_path": 671,
+    "/visual_slam/tracking/vo_pose": 671
+  },
+  "duration_s": 30.007083168000463,
+  "imu_timing": {
+    "messages": 4049,
+    "non_monotonic": 0,
+    "period_max_ms": 100.244992,
+    "period_median_ms": 5.012224,
+    "period_p95_ms": 35.085312,
+    "rate_hz": 136.12223583085893
+  },
+  "mode": "stereo_only",
+  "odometry_geometry": {
+    "end": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "end_displacement_m": 0.0,
+    "max_displacement_m": 0.0,
+    "start": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "odometry_samples": 671,
+  "odometry_timing": {
+    "messages": 671,
+    "non_monotonic": 0,
+    "period_max_ms": 1333.927734,
+    "period_median_ms": 33.339844,
+    "period_p95_ms": 33.354382199999996,
+    "rate_hz": 23.669389263567144
+  },
+  "route": "r2_manual_short_straight",
+  "slam_path_length_latest_m": 0.0,
+  "slam_path_samples": 671,
+  "status_samples": [
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    },
+    {
+      "vo_state": 1
+    }
+  ],
+  "tracking_gate": {
+    "status_samples": 670,
+    "vo_state_1_fraction": 1.0,
+    "vo_state_values": [
+      1
+    ]
+  },
+  "vo_pose_samples": 671,
+  "vo_pose_timing": {
+    "messages": 671,
+    "non_monotonic": 0,
+    "period_max_ms": 1333.927734,
+    "period_median_ms": 33.339844,
+    "period_p95_ms": 33.354382199999996,
+    "rate_hz": 23.669389263567144
+  }
+}

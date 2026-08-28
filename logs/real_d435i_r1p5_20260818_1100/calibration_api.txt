@@ -1,0 +1,26 @@
+R1.5 direct librealsense C++ API audit
+Device: Intel RealSense D435I
+Serial: 261222077990
+Firmware: 5.15.1.55
+librealsense: 2.54.2
+
+Motion intrinsic data returned by rs2::motion_stream_profile::get_motion_intrinsics():
+- Accel 200/100 Hz: data is identity scale/cross-axis, bias column is zero;
+  noise_variances and bias_variances are all zero.
+- Gyro 400/200 Hz: data is identity scale/cross-axis, bias column is zero;
+  noise_variances and bias_variances are all zero.
+
+Extrinsic returned by get_extrinsics_to():
+- gyro -> infra1: identity rotation;
+  translation = [+0.0055200001, -0.0051000002, -0.0117400000] m
+- infra1 -> gyro: identity rotation;
+  translation = [-0.0055200001, +0.0051000002, +0.0117400000] m
+
+Interpretation:
+The public factory-calibration API is callable and the source is therefore
+known, but this firmware/device combination exposes no non-zero motion bias or
+noise metadata.  This matches the RealSense ROS warning:
+"IMU Calibration is not available, default intrinsic and extrinsic will be used."
+It is not evidence that the IMU is dead.  R1.5 uses the measured static noise
+and the NVIDIA cuVSLAM D435i noise contract; it does not claim factory bias/noise
+calibration was recovered.

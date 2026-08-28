@@ -1,0 +1,6 @@
+ready: min_scan=0.745m, vo_state=1; ground truth is not subscribed
+diagnostic straight: duration=5.00s, linear=0.120, angular=0.000
+  elapsed=0.0s, min_scan=0.745m, vo_state=1
+  elapsed=2.0s, min_scan=1.078m, vo_state=1
+  elapsed=4.1s, min_scan=0.979m, vo_state=1
+complete: vo_state=1

@@ -1,0 +1,34 @@
+--- a/src/impl/landmarks_vis_helper.cpp
++++ b/src/impl/landmarks_vis_helper.cpp
+@@ -107,13 +107,15 @@
+     sensor_msgs::PointCloud2Modifier modifier(*pc_msg.get());
+     modifier.setPointCloud2Fields(
+-      4,
++      5,
+       "x", 1, sensor_msgs::msg::PointField::FLOAT32,
+       "y", 1, sensor_msgs::msg::PointField::FLOAT32,
+       "z", 1, sensor_msgs::msg::PointField::FLOAT32,
+-      "rgb", 1, sensor_msgs::msg::PointField::UINT32);
++      "rgb", 1, sensor_msgs::msg::PointField::UINT32,
++      "weight", 1, sensor_msgs::msg::PointField::FLOAT32);
+     modifier.resize(landmarks.num);
+ 
+     sensor_msgs::PointCloud2Iterator<float> iter_x(*pc_msg.get(), "x");
+     sensor_msgs::PointCloud2Iterator<float> iter_y(*pc_msg.get(), "y");
+     sensor_msgs::PointCloud2Iterator<float> iter_z(*pc_msg.get(), "z");
+     sensor_msgs::PointCloud2Iterator<uint32_t> iter_rgb(*pc_msg.get(), "rgb");
++    sensor_msgs::PointCloud2Iterator<float> iter_weight(*pc_msg.get(), "weight");
+@@ -120,5 +122,6 @@
+ 
+-    for (uint32_t i = 0; i < landmarks.num; i++, ++iter_x, ++iter_y, ++iter_z, ++iter_rgb) {
++    for (uint32_t i = 0; i < landmarks.num;
++      i++, ++iter_x, ++iter_y, ++iter_z, ++iter_rgb, ++iter_weight) {
+       float w = landmarks.landmarks[i].weight;
+       tf2::Vector3 xyz(landmarks.landmarks[i].x, landmarks.landmarks[i].y,
+         landmarks.landmarks[i].z);
+@@ -167,4 +170,5 @@
+       }
+       *iter_rgb = rgb;
++      *iter_weight = w;
+     }
+     CUVSLAM_FinishReadingLandmarks(cuvslam_handle_, layer_);
