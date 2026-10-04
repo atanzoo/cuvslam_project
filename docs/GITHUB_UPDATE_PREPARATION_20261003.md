@@ -9,7 +9,22 @@ GitHub connector. On October 4, the connected identity was verified as
 `atanzoo` with push access to this private repository. Remote `main` and local
 HEAD both resolve to `9043a718bce6ac24ae21e5fd1abe7a0e0b52f961`.
 HTTPS command-line Git authentication remains unavailable; publication uses
-the authorized connector instead. Publication is pending final verification.
+the authorized connector instead. The research snapshot was published and
+verified on October 4; `main` remains unchanged and the draft is not merged.
+
+Publication receipt:
+- Branch: `codex/github-workstream-update-20261004`.
+- Initial snapshot commit: `0793de37a49519485c029848044eb3eb3a549fa1`.
+- Verified 546-file tree: `74200a28f4f45f773f6a31bccb16fff1a7b58268`.
+- Draft review: `https://github.com/atanzoo/cuvslam_project/pull/1`.
+- Remote branch SHA and README blob were read back successfully; remote
+  `main` was read back at the unchanged base SHA above.
+- A documentation-only follow-up records this receipt and corrects the
+  handoff's GitHub metadata without changing technical milestone status.
+- Local working files and ignored evidence remain intact. Command-line Git
+  authentication is still unavailable: publication used the connector, and
+  the local checkout stays on `main` with its snapshot staged, not a synced
+  local commit or switched research branch.
 
 This preparation is C0 documentation/ignore-policy work. It does not approve
 or introduce runtime architecture changes. Existing workstream source and

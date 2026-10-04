@@ -13,8 +13,11 @@
 - Project root: `<repository-root>`
 - Active current-state entry point: `docs/CUVSLAM_CURRENT_STATUS_20260825.md`
 - Latest real-camera correction record: `real_robot/cuvslam/evidence/logs/real_d435i_quality/20260825_r2_correction_log.md`
-- GitHub repository: `https://github.com/atanzoo/cuvslam_project` (`main`,
-  commit `d53d08d`)
+- GitHub repository: `https://github.com/atanzoo/cuvslam_project` (private;
+  unchanged `main` at `9043a71`). The October 4 research snapshot is published
+  on `codex/github-workstream-update-20261004` for draft review:
+  `https://github.com/atanzoo/cuvslam_project/pull/1`. This is publication, not
+  new runtime acceptance; see `docs/GITHUB_UPDATE_PREPARATION_20261003.md`.
 - Content classification: `docs/PROJECT_CONTENT_MAP.md`
 - Physical layout: `docs/PROJECT_LAYOUT.md`
 - Current milestone: real D435i stereo+IMU cuVSLAM odometry accepted for the
