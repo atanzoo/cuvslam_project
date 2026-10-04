@@ -1,0 +1,38 @@
+{
+  "adjudication": "pass",
+  "adjudication_basis": [
+    "Local MuJoCo proxy trace reached the configured 0.30 m goal tolerance (final recorded goal distance 0.2371 m).",
+    "Local runner recorded Nav2 result status code 4 (SUCCEEDED), no collision/contact, no map violation, and no timeout.",
+    "The matching Jetson FollowPath action result independently records status succeeded and result status 4 for the same scene and reverse path.",
+    "Runtime bridge health reported last_goal_status_code 4 after the action became inactive."
+  ],
+  "decision_rule": "A fixed-only traversal passes when the scene/path identity matches, the Nav2 FollowPath action reaches SUCCEEDED, the local proxy reaches goal tolerance, and collision/contact, map_violation, and timeout are all false.",
+  "local_runner_raw_status": "nav2_rpp_mujoco_fixed_gate_fail",
+  "local_runner_terminal_transition_observed": false,
+  "local_runner_terminal_transition_race": true,
+  "local_simulation_evidence": "20261002_nav2_rpp_mujoco_reverse_fixed_gate_seed10042.json",
+  "local_simulation_metrics": {
+    "scene_id": "reset10042_scene1369567760",
+    "sim_elapsed_s": 50.04000000000339,
+    "goal_distance_m": 0.23705452999540924,
+    "fixed_object_active": true,
+    "pedestrian_disabled": true,
+    "required_obstacle_edge_clearance_m": 0.61,
+    "min_fixed_box_edge_distance_m": 0.8042569163079395,
+    "physical_contact": false,
+    "geometric_collision": false,
+    "map_violation": false,
+    "timeout": false,
+    "nav2_result_status_code": 4
+  },
+  "nav2_action_evidence": "20261002_nav2_follow_result_seed10042_reverse.json",
+  "nav2_action_result": {
+    "status": "succeeded",
+    "result_status": 4,
+    "scene_id": "reset10042_scene1369567760",
+    "path_file": "results/nav2_path_seed10042_reverse_controller_loop_20261002.json",
+    "path_point_count": 407
+  },
+  "raw_evidence_preserved_unchanged": true,
+  "scope": "One reverse traversal in one isolated static-obstacle scene using a local D1 Max kinematic MuJoCo proxy and Jetson ROS 2 Foxy Nav2 controller; not hardware or pedestrian evidence."
+}

@@ -1,0 +1,807 @@
+{
+  "command_histogram_rounded": {
+    "-0.00,0.00,0.09": 1,
+    "-0.00,0.00,0.11": 2,
+    "-0.00,0.00,0.14": 1,
+    "-0.00,0.00,0.15": 1,
+    "0.00,0.00,0.02": 1,
+    "0.00,0.00,0.04": 1,
+    "0.00,0.00,0.06": 1,
+    "0.00,0.00,0.08": 2,
+    "0.00,0.00,0.18": 1,
+    "0.00,0.00,0.20": 1,
+    "0.00,0.00,0.22": 1,
+    "0.01,0.00,-0.16": 1,
+    "0.01,0.00,0.09": 2,
+    "0.01,0.00,0.19": 1,
+    "0.02,0.00,-0.15": 3,
+    "0.02,0.00,0.20": 1,
+    "0.03,0.00,-0.14": 1,
+    "0.03,0.00,0.17": 1,
+    "0.04,0.00,-0.04": 1,
+    "0.04,0.00,-0.05": 5,
+    "0.04,0.00,-0.06": 1,
+    "0.04,0.00,-0.11": 1,
+    "0.04,0.00,-0.12": 1,
+    "0.04,0.00,-0.14": 1,
+    "0.05,0.00,-0.02": 1,
+    "0.05,0.00,-0.03": 2,
+    "0.05,0.00,-0.05": 2,
+    "0.05,0.00,-0.06": 3,
+    "0.05,0.00,-0.10": 1,
+    "0.05,0.00,-0.12": 2,
+    "0.05,0.00,0.14": 1,
+    "0.06,0.00,-0.03": 1,
+    "0.06,0.00,-0.05": 1,
+    "0.06,0.00,-0.07": 4,
+    "0.06,0.00,-0.08": 1,
+    "0.06,0.00,-0.11": 2,
+    "0.06,0.00,0.12": 1,
+    "0.07,0.00,-0.03": 2,
+    "0.07,0.00,-0.07": 2,
+    "0.07,0.00,-0.08": 2,
+    "0.07,0.00,-0.09": 2,
+    "0.07,0.00,-0.10": 1,
+    "0.07,0.00,-0.11": 1,
+    "0.07,0.00,-0.13": 1,
+    "0.07,0.00,-0.14": 1,
+    "0.07,0.00,-0.15": 1,
+    "0.07,0.00,0.09": 1,
+    "0.07,0.00,0.10": 1,
+    "0.08,0.00,-0.02": 1,
+    "0.08,0.00,-0.06": 3,
+    "0.08,0.00,-0.07": 1,
+    "0.08,0.00,-0.08": 1,
+    "0.08,0.00,-0.09": 2,
+    "0.08,0.00,-0.10": 1,
+    "0.08,0.00,-0.11": 2,
+    "0.08,0.00,-0.13": 3,
+    "0.08,0.00,-0.16": 2,
+    "0.08,0.00,-0.17": 1,
+    "0.08,0.00,0.06": 2,
+    "0.08,0.00,0.07": 2,
+    "0.08,0.00,0.08": 1,
+    "0.08,0.00,0.10": 2,
+    "0.08,0.00,0.15": 2,
+    "0.08,0.00,0.16": 1,
+    "0.09,0.00,-0.02": 2,
+    "0.09,0.00,-0.07": 6,
+    "0.09,0.00,-0.08": 5,
+    "0.09,0.00,-0.09": 6,
+    "0.09,0.00,-0.10": 3,
+    "0.09,0.00,-0.11": 1,
+    "0.09,0.00,-0.16": 2,
+    "0.09,0.00,0.09": 1,
+    "0.09,0.00,0.11": 2,
+    "0.09,0.00,0.12": 3,
+    "0.09,0.00,0.13": 5,
+    "0.09,0.00,0.14": 3,
+    "0.10,0.00,-0.02": 2,
+    "0.10,0.00,-0.05": 3,
+    "0.10,0.00,-0.06": 3,
+    "0.10,0.00,-0.07": 4,
+    "0.10,0.00,-0.08": 1,
+    "0.10,0.00,-0.09": 2,
+    "0.10,0.00,-0.12": 1,
+    "0.10,0.00,-0.13": 1,
+    "0.10,0.00,-0.14": 1,
+    "0.10,0.00,-0.15": 2,
+    "0.10,0.00,0.13": 3,
+    "0.11,0.00,-0.02": 8,
+    "0.11,0.00,-0.03": 26,
+    "0.11,0.00,-0.04": 19,
+    "0.11,0.00,-0.05": 17,
+    "0.11,0.00,-0.06": 3,
+    "0.11,0.00,-0.07": 1,
+    "0.11,0.00,-0.08": 1,
+    "0.11,0.00,-0.11": 1,
+    "0.11,0.00,0.01": 1,
+    "0.11,0.00,0.10": 2,
+    "0.11,0.00,0.11": 2,
+    "0.11,0.00,0.12": 1,
+    "0.12,0.00,-0.00": 8,
+    "0.12,0.00,-0.01": 35,
+    "0.12,0.00,-0.02": 61,
+    "0.12,0.00,-0.03": 67,
+    "0.12,0.00,-0.04": 45,
+    "0.12,0.00,-0.05": 11,
+    "0.12,0.00,-0.11": 1,
+    "0.12,0.00,0.00": 6,
+    "0.12,0.00,0.01": 5,
+    "0.12,0.00,0.02": 1,
+    "0.12,0.00,0.03": 1,
+    "0.12,0.00,0.04": 5,
+    "0.13,0.00,-0.00": 41,
+    "0.13,0.00,-0.01": 82,
+    "0.13,0.00,-0.02": 54,
+    "0.13,0.00,-0.03": 13,
+    "0.13,0.00,-0.04": 1,
+    "0.13,0.00,-0.05": 1,
+    "0.13,0.00,-0.08": 1,
+    "0.13,0.00,-0.09": 1,
+    "0.13,0.00,0.00": 29,
+    "0.13,0.00,0.01": 12,
+    "0.13,0.00,0.05": 2,
+    "0.13,0.00,0.06": 2,
+    "0.13,0.00,0.08": 2,
+    "0.14,0.00,-0.01": 1,
+    "0.14,0.00,-0.06": 1
+  },
+  "command_sample_count": 730,
+  "controller": "nav2_mppi_controller::MPPIController/FollowPath",
+  "controller_frequency_hz": 10.0,
+  "costmap_sha256": "830b4aa44a2d7d3d0b03ef3376c780bb5bd27e374fe17fefb2032b1f2f4ec466",
+  "curriculum_index": 0,
+  "episode_seed": 1369567760,
+  "fixed_object_active": true,
+  "geometric_collision": false,
+  "goal_distance_m": 2.2319586949098906,
+  "initial_yaw_rad": 0.22758654768121547,
+  "map_scene_seed": 1369567760,
+  "map_violation": false,
+  "max_forward_velocity_mps": 0.22,
+  "min_fixed_box_edge_distance_m": 0.7409562513681829,
+  "mode_trace_0p5hz": [
+    {
+      "elapsed_s": 0.09600000000000003,
+      "fixed_box_edge_distance_m": 7.699732321396886,
+      "goal_distance_m": 9.304185783355546,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.0,
+        0.0,
+        0.015015743672847748
+      ],
+      "robot_xy": [
+        -3.8199998830258846,
+        -5.619999845027923
+      ],
+      "robot_yaw_rad": 1.5722137122381077
+    },
+    {
+      "elapsed_s": 2.0160000000000013,
+      "fixed_box_edge_distance_m": 7.676243499936746,
+      "goal_distance_m": 9.281197131805042,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.06711025536060333,
+        0.0,
+        0.09620252996683121
+      ],
+      "robot_xy": [
+        -3.8248052044515157,
+        -5.596207080879762
+      ],
+      "robot_yaw_rad": 1.8158453985894094
+    },
+    {
+      "elapsed_s": 4.032000000000003,
+      "fixed_box_edge_distance_m": 7.51896925716575,
+      "goal_distance_m": 9.129083937887147,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.08321132510900497,
+        0.0,
+        0.15028749406337738
+      ],
+      "robot_xy": [
+        -3.8815555905775296,
+        -5.4352159046760296
+      ],
+      "robot_yaw_rad": 2.035800459099562
+    },
+    {
+      "elapsed_s": 6.0480000000000045,
+      "fixed_box_edge_distance_m": 7.340449690338586,
+      "goal_distance_m": 8.960787512909876,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.11793612688779831,
+        0.0,
+        0.03501405194401741
+      ],
+      "robot_xy": [
+        -4.006586311971222,
+        -5.246933234957287
+      ],
+      "robot_yaw_rad": 2.2233750533306704
+    },
+    {
+      "elapsed_s": 8.063999999999998,
+      "fixed_box_edge_distance_m": 7.165846991493275,
+      "goal_distance_m": 8.797623898690771,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.11567631363868713,
+        0.0,
+        -0.0412275530397892
+      ],
+      "robot_xy": [
+        -4.151228903743575,
+        -5.057837716473696
+      ],
+      "robot_yaw_rad": 2.195844540518018
+    },
+    {
+      "elapsed_s": 10.079999999999776,
+      "fixed_box_edge_distance_m": 6.990877679348259,
+      "goal_distance_m": 8.632827324561628,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.1128917932510376,
+        0.0,
+        -0.04503314942121506
+      ],
+      "robot_xy": [
+        -4.279661194965707,
+        -4.866682783174492
+      ],
+      "robot_yaw_rad": 2.1246123718435497
+    },
+    {
+      "elapsed_s": 12.095999999999554,
+      "fixed_box_edge_distance_m": 6.8497633126201904,
+      "goal_distance_m": 8.498801109402034,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.027687160298228264,
+        0.0,
+        -0.1384280025959015
+      ],
+      "robot_xy": [
+        -4.367634748022472,
+        -4.712362623856304
+      ],
+      "robot_yaw_rad": 2.001227419720618
+    },
+    {
+      "elapsed_s": 14.015999999999343,
+      "fixed_box_edge_distance_m": 6.729743562315604,
+      "goal_distance_m": 8.382443318778149,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.11243215948343277,
+        0.0,
+        -0.044256288558244705
+      ],
+      "robot_xy": [
+        -4.405129864459334,
+        -4.585507558653353
+      ],
+      "robot_yaw_rad": 1.807557419223756
+    },
+    {
+      "elapsed_s": 16.031999999999123,
+      "fixed_box_edge_distance_m": 6.5062216626508285,
+      "goal_distance_m": 8.164358939578035,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12108829617500305,
+        0.0,
+        -0.016493959352374077
+      ],
+      "robot_xy": [
+        -4.451620302137829,
+        -4.351855755903998
+      ],
+      "robot_yaw_rad": 1.7355197102251896
+    },
+    {
+      "elapsed_s": 18.0479999999989,
+      "fixed_box_edge_distance_m": 6.276056251261029,
+      "goal_distance_m": 7.939040349323106,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.11328829079866409,
+        0.0,
+        -0.05492005869746208
+      ],
+      "robot_xy": [
+        -4.485522493350673,
+        -4.112591724588522
+      ],
+      "robot_yaw_rad": 1.6777744924722504
+    },
+    {
+      "elapsed_s": 20.06399999999868,
+      "fixed_box_edge_distance_m": 6.051046353443215,
+      "goal_distance_m": 7.717659521990788,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12337431311607361,
+        0.0,
+        -0.005707955453544855
+      ],
+      "robot_xy": [
+        -4.498611635830072,
+        -3.881560653437576
+      ],
+      "robot_yaw_rad": 1.6000488857633604
+    },
+    {
+      "elapsed_s": 22.079999999998456,
+      "fixed_box_edge_distance_m": 5.812021845067313,
+      "goal_distance_m": 7.481883458527188,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12184619903564453,
+        0.0,
+        -0.02774728834629059
+      ],
+      "robot_xy": [
+        -4.50050801001134,
+        -3.6379193647124226
+      ],
+      "robot_yaw_rad": 1.553064878822039
+    },
+    {
+      "elapsed_s": 24.095999999998234,
+      "fixed_box_edge_distance_m": 5.57260720653182,
+      "goal_distance_m": 7.245367828428759,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12333159893751144,
+        0.0,
+        -0.022075098007917404
+      ],
+      "robot_xy": [
+        -4.494537325054765,
+        -3.395060660151632
+      ],
+      "robot_yaw_rad": 1.533660691524587
+    },
+    {
+      "elapsed_s": 26.015999999998023,
+      "fixed_box_edge_distance_m": 5.340429308230761,
+      "goal_distance_m": 7.015575439471365,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12170754373073578,
+        0.0,
+        -0.03139599412679672
+      ],
+      "robot_xy": [
+        -4.479907764015194,
+        -3.161074551742627
+      ],
+      "robot_yaw_rad": 1.4815195900450548
+    },
+    {
+      "elapsed_s": 28.0319999999978,
+      "fixed_box_edge_distance_m": 5.092057344799542,
+      "goal_distance_m": 6.769143124849793,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12837544083595276,
+        0.0,
+        -0.004378064535558224
+      ],
+      "robot_xy": [
+        -4.452489319384928,
+        -2.9130462564103565
+      ],
+      "robot_yaw_rad": 1.4490320720492933
+    },
+    {
+      "elapsed_s": 30.04799999999758,
+      "fixed_box_edge_distance_m": 4.835464225476965,
+      "goal_distance_m": 6.514200950530871,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.1286279857158661,
+        0.0,
+        -0.017876911908388138
+      ],
+      "robot_xy": [
+        -4.416758837683446,
+        -2.658285823000291
+      ],
+      "robot_yaw_rad": 1.4136906925856196
+    },
+    {
+      "elapsed_s": 32.063999999997385,
+      "fixed_box_edge_distance_m": 4.576649085031794,
+      "goal_distance_m": 6.256687406680856,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.13125991821289062,
+        0.0,
+        0.007180757354944944
+      ],
+      "robot_xy": [
+        -4.373470393124435,
+        -2.4028348344989094
+      ],
+      "robot_yaw_rad": 1.4012473411715705
+    },
+    {
+      "elapsed_s": 34.07999999999806,
+      "fixed_box_edge_distance_m": 4.322890572119126,
+      "goal_distance_m": 6.0041338616409865,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12193528562784195,
+        0.0,
+        -0.016675222665071487
+      ],
+      "robot_xy": [
+        -4.328535160245059,
+        -2.1528937086350655
+      ],
+      "robot_yaw_rad": 1.374124364939252
+    },
+    {
+      "elapsed_s": 36.09599999999873,
+      "fixed_box_edge_distance_m": 4.069639013325414,
+      "goal_distance_m": 5.75168108888435,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12977634370326996,
+        0.0,
+        -0.01651342399418354
+      ],
+      "robot_xy": [
+        -4.2766450343702695,
+        -1.9049975545752076
+      ],
+      "robot_yaw_rad": 1.3519469648345497
+    },
+    {
+      "elapsed_s": 38.01599999999937,
+      "fixed_box_edge_distance_m": 3.8257288737140365,
+      "goal_distance_m": 5.508081267273451,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12427540868520737,
+        0.0,
+        0.0009691973682492971
+      ],
+      "robot_xy": [
+        -4.219621244209621,
+        -1.6678057121310568
+      ],
+      "robot_yaw_rad": 1.3277889409258152
+    },
+    {
+      "elapsed_s": 40.032000000000046,
+      "fixed_box_edge_distance_m": 3.5622299469930434,
+      "goal_distance_m": 5.244626865602425,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.13170753419399261,
+        0.0,
+        -0.0018563508056104183
+      ],
+      "robot_xy": [
+        -4.153978382634641,
+        -1.412441662179007
+      ],
+      "robot_yaw_rad": 1.314231621746172
+    },
+    {
+      "elapsed_s": 42.04800000000072,
+      "fixed_box_edge_distance_m": 3.3010855021253045,
+      "goal_distance_m": 4.983267521720331,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12817901372909546,
+        0.0,
+        -0.009026175364851952
+      ],
+      "robot_xy": [
+        -4.085917696684216,
+        -1.1599769934039317
+      ],
+      "robot_yaw_rad": 1.3007057518178733
+    },
+    {
+      "elapsed_s": 44.06400000000139,
+      "fixed_box_edge_distance_m": 3.0405295118478968,
+      "goal_distance_m": 4.722226002830157,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12681728601455688,
+        0.0,
+        -0.00442025950178504
+      ],
+      "robot_xy": [
+        -4.015515111563846,
+        -0.9085441453384023
+      ],
+      "robot_yaw_rad": 1.2904825826102966
+    },
+    {
+      "elapsed_s": 46.080000000002066,
+      "fixed_box_edge_distance_m": 2.784452216792579,
+      "goal_distance_m": 4.465282770889735,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.13055358827114105,
+        0.0,
+        -0.014775257557630539
+      ],
+      "robot_xy": [
+        -3.943320635560341,
+        -0.6619359193039179
+      ],
+      "robot_yaw_rad": 1.277172117266996
+    },
+    {
+      "elapsed_s": 48.00000000000271,
+      "fixed_box_edge_distance_m": 2.537752455274531,
+      "goal_distance_m": 4.216910083832136,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12590111792087555,
+        0.0,
+        -0.014114486053586006
+      ],
+      "robot_xy": [
+        -3.867569783432391,
+        -0.425370026702733
+      ],
+      "robot_yaw_rad": 1.2528524344248753
+    },
+    {
+      "elapsed_s": 50.01600000000338,
+      "fixed_box_edge_distance_m": 2.2847209849973,
+      "goal_distance_m": 3.9614484536589365,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12749601900577545,
+        0.0,
+        -0.008839582093060017
+      ],
+      "robot_xy": [
+        -3.787045590037165,
+        -0.1828389996967105
+      ],
+      "robot_yaw_rad": 1.2471871163418562
+    },
+    {
+      "elapsed_s": 52.032000000004054,
+      "fixed_box_edge_distance_m": 2.034476033466684,
+      "goal_distance_m": 3.7079411527380866,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12422789633274078,
+        0.0,
+        -0.025606894865632057
+      ],
+      "robot_xy": [
+        -3.705459186291463,
+        0.05734562360420729
+      ],
+      "robot_yaw_rad": 1.2308091229276756
+    },
+    {
+      "elapsed_s": 54.04800000000473,
+      "fixed_box_edge_distance_m": 1.7938721672807911,
+      "goal_distance_m": 3.4619207058977177,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.11999133974313736,
+        0.0,
+        -0.03142208978533745
+      ],
+      "robot_xy": [
+        -3.6181496611997757,
+        0.28805558612968113
+      ],
+      "robot_yaw_rad": 1.1863391792850562
+    },
+    {
+      "elapsed_s": 56.0640000000054,
+      "fixed_box_edge_distance_m": 1.572263921293159,
+      "goal_distance_m": 3.2307572045555686,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.11519119143486023,
+        0.0,
+        -0.03106624074280262
+      ],
+      "robot_xy": [
+        -3.521877016406737,
+        0.5008579703740879
+      ],
+      "robot_yaw_rad": 1.1121662260966347
+    },
+    {
+      "elapsed_s": 58.08000000000607,
+      "fixed_box_edge_distance_m": 1.3612021741397493,
+      "goal_distance_m": 3.002896267753472,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.11767467111349106,
+        0.0,
+        -0.04118753597140312
+      ],
+      "robot_xy": [
+        -3.4116955077538944,
+        0.7068944486303538
+      ],
+      "robot_yaw_rad": 1.0400576211290395
+    },
+    {
+      "elapsed_s": 60.000000000006715,
+      "fixed_box_edge_distance_m": 1.1725011602702131,
+      "goal_distance_m": 2.790648238882937,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.11410427838563919,
+        0.0,
+        -0.04280787333846092
+      ],
+      "robot_xy": [
+        -3.291769203654516,
+        0.8954930712209054
+      ],
+      "robot_yaw_rad": 0.9683736066298525
+    },
+    {
+      "elapsed_s": 62.01600000000739,
+      "fixed_box_edge_distance_m": 1.0311389496104875,
+      "goal_distance_m": 2.6276794120293574,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.07734420895576477,
+        0.0,
+        -0.07913695275783539
+      ],
+      "robot_xy": [
+        -3.1774297201300876,
+        1.036855281880631
+      ],
+      "robot_yaw_rad": 0.8092609916877761
+    },
+    {
+      "elapsed_s": 64.03200000000803,
+      "fixed_box_edge_distance_m": 0.959734766920074,
+      "goal_distance_m": 2.5427739147294166,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.043168239295482635,
+        0.0,
+        -0.03709269315004349
+      ],
+      "robot_xy": [
+        -3.100380638988056,
+        1.1082594645710444
+      ],
+      "robot_yaw_rad": 0.6852516324613105
+    },
+    {
+      "elapsed_s": 66.04800000000691,
+      "fixed_box_edge_distance_m": 0.8481470662688382,
+      "goal_distance_m": 2.40992447923,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.11001861840486526,
+        0.0,
+        -0.05054410547018051
+      ],
+      "robot_xy": [
+        -2.9553295027097475,
+        1.2198471652222802
+      ],
+      "robot_yaw_rad": 0.6315084922572405
+    },
+    {
+      "elapsed_s": 68.06400000000579,
+      "fixed_box_edge_distance_m": 0.7569317333151454,
+      "goal_distance_m": 2.297684043866871,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.06972996890544891,
+        0.0,
+        -0.14205637574195862
+      ],
+      "robot_xy": [
+        -2.800252208177605,
+        1.3170158663937939
+      ],
+      "robot_yaw_rad": 0.4404130238710671
+    },
+    {
+      "elapsed_s": 70.00000000000472,
+      "fixed_box_edge_distance_m": 0.7500631049186146,
+      "goal_distance_m": 2.2319586949098906,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.12472064793109894,
+        0.0,
+        -0.02330588735640049
+      ],
+      "robot_xy": [
+        -2.601961284348032,
+        1.377542949727374
+      ],
+      "robot_yaw_rad": 0.22758654768121547
+    }
+  ],
+  "nav2_map_yaml_sha256": "ff5cd429ccb86783e6e39ce6017e2c40f1ec71a4e01c364e8b9799ad2f63a33e",
+  "nav2_path_sha256": "061bc0f8165e0a3bef48819b8ef8e26764d0c2e3ed743f5f462a9eaf01a3e58b",
+  "nav2_path_start_xy": [
+    -3.8199998830258846,
+    -5.619999845027923
+  ],
+  "nav2_result_status_code": 2,
+  "nav2_terminal_transition_observed": false,
+  "note": "MuJoCo uses a D1 Max kinematic proxy and the existing delayed/saturated simulated velocity interface; this is not gait or hardware evidence.",
+  "pedestrian_disabled": true,
+  "physical_contact": false,
+  "preflight_costmap": {
+    "dense_costmap_samples_clear": 1089,
+    "nav2_unknown_cells": 208099,
+    "path_segments": 436,
+    "scene_id": "reset10042_scene1369567760",
+    "source_occupied_cells_blocked": 39586,
+    "source_unknown_cells_blocked": 256518,
+    "status": "real_nav2_costmap_and_path_geometry_pass_only_not_closed_loop"
+  },
+  "preflight_path": {
+    "all_samples_traversable": true,
+    "dense_samples": 654,
+    "goal_error_m": 0.0,
+    "min_fixed_edge_distance_m": 0.8690058508505952,
+    "nav2_path_points": 437,
+    "path_length_m": 10.961558487254859,
+    "required_distance_m": 0.61,
+    "scene_id": "reset10042_scene1369567760",
+    "start_error_m": 1.9416304560877896e-07,
+    "status": "nav2_path_geometry_pass_only_not_closed_loop"
+  },
+  "required_obstacle_edge_clearance_m": 0.61,
+  "reset_seed": 10042,
+  "robot_proxy_radius_m": 0.49,
+  "runtime": "Jetson ARM64 isolated ROS 2 Humble Nav2 container + Mac MuJoCo D1 Max kinematic proxy",
+  "scene_id": "reset10042_scene1369567760",
+  "sim_elapsed_s": 70.00000000000472,
+  "simulation_reset_start_xy": [
+    -3.795,
+    -5.622817459305201
+  ],
+  "source_map_yaml_sha256": "be42f16b9730106c54f0bb75e83b04ec48b7c2c69f49e12c4fb4183ca21feb5d",
+  "static_unknown_blocked": true,
+  "status": "nav2_mppi_mujoco_fixed_gate_fail",
+  "success": false,
+  "terminal_contacts": [],
+  "timeout": true,
+  "wall_elapsed_s": 86.92903450000449
+}

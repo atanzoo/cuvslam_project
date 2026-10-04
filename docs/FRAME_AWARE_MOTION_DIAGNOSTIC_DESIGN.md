@@ -6,7 +6,7 @@ Date: 2026-07-30
 
 ## Problem
 
-`tools/evaluate_simulation_bag.py` reports the independent endpoint
+`simulation/cuvslam/tools/evaluate_simulation_bag.py` reports the independent endpoint
 displacements of `/ground_truth/odom` and cuVSLAM pose topics. Ground truth
 describes `slam_bot/base_link`, while the current cuVSLAM launch describes
 `camera_infra1_optical_frame`.
@@ -63,4 +63,3 @@ Modify `evaluate_simulation_bag.py` in place.
 This would make old command output non-comparable with existing reports and
 silently change the meaning of previously used metrics. A separate diagnostic
 is safer while the frame contract is still being validated.
-

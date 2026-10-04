@@ -1,0 +1,3 @@
+# Empty ROS 2 parameter overlay used when no experiment-specific tuning is set.
+"/**":
+  ros__parameters: {}

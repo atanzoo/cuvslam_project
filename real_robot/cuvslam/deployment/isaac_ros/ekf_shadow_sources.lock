@@ -1,0 +1,6 @@
+# Source lock for the real D435i + RPLIDAR EKF-shadow deployment.
+# The Jetson deployment is staged offline; do not replace refs implicitly.
+geographiclib https://github.com/geographiclib/geographiclib.git 48959dfc4a581ad29f76b526726a801473767c98
+robot_localization https://github.com/cra-ros-pkg/robot_localization.git 8696ee5a9e4f959fcaae37835dcf2ed12ead581b
+rf2o_laser_odometry https://github.com/MAPIRlab/rf2o_laser_odometry.git b38c68e46387b98845ecbfeb6660292f967a00d3
+geographic_info https://github.com/ros-geographic-info/geographic_info.git f70b81a438172cd7a066dc1b18314d70e0eb6389

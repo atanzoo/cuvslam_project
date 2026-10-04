@@ -1,0 +1,19 @@
+{
+  "costmap_bytes": 551628,
+  "costmap_sha256": "b778701e0d86e1e3cd3808b1138a5d7e1e7778542fc72f72b3bcce06c79332f9",
+  "fixed_center_cost": 254,
+  "height": 924,
+  "inscribed_cells": 154725,
+  "lethal_cells": 39586,
+  "origin_xy": [
+    -11.67,
+    -16.02
+  ],
+  "resolution": 0.05000000074505806,
+  "scene_id": "reset10042_scene1369567760",
+  "service": "/local_costmap/get_costmap",
+  "start_cost": 0,
+  "status": "real_nav2_local_costmap_sampled_not_closed_loop",
+  "unknown_cells": 208099,
+  "width": 597
+}

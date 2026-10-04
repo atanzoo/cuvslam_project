@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-10-02",
+  "environment": "Jetson isolated network-none read-only dependency probe; no ROS motion nodes",
+  "image_id": "sha256:934771b0dd2ad60b7bad76e97c2dcf25fc71a0b0a2db09ee009951f5123adbe6",
+  "host_disk_free_gb": 7.8,
+  "host_ram_available_mb": 61026,
+  "gtest_header": true,
+  "machine": "aarch64",
+  "packages": {
+    "ament_cmake": {
+      "available": true,
+      "licenses": [
+        "Apache License 2.0"
+      ],
+      "version": "1.3.5"
+    },
+    "ament_cmake_gtest": {
+      "available": true,
+      "licenses": [
+        "Apache License 2.0"
+      ],
+      "version": "1.3.5"
+    },
+    "builtin_interfaces": {
+      "available": true,
+      "licenses": [
+        "Apache License 2.0"
+      ],
+      "version": "1.2.1"
+    },
+    "nav2_core": {
+      "available": true,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "version": "1.1.12"
+    },
+    "nav2_costmap_2d": {
+      "available": true,
+      "licenses": [
+        "BSD-3-Clause",
+        "Apache-2.0"
+      ],
+      "version": "1.1.12"
+    },
+    "nav2_mppi_controller": {
+      "available": true,
+      "licenses": [
+        "MIT"
+      ],
+      "version": "1.1.12"
+    },
+    "pluginlib": {
+      "available": true,
+      "licenses": [
+        "BSD"
+      ],
+      "version": "5.1.0"
+    },
+    "rclcpp": {
+      "available": true,
+      "licenses": [
+        "Apache License 2.0"
+      ],
+      "version": "16.0.6"
+    },
+    "rclcpp_lifecycle": {
+      "available": true,
+      "licenses": [
+        "Apache License 2.0"
+      ],
+      "version": "16.0.6"
+    },
+    "rosidl_default_generators": {
+      "available": true,
+      "licenses": [
+        "Apache License 2.0"
+      ],
+      "version": "1.2.0"
+    },
+    "rosidl_default_runtime": {
+      "available": true,
+      "licenses": [
+        "Apache License 2.0"
+      ],
+      "version": "1.2.0"
+    },
+    "rosidl_typesupport_cpp": {
+      "available": true,
+      "licenses": [
+        "Apache License 2.0"
+      ],
+      "version": "2.0.1"
+    },
+    "std_msgs": {
+      "available": true,
+      "licenses": [
+        "Apache License 2.0"
+      ],
+      "version": "4.2.3"
+    }
+  },
+  "toolchain": {
+    "cmake": {
+      "path": "/usr/bin/cmake",
+      "version": "cmake version 3.22.1"
+    },
+    "colcon": {
+      "path": "/usr/bin/colcon"
+    },
+    "g++": {
+      "path": "/usr/bin/g++",
+      "version": "g++ (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0"
+    }
+  },
+  "xtensor_header": true
+}

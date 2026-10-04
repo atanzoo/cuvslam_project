@@ -1,0 +1,40 @@
+{
+  "controller_parameters": {
+    "FollowPath.model_dt": 0.1,
+    "FollowPath.motion_model": "DiffDrive",
+    "FollowPath.time_steps": 30,
+    "FollowPath.vx_max": 0.3,
+    "FollowPath.wz_max": 0.7,
+    "controller_frequency": 10.0
+  },
+  "controller_plugin": "nav2_mppi_controller::MPPIController",
+  "endpoints": {
+    "/cmd_vel": {
+      "publishers": 1,
+      "subscribers": 1
+    },
+    "/odom": {
+      "publishers": 1,
+      "subscribers": 0
+    },
+    "/tf": {
+      "publishers": 1,
+      "subscribers": 0
+    },
+    "/tf_static": {
+      "publishers": 1,
+      "subscribers": 0
+    }
+  },
+  "follow_path_action_available": true,
+  "lifecycle": {
+    "controller_server": "active",
+    "map_server": "active",
+    "planner_server": "active"
+  },
+  "local_costmap_parameters": {
+    "robot_radius": 0.61,
+    "track_unknown_space": true
+  },
+  "status": "isolated_humble_nav2_mppi_readiness_pass_no_goal"
+}

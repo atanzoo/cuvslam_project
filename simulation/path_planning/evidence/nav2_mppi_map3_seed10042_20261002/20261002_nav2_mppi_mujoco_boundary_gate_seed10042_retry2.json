@@ -1,0 +1,92 @@
+{
+  "command_histogram_rounded": {
+    "0.00,0.00,0.00": 1,
+    "0.07,0.00,-0.06": 1,
+    "0.08,0.00,-0.04": 1,
+    "0.11,0.00,-0.18": 1,
+    "0.23,0.00,-0.31": 1,
+    "0.29,0.00,-0.33": 1
+  },
+  "command_sample_count": 6,
+  "controller": "nav2_mppi_controller::MPPIController/FollowPath",
+  "controller_frequency_hz": 10.0,
+  "costmap_sha256": "30469bc53799fa415ea8914dcd66700a088cea938615feee28faf15a6ffe5923",
+  "curriculum_index": 0,
+  "episode_seed": 1369567760,
+  "fixed_object_active": true,
+  "geometric_collision": false,
+  "goal_distance_m": 9.618708576365412,
+  "initial_yaw_rad": 3.064925597175903,
+  "map_scene_seed": 1369567760,
+  "map_violation": false,
+  "max_forward_velocity_mps": 0.3,
+  "min_fixed_box_edge_distance_m": 1.7303580304075907,
+  "mode_trace_0p5hz": [
+    {
+      "elapsed_s": 0.09600000000000003,
+      "fixed_box_edge_distance_m": 1.7753189990906812,
+      "goal_distance_m": 9.656151175400277,
+      "local_goal_tolerance_reached": false,
+      "map_traversable": true,
+      "nav2_cmd_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "robot_xy": [
+        -1.4199998472630977,
+        1.0800002548098568
+      ],
+      "robot_yaw_rad": 3.141592653589793
+    }
+  ],
+  "nav2_map_yaml_sha256": "ff5cd429ccb86783e6e39ce6017e2c40f1ec71a4e01c364e8b9799ad2f63a33e",
+  "nav2_path_sha256": "8e9ed7b93afd734e1d56c7d7a9dfef68efc3e6b594d062ca8592d1f25f50d433",
+  "nav2_path_start_xy": [
+    -1.4199998472630977,
+    1.0800002548098568
+  ],
+  "nav2_result_status_code": 2,
+  "nav2_terminal_transition_observed": false,
+  "note": "MuJoCo uses a D1 Max kinematic proxy and the existing delayed/saturated simulated velocity interface; this is not gait or hardware evidence.",
+  "pedestrian_disabled": true,
+  "physical_contact": false,
+  "preflight_costmap": {
+    "dense_costmap_samples_clear": 1007,
+    "nav2_unknown_cells": 208099,
+    "path_segments": 406,
+    "scene_id": "reset10042_scene1369567760",
+    "source_occupied_cells_blocked": 39586,
+    "source_unknown_cells_blocked": 256518,
+    "status": "real_nav2_costmap_and_path_geometry_pass_only_not_closed_loop"
+  },
+  "preflight_path": {
+    "all_samples_traversable": true,
+    "dense_samples": 602,
+    "goal_error_m": 0.0,
+    "min_fixed_edge_distance_m": 1.221454323109532,
+    "nav2_path_points": 407,
+    "path_length_m": 10.17412365789389,
+    "required_distance_m": 0.61,
+    "scene_id": "reset10042_scene1369567760",
+    "start_error_m": 0.03535505088032398,
+    "status": "nav2_path_geometry_pass_only_not_closed_loop"
+  },
+  "required_obstacle_edge_clearance_m": 0.61,
+  "reset_seed": 10042,
+  "robot_proxy_radius_m": 0.49,
+  "runtime": "Jetson ARM64 isolated ROS 2 Humble Nav2 container + Mac MuJoCo D1 Max kinematic proxy",
+  "scene_id": "reset10042_scene1369567760",
+  "sim_elapsed_s": 0.5760000000000004,
+  "simulation_reset_start_xy": [
+    -3.795,
+    -5.622817459305201
+  ],
+  "source_map_yaml_sha256": "be42f16b9730106c54f0bb75e83b04ec48b7c2c69f49e12c4fb4183ca21feb5d",
+  "static_unknown_blocked": true,
+  "status": "nav2_mppi_mujoco_fixed_gate_fail",
+  "success": false,
+  "terminal_contacts": [],
+  "timeout": false,
+  "wall_elapsed_s": 12.321788583998568
+}

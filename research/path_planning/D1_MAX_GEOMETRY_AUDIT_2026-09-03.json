@@ -1,0 +1,909 @@
+{
+  "model": "external/Agibot_D1_Max/d1_max.xml",
+  "profile": "d1_max_proxy",
+  "source_revision": "83bdebb04ae140f751e7c5e9e2c8be44aad62473",
+  "pose": {
+    "kind": "MuJoCo default qpos after mj_forward",
+    "base_origin_xy": [
+      0.0,
+      0.0
+    ],
+    "base_origin_z": 0.538855479
+  },
+  "model_dimensions": {
+    "nq": 23,
+    "nv": 22,
+    "nu": 16,
+    "nbody": 30,
+    "ngeom": 58,
+    "nmesh": 28,
+    "robot_collision_geom_count": 29
+  },
+  "base_collision": {
+    "name": "BASE_LINK_collision",
+    "type": 6,
+    "type_name": "box",
+    "proxy_detected": true,
+    "xy_bounds": {
+      "min": [
+        -0.461078018,
+        -0.118556112
+      ],
+      "max": [
+        0.461078018,
+        0.118556112
+      ],
+      "size": [
+        0.922156036,
+        0.237112224
+      ]
+    },
+    "planar_radius_m": 0.47607613926279146,
+    "rbound_m": 0.48420572163902953
+  },
+  "robot_collision": {
+    "xy_bounds": {
+      "min": [
+        -0.461078018,
+        -0.23794940596080436
+      ],
+      "max": [
+        0.461078018,
+        0.23805846943812065
+      ],
+      "size": [
+        0.922156036,
+        0.476007875398925
+      ]
+    },
+    "planar_radius_m": 0.48033480660723077,
+    "planner_radius_candidate_m": 0.49
+  },
+  "joint_limit_envelope": {
+    "method": "joint limits plus uniform hinge-range samples using geom_rbound",
+    "seed": 0,
+    "random_samples": 256,
+    "limit_samples": 32,
+    "evaluated_samples": 288,
+    "hinge_joint_count": 16,
+    "xy_bounds": {
+      "min": [
+        -1.0071634555387379,
+        -0.6647414584249521
+      ],
+      "max": [
+        0.9994848000764995,
+        0.6648012384052813
+      ],
+      "size": [
+        2.0066482556152376,
+        1.3295426968302335
+      ]
+    },
+    "planar_radius_m": 1.031930711492779,
+    "planner_radius_candidate_m": 1.04,
+    "radius_sample_index": 198
+  },
+  "collision_geoms": [
+    {
+      "name": "BASE_LINK_collision",
+      "body": "BASE_LINK",
+      "type": 6,
+      "center_xy": [
+        0.0,
+        0.0
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.461078018,
+          -0.118556112
+        ],
+        "max": [
+          0.461078018,
+          0.118556112
+        ],
+        "size": [
+          0.922156036,
+          0.237112224
+        ]
+      },
+      "center_offset_m": 0.0,
+      "planar_radius_m": 0.47607613926279146,
+      "rbound_m": 0.48420572163902953,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "IMU_ICM42688_LINK_collision",
+      "body": "IMU_ICM42688_LINK",
+      "type": 7,
+      "center_xy": [
+        0.000531600764885344,
+        -0.013717559599748266
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.011093451187790832,
+          -0.037065197708387364
+        ],
+        "max": [
+          0.00890650826818909,
+          0.013934697932806765
+        ],
+        "size": [
+          0.01999995945597992,
+          0.05099989564119413
+        ]
+      },
+      "center_offset_m": 0.013727856378396172,
+      "planar_radius_m": 0.03820685901253908,
+      "rbound_m": 0.03183739341726257,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "IMU_LUA300C_LINK_collision",
+      "body": "IMU_LUA300C_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.006621092792856565,
+        -0.00046647325251851236
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.030552898041899847,
+          -0.010552812735759703
+        ],
+        "max": [
+          0.017552925788047097,
+          0.010552809997754356
+        ],
+        "size": [
+          0.04810582382994694,
+          0.02110562273351406
+        ]
+      },
+      "center_offset_m": 0.006637504581311591,
+      "planar_radius_m": 0.031535255653572465,
+      "rbound_m": 0.028017191373063126,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "F_AIRY_LINK_collision",
+      "body": "F_AIRY_LINK",
+      "type": 7,
+      "center_xy": [
+        0.3884680761540182,
+        1.6296075685209152e-05
+      ],
+      "xy_bounds": {
+        "min": [
+          0.28224736850884724,
+          -0.029999998609617575
+        ],
+        "max": [
+          0.4291644712312721,
+          0.030000000051285055
+        ],
+        "size": [
+          0.14691710272242486,
+          0.05999999866090263
+        ]
+      },
+      "center_offset_m": 0.388468076495825,
+      "planar_radius_m": 0.4291644712312721,
+      "rbound_m": 0.12637491617851987,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "F_IMX415_LINK_collision",
+      "body": "F_IMX415_LINK",
+      "type": 7,
+      "center_xy": [
+        0.4014568505682155,
+        5.190612334434759e-07
+      ],
+      "xy_bounds": {
+        "min": [
+          0.39205686402668116,
+          -0.01799999984190289
+        ],
+        "max": [
+          0.4187282625889797,
+          0.017999998608376505
+        ],
+        "size": [
+          0.026671398562298554,
+          0.035999998450279395
+        ]
+      },
+      "center_offset_m": 0.40145685056855107,
+      "planar_radius_m": 0.4187282625889797,
+      "rbound_m": 0.027223075731179127,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FAR_LIHGT_LINK_collision",
+      "body": "FAR_LIHGT_LINK",
+      "type": 7,
+      "center_xy": [
+        0.41713967977659805,
+        -0.029749744918296968
+      ],
+      "xy_bounds": {
+        "min": [
+          0.4076250348360832,
+          -0.04171165612981004
+        ],
+        "max": [
+          0.42729215923502034,
+          -0.017353592572110804
+        ],
+        "size": [
+          0.01966712439893714,
+          0.024358063557699233
+        ]
+      },
+      "center_offset_m": 0.41819918671229683,
+      "planar_radius_m": 0.42789224138187576,
+      "rbound_m": 0.021242863575971,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FBL_LIHGT_LINK_collision",
+      "body": "FBL_LIHGT_LINK",
+      "type": 7,
+      "center_xy": [
+        0.4171396845665226,
+        0.029749731804918845
+      ],
+      "xy_bounds": {
+        "min": [
+          0.40762504047711245,
+          0.017353575894783153
+        ],
+        "max": [
+          0.4272921489927789,
+          0.04171165551410854
+        ],
+        "size": [
+          0.019667108515666443,
+          0.024358079619325387
+        ]
+      },
+      "center_offset_m": 0.41819919055723026,
+      "planar_radius_m": 0.42789223149144334,
+      "rbound_m": 0.021242871310715863,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "R_AIRY_LINK_collision",
+      "body": "R_AIRY_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.3884680761540182,
+        -1.6296075685207418e-05
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.4291644712312721,
+          -0.03000000005128505
+        ],
+        "max": [
+          -0.28224736850884724,
+          0.02999999860961758
+        ],
+        "size": [
+          0.14691710272242486,
+          0.05999999866090263
+        ]
+      },
+      "center_offset_m": 0.388468076495825,
+      "planar_radius_m": 0.4291644712312721,
+      "rbound_m": 0.1263749161785199,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "R_IMX415_LINK_collision",
+      "body": "R_IMX415_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.40044793689366176,
+        -5.190765818174203e-07
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.4177193467358329,
+          -0.017999998623724874
+        ],
+        "max": [
+          -0.39104795492688216,
+          0.017999999826554508
+        ],
+        "size": [
+          0.02667139180895073,
+          0.03599999845027938
+        ]
+      },
+      "center_offset_m": 0.4004479368939982,
+      "planar_radius_m": 0.4177193467358329,
+      "rbound_m": 0.02722307580506791,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "RAR_LIHGT_LINK_collision",
+      "body": "RAR_LIHGT_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.41713968455751776,
+        -0.029749731815849955
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.4272921481778448,
+          -0.04171165571565775
+        ],
+        "max": [
+          -0.40762504038810365,
+          -0.017353575886012745
+        ],
+        "size": [
+          0.019667107789741123,
+          0.024358079829645003
+        ]
+      },
+      "center_offset_m": 0.4181991905490258,
+      "planar_radius_m": 0.4278922306666155,
+      "rbound_m": 0.021242872937833987,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "RBL_LIHGT_LINK_collision",
+      "body": "RBL_LIHGT_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.4171396797386989,
+        0.02974974493204126
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.4272921592485008,
+          0.017353592730533135
+        ],
+        "max": [
+          -0.4076250351763929,
+          0.04171165616683846
+        ],
+        "size": [
+          0.019667124072107856,
+          0.024358063436305324
+        ]
+      },
+      "center_offset_m": 0.41819918667547146,
+      "planar_radius_m": 0.42789224139995663,
+      "rbound_m": 0.021242865287445692,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FAR_RADARA22_LINK_collision",
+      "body": "FAR_RADARA22_LINK",
+      "type": 7,
+      "center_xy": [
+        0.17920021558830806,
+        -0.0895605305731836
+      ],
+      "xy_bounds": {
+        "min": [
+          0.15570000032613335,
+          -0.1002000004617131
+        ],
+        "max": [
+          0.20269999871680816,
+          -0.047999997757714845
+        ],
+        "size": [
+          0.04699999839067481,
+          0.05220000270399825
+        ]
+      },
+      "center_offset_m": 0.20033423547523335,
+      "planar_radius_m": 0.2218633126858437,
+      "rbound_m": 0.04923565695173555,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FBL_RADARA22_LINK_collision",
+      "body": "FBL_RADARA22_LINK",
+      "type": 7,
+      "center_xy": [
+        0.17919978441169193,
+        0.0895605305731836
+      ],
+      "xy_bounds": {
+        "min": [
+          0.15570000128319184,
+          0.047999997757714845
+        ],
+        "max": [
+          0.20269999967386665,
+          0.1002000004617131
+        ],
+        "size": [
+          0.04699999839067481,
+          0.05220000270399825
+        ]
+      },
+      "center_offset_m": 0.2003338497851699,
+      "planar_radius_m": 0.2218633135602368,
+      "rbound_m": 0.049235656951735554,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FAR_ABAD_LINK_collision",
+      "body": "FAR_ABAD_LINK",
+      "type": 7,
+      "center_xy": [
+        0.3089436018671946,
+        -0.07988296944412852
+      ],
+      "xy_bounds": {
+        "min": [
+          0.27199999833552646,
+          -0.10400000204237447
+        ],
+        "max": [
+          0.3617500006842271,
+          -0.03275000123276893
+        ],
+        "size": [
+          0.08975000234870062,
+          0.07125000080960554
+        ]
+      },
+      "center_offset_m": 0.3191041177137757,
+      "planar_radius_m": 0.3762492814827435,
+      "rbound_m": 0.07808763836338294,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FAR_HIP_LINK_collision",
+      "body": "FAR_HIP_LINK",
+      "type": 7,
+      "center_xy": [
+        0.3299354616849017,
+        -0.16213275688007175
+      ],
+      "xy_bounds": {
+        "min": [
+          0.2810063730350031,
+          -0.22229999888418495
+        ],
+        "max": [
+          0.37799362897534855,
+          -0.09769999778743334
+        ],
+        "size": [
+          0.09698725594034546,
+          0.12460000109675161
+        ]
+      },
+      "center_offset_m": 0.3676199664473649,
+      "planar_radius_m": 0.4247940799314955,
+      "rbound_m": 0.2073920099711963,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FAR_KNEE_LINK_collision",
+      "body": "FAR_KNEE_LINK",
+      "type": 7,
+      "center_xy": [
+        0.3295405811823652,
+        -0.1774321973770422
+      ],
+      "xy_bounds": {
+        "min": [
+          0.27950500703043996,
+          -0.2288000029736701
+        ],
+        "max": [
+          0.3794949951997235,
+          -0.1321999969950863
+        ],
+        "size": [
+          0.09998998816928356,
+          0.09660000597858379
+        ]
+      },
+      "center_offset_m": 0.3742715315276553,
+      "planar_radius_m": 0.4414315543701314,
+      "rbound_m": 0.22381483509423797,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FAR_FOOT_LINK_collision",
+      "body": "FAR_FOOT_LINK",
+      "type": 7,
+      "center_xy": [
+        0.3294877526659944,
+        -0.2153854148325722
+      ],
+      "xy_bounds": {
+        "min": [
+          0.23359866748355296,
+          -0.23794940596080436
+        ],
+        "max": [
+          0.42540132989523904,
+          -0.19145059335024953
+        ],
+        "size": [
+          0.1918026624116861,
+          0.04649881261055483
+        ]
+      },
+      "center_offset_m": 0.39364077034713607,
+      "planar_radius_m": 0.4802899842776227,
+      "rbound_m": 0.13779202218155773,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FBL_ABAD_LINK_collision",
+      "body": "FBL_ABAD_LINK",
+      "type": 7,
+      "center_xy": [
+        0.3089436017111017,
+        0.07988296908830712
+      ],
+      "xy_bounds": {
+        "min": [
+          0.2719999983952871,
+          0.03275000095046586
+        ],
+        "max": [
+          0.36175000055612583,
+          0.10400561050665905
+        ],
+        "size": [
+          0.08975000216083873,
+          0.07125560955619319
+        ]
+      },
+      "center_offset_m": 0.3191041174735783,
+      "planar_radius_m": 0.37624943313258585,
+      "rbound_m": 0.07808780646152834,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FBL_HIP_LINK_collision",
+      "body": "FBL_HIP_LINK",
+      "type": 7,
+      "center_xy": [
+        0.32906453831509835,
+        0.16215241841118055
+      ],
+      "xy_bounds": {
+        "min": [
+          0.28100637102465176,
+          0.09769741552964353
+        ],
+        "max": [
+          0.3779936269649973,
+          0.2223417446585801
+        ],
+        "size": [
+          0.09698725594034552,
+          0.12464432912893655
+        ]
+      },
+      "center_offset_m": 0.36684721230114775,
+      "planar_radius_m": 0.42468475381853704,
+      "rbound_m": 0.20739200997119256,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FBL_KNEE_LINK_collision",
+      "body": "FBL_KNEE_LINK",
+      "type": 7,
+      "center_xy": [
+        0.32945941881763485,
+        0.17749791428486617
+      ],
+      "xy_bounds": {
+        "min": [
+          0.2795050048002765,
+          0.1322398142545779
+        ],
+        "max": [
+          0.37949499296956,
+          0.2288505976598025
+        ],
+        "size": [
+          0.0999899881692835,
+          0.09661078340522461
+        ]
+      },
+      "center_offset_m": 0.37423123630067473,
+      "planar_radius_m": 0.441455006904162,
+      "rbound_m": 0.22381483509423847,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "FBL_FOOT_LINK_collision",
+      "body": "FBL_FOOT_LINK",
+      "type": 7,
+      "center_xy": [
+        0.32951224733400564,
+        0.21547965967786464
+      ],
+      "xy_bounds": {
+        "min": [
+          0.233598670104761,
+          0.19153001239872733
+        ],
+        "max": [
+          0.4254013325164471,
+          0.23805846943812065
+        ],
+        "size": [
+          0.19180266241168606,
+          0.04652845703939332
+        ]
+      },
+      "center_offset_m": 0.3937128457111798,
+      "planar_radius_m": 0.48033480660723077,
+      "rbound_m": 0.13779202218155773,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "RAR_ABAD_LINK_collision",
+      "body": "RAR_ABAD_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.3089436018671946,
+        -0.07988296944412852
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.3617500006842271,
+          -0.10400000204237447
+        ],
+        "max": [
+          -0.27199999833552646,
+          -0.03275000123276893
+        ],
+        "size": [
+          0.08975000234870062,
+          0.07125000080960554
+        ]
+      },
+      "center_offset_m": 0.3191041177137757,
+      "planar_radius_m": 0.3762492814827435,
+      "rbound_m": 0.07808763836338294,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "RAR_HIP_LINK_collision",
+      "body": "RAR_HIP_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.32906453831509835,
+        -0.1621327568800727
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.37799362696499744,
+          -0.22229999888418686
+        ],
+        "max": [
+          -0.281006371024652,
+          -0.09769999778743425
+        ],
+        "size": [
+          0.09698725594034546,
+          0.12460000109675261
+        ]
+      },
+      "center_offset_m": 0.366838522009428,
+      "planar_radius_m": 0.42466253552077626,
+      "rbound_m": 0.20739200997119245,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "RAR_KNEE_LINK_collision",
+      "body": "RAR_KNEE_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.32945941881763485,
+        -0.17743219737704197
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.3794949929695601,
+          -0.22880000297366987
+        ],
+        "max": [
+          -0.2795050048002765,
+          -0.13219999699508608
+        ],
+        "size": [
+          0.09998998816928356,
+          0.09660000597858379
+        ]
+      },
+      "center_offset_m": 0.3742000712368977,
+      "planar_radius_m": 0.4414315537205947,
+      "rbound_m": 0.2238148350942386,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "RAR_FOOT_LINK_collision",
+      "body": "RAR_FOOT_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.32951224733400564,
+        -0.2153854148325722
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.4254013325164471,
+          -0.23794940596080436
+        ],
+        "max": [
+          -0.233598670104761,
+          -0.19145059335024953
+        ],
+        "size": [
+          0.19180266241168606,
+          0.04649881261055483
+        ]
+      },
+      "center_offset_m": 0.39366127326129774,
+      "planar_radius_m": 0.4802899833687816,
+      "rbound_m": 0.13779202218155773,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "RBL_ABAD_LINK_collision",
+      "body": "RBL_ABAD_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.3089436018671946,
+        0.07988296944412852
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.3617500006842271,
+          0.03275000123276893
+        ],
+        "max": [
+          -0.27199999833552646,
+          0.10400000204237447
+        ],
+        "size": [
+          0.08975000234870062,
+          0.07125000080960554
+        ]
+      },
+      "center_offset_m": 0.3191041177137757,
+      "planar_radius_m": 0.3762492814827435,
+      "rbound_m": 0.07808763836338294,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "RBL_HIP_LINK_collision",
+      "body": "RBL_HIP_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.3299354616849017,
+        0.16213275688007184
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.37799362897534833,
+          0.09769999778743339
+        ],
+        "max": [
+          -0.2810063730350028,
+          0.22229999888418553
+        ],
+        "size": [
+          0.09698725594034552,
+          0.12460000109675214
+        ]
+      },
+      "center_offset_m": 0.36761996644736494,
+      "planar_radius_m": 0.4247940799314957,
+      "rbound_m": 0.2073920099711963,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "RBL_KNEE_LINK_collision",
+      "body": "RBL_KNEE_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.3295405811823652,
+        0.17743219737704152
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.3794949951997235,
+          0.13219999699508528
+        ],
+        "max": [
+          -0.27950500703044,
+          0.228800002973669
+        ],
+        "size": [
+          0.0999899881692835,
+          0.09660000597858373
+        ]
+      },
+      "center_offset_m": 0.37427153152765497,
+      "planar_radius_m": 0.4414315543701308,
+      "rbound_m": 0.22381483509423894,
+      "contype": 0,
+      "conaffinity": 1
+    },
+    {
+      "name": "RBL_FOOT_LINK_collision",
+      "body": "RBL_FOOT_LINK",
+      "type": 7,
+      "center_xy": [
+        -0.3294877526659944,
+        0.2153854148325722
+      ],
+      "xy_bounds": {
+        "min": [
+          -0.42540132989523904,
+          0.19145059335024953
+        ],
+        "max": [
+          -0.23359866748355296,
+          0.23794940596080436
+        ],
+        "size": [
+          0.1918026624116861,
+          0.04649881261055483
+        ]
+      },
+      "center_offset_m": 0.39364077034713607,
+      "planar_radius_m": 0.4802899842776227,
+      "rbound_m": 0.13779202218155773,
+      "contype": 0,
+      "conaffinity": 1
+    }
+  ],
+  "limitations": [
+    "Default-pose measurement is not a gait envelope.",
+    "Joint-limit envelope uses conservative geom_rbound samples and is not a complete reachable-set proof.",
+    "Joint-limit envelope is not a measured walking footprint and must not be used as a final planner radius.",
+    "BASE_LINK uses a box proxy because the official STL exceeds the MuJoCo mesh face limit.",
+    "No ground plane, standing controller, contact calibration, or D1 Max gait acceptance is included.",
+    "Planner radius candidate is an audit value only and is not approved for training."
+  ]
+}
