@@ -66,7 +66,7 @@ lighting profile    = official
 - 靜止 gyro、加速度大小、相機/IMU timing 與 TF tree 已記錄。
 
 詳細證據：
-`reports/real_d435i_r1_static_contract_20260818.md`
+`real_robot/cuvslam/evidence/reports/real_d435i_r1_static_contract_20260818.md`
 
 ### R1.5：IMU fusion readiness — 已完成
 
@@ -79,7 +79,7 @@ lighting profile    = official
 motion bias/noise 欄位為零；這不等同於 IMU 沒有資料或 fusion 不能使用。
 
 詳細證據：
-`reports/real_d435i_r1p5_imu_qualification_20260818.md`
+`real_robot/cuvslam/evidence/reports/real_d435i_r1p5_imu_qualification_20260818.md`
 
 ### R2：實機建圖與 odom — 已可執行，仍在改善追蹤品質
 
@@ -112,7 +112,7 @@ motion bias/noise 欄位為零；這不等同於 IMU 沒有資料或 fusion 不�
 GUI 現在會在停止 R2 後保存完整追蹤紀錄與轉向片段資訊，供後續和同一路線重測比對。
 
 詳細修正紀錄：
-`logs/real_d435i_quality/20260825_r2_correction_log.md`
+`real_robot/cuvslam/evidence/logs/real_d435i_quality/20260825_r2_correction_log.md`
 
 ## 5. 目前已完成的軟體修正
 
@@ -129,16 +129,16 @@ GUI 現在會在停止 R2 後保存完整追蹤紀錄與轉向片段資訊，供
 - odom rate 使用 ROS timestamp span；轉向抖動另以 yaw-rate P95 與 sign flips
   記錄，不直接混入總分。
 - GUI 可在移動前啟動 rosbag 錄製，並下載 IMU、TF、odom、VO pose、SLAM path 與
-  landmarks cloud 到 `logs/real_d435i_r2_downloads/`。錄製預設為輕量模式，不含
+  landmarks cloud 到 `real_robot/cuvslam/evidence/logs/real_d435i_r2_downloads/`。錄製預設為輕量模式，不含
   左右原始 IR 影像；需要完整影像回放時才切換到 full 模式。兩種模式都使用
   Jetson ROS 2 rosbag 支援的 zstd file-level compression，完整模式仍可能很大。
 
 主要程式：
 
-- `tools/real_d435i_axis_web_gui.py`
-- `tools/collect_real_d435i_odom_live.py`
-- `tools/run_real_d435i_r2.sh`
-- `tools/open_real_d435i_rviz_view.sh`
+- `real_robot/cuvslam/tools/real_d435i_axis_web_gui.py`
+- `real_robot/cuvslam/tools/collect_real_d435i_odom_live.py`
+- `real_robot/cuvslam/tools/run_real_d435i_r2.sh`
+- `real_robot/cuvslam/tools/open_real_d435i_rviz_view.sh`
 
 ## 6. 下一個正確測試順序
 
@@ -178,24 +178,24 @@ GUI 現在會在停止 R2 後保存完整追蹤紀錄與轉向片段資訊，供
 2. `docs/REAL_D435I_MAPPING_HANDOFF_20260817.md`：實機 R0–R3 流程與限制。
 3. `docs/sensor_and_frame_contract.md`：frame、TF 與 CameraInfo 契約。
 4. `docs/CUVSLAM_NVIDIA_REFERENCE_DEBUG_DESIGN.md`：NVIDIA 輸入契約與 debug 原則。
-5. `logs/real_d435i_quality/20260825_r2_correction_log.md`：最新修正與實測判讀。
+5. `real_robot/cuvslam/evidence/logs/real_d435i_quality/20260825_r2_correction_log.md`：最新修正與實測判讀。
 
 ### 各資料夾用途
 
 | 資料夾 | 用途 | 規則 |
 |---|---|---|
 | `docs/` | 設計、契約、handoff、目前決策 | 以本索引找到有效文件 |
-| `reports/` | 實驗結果與 acceptance report | 歷史失敗報告不可刪除或覆蓋 |
-| `logs/` | 原始 runtime、bag metadata、GUI JSON | 只作證據，不當作 source |
-| `calibration/` | 相機、IMU、extrinsic、時間紀錄 | 實機校正資料集中保存 |
-| `deployment/` | Jetson、Isaac ROS、容器與網路部署 | 不混入 production Nav2 |
-| `tools/` | 可重複執行的收集、分析與 GUI 工具 | 程式修改要附驗證 |
+| `real_robot/cuvslam/evidence/reports/` | 實機實驗結果與 acceptance report | 歷史失敗報告不可刪除或覆蓋 |
+| `real_robot/cuvslam/evidence/logs/` | 實機原始 runtime、bag metadata、GUI JSON | 只作證據，不當作 source |
+| `real_robot/cuvslam/calibration/` | 相機、IMU、extrinsic、時間紀錄 | 實機校正資料集中保存 |
+| `real_robot/cuvslam/deployment/` | 實機 Jetson、Isaac ROS 與容器部署 | 不混入 simulation 或 production Nav2 |
+| `real_robot/cuvslam/tools/` | 可重複執行的收集、分析與 GUI 工具 | 程式修改要附驗證 |
 | `datasets/` | 原始/處理後 recording 與 provenance | 大檔不複製到 reports |
 
 ### 歷史或不同主題文件
 
 - `docs/CUVSLAM_STAGE1_*` 至 `STAGE4_*`：模擬與輸入契約的設計歷史。
 - `docs/CUVSLAM_*_DESIGN.md`：模擬、frame、觀測性與 estimator 設計。
-- `docs/RESEARCH_PROGRESS_2026-08-06.md`、`PPO_*`、`IMM_*`：D1 Edu/導航研究，
+- `research/path_planning/RESEARCH_PROGRESS_2026-08-06.md`、`PPO_*`、`IMM_*`：D1 Edu/導航研究，
   與目前實機建圖主線分開閱讀。
 - `PROJECT_HANDOFF.md`：完整專案與模擬歷史；目前實機狀態以本文件為準。

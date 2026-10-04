@@ -10,7 +10,7 @@
 - `/Users/tsengpochien/Desktop/cuvslam_project/PROJECT_HANDOFF.md`
 - `/Users/tsengpochien/Desktop/cuvslam_project/docs/SIMULATION_HANDOFF.md`
 - `/Users/tsengpochien/Desktop/cuvslam_project/docs/sensor_and_frame_contract.md`
-- `/Users/tsengpochien/Desktop/cuvslam_project/reports/nvidia_reference_and_gazebo_1m_debug_20260730.md`
+- `/Users/tsengpochien/Desktop/cuvslam_project/simulation/cuvslam/evidence/reports/nvidia_reference_and_gazebo_1m_debug_20260730.md`
 
 ## 已確認狀態
 

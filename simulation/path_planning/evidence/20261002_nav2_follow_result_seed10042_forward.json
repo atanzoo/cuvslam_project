@@ -1,0 +1,18 @@
+{
+  "action": "follow_path",
+  "cancel_requested": false,
+  "controller_id": "FollowPath",
+  "goal_xy": [
+    -2.6408369439657418,
+    3.6091630560342582
+  ],
+  "path_file": "results/nav2_path_seed10042_controller_loop_20261002.json",
+  "path_point_count": 437,
+  "result_status": 4,
+  "scene_id": "reset10042_scene1369567760",
+  "start_xy": [
+    -3.8199998830258846,
+    -5.619999845027923
+  ],
+  "status": "succeeded"
+}

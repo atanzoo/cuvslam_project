@@ -1,6 +1,6 @@
 # Simulation Handoff
 
-Updated: 2026-07-31 (Asia/Taipei)
+Updated: 2026-08-31 (Asia/Taipei)
 
 This document is the entry point for simulation and replay work. It is
 separate from the real-robot deployment procedure and from the existing LiDAR
@@ -14,7 +14,7 @@ ICP/Nav2 project.
 - Isaac ROS container ROS 2: Humble
 - Isaac ROS image: `isaac_ros_dev-aarch64:fixed`
 - Isaac ROS workspace: `/home/tseng/isaac_ros_ws`
-- Data directory: `/home/tseng/isaac_ros_data`
+- Data directory: `/home/tseng/isaac_ros_ws/simulation/cuvslam/data`
 - Isaac ROS domain: `42`
 - Verified build: 36 packages, including `isaac_ros_visual_slam`
 
@@ -27,7 +27,7 @@ the dense v3 SDF under the installed package `share/slam_gazebo` path, starts
 stereo-only cuVSLAM with mapping visualization, and leaves the large native
 Pose_V bridge disabled. The native bridge is enabled only by route tests that
 use the compact relay. A live verification reached `vo_state=1`. See
-`reports/gui_start_simulation_fix_20260731.md`.
+`simulation/cuvslam/evidence/reports/gui_start_simulation_fix_20260731.md`.
 
 ## 2026-07-31 In-Place Turn Pose Gate
 
@@ -53,7 +53,7 @@ speed fixed yaw. VIO, camera-at-origin, VO-only, and short-render-range tests
 did not fix it. Continuous asymmetric near-field geometry across the entire
 turn did. Proceed to `1 m -> 90 deg -> 0.5 m`; do not restore wheel odometry
 for linear control. See
-`reports/cuvslam_in_place_turn_pose_fix_20260731.md`.
+`simulation/cuvslam/evidence/reports/cuvslam_in_place_turn_pose_fix_20260731.md`.
 
 The first `1 m -> 90 deg -> 0.5 m` mapping run is complete but failed the
 route pose gate. Native/IMU control was correct and all 852 status samples
@@ -66,7 +66,7 @@ final 4,243 landmarks also scored 99.5 percent within 0.25 m, but this nearest
 surface score masks the wrong route orientation and 22 extreme outliers up to
 54.4 m. The map is generated but not accepted. Extend dense, asymmetric
 near-field geometry around `(-0.8, -1.8)` and repeat. See
-`reports/cuvslam_initial_dense_v3_mapping_20260731.md`.
+`simulation/cuvslam/evidence/reports/cuvslam_initial_dense_v3_mapping_20260731.md`.
 
 ## 2026-07-30 Current Gate
 
@@ -102,13 +102,13 @@ experiment.
 
 Primary evidence:
 
-- `reports/nvidia_reference_and_gazebo_1m_debug_20260730.md`
+- `simulation/cuvslam/evidence/reports/nvidia_reference_and_gazebo_1m_debug_20260730.md`
 - `docs/CUVSLAM_NVIDIA_REFERENCE_DEBUG_DESIGN.md`
 - `docs/NEXT_THREAD_MAPPING_TEST_PROMPT.md`
 
 The user-provided power bank passed a short CPU and representative
 Gazebo/cuVSLAM load test in `MODE_30W`. See
-`reports/jetson_powerbank_stress_test_20260730.md`. This does not yet qualify
+`simulation/cuvslam/evidence/reports/jetson_powerbank_stress_test_20260730.md`. This does not yet qualify
 battery runtime or low-battery shutdown behavior.
 
 At handoff completion, all simulation workloads were stopped and the Jetson was
@@ -149,7 +149,7 @@ Every in-motion image was unique, stereo timestamps matched exactly, and all
 status samples remained `vo_state=1`. The straight-motion repeatability gate
 is complete. Begin mapping with a straight segment, then one controlled
 90-degree turn, and only then the full square. See
-`reports/cuvslam_observable_world_repeatability_20260731.md`.
+`simulation/cuvslam/evidence/reports/cuvslam_observable_world_repeatability_20260731.md`.
 
 ## 2026-07-31 First Straight Mapping Geometry Gate
 
@@ -167,7 +167,7 @@ failed sparse-map geometry:
 Do not enter the 90-degree turn gate yet. Repeat the same cold-start straight
 mapping once, then inspect landmark confidence and stereo triangulation if the
 heavy-tailed geometry error repeats. See
-`reports/cuvslam_first_observable_straight_mapping_20260731.md`.
+`simulation/cuvslam/evidence/reports/cuvslam_first_observable_straight_mapping_20260731.md`.
 
 The repeat confirmed the failure: only 47.9 percent of 378 landmarks were
 within 0.25 m of an SDF surface, P90 was `1.8473 m`, and maximum error was
@@ -179,7 +179,7 @@ Every point, including severe outliers, had weight exactly `1.0`. The patch
 was reversed and the standard NVIDIA PointCloud schema was restored. The next
 gate is current observation cloud versus accumulated map cloud plus stereo
 disparity; turning remains blocked. See
-`reports/cuvslam_landmark_repeatability_and_weight_20260731.md`.
+`simulation/cuvslam/evidence/reports/cuvslam_landmark_repeatability_and_weight_20260731.md`.
 
 ## 2026-07-31 Triangulation And Out-And-Back Gate
 
@@ -203,7 +203,7 @@ The subsequent 1 m straight-out/reverse-back run failed the complete gate:
 
 The backend map improved during re-observation but did not reject enough
 wrong landmarks. Do not add a turn or begin the square route. See
-`reports/cuvslam_triangulation_and_roundtrip_20260731.md`.
+`simulation/cuvslam/evidence/reports/cuvslam_triangulation_and_roundtrip_20260731.md`.
 
 ## 2026-07-31 Controlled Corner Exploration
 
@@ -254,12 +254,12 @@ An identical native-truth A/B did not accept IMU fusion:
 Keep `enable_imu_fusion=false` by default. Use Gazebo native model pose for
 trajectory acceptance and the IMU-gated controller for future physical
 90-degree routes. See
-`reports/cuvslam_d435i_imu_corner_audit_20260731.md`.
+`simulation/cuvslam/evidence/reports/cuvslam_d435i_imu_corner_audit_20260731.md`.
 
 The longer-route convergence hypothesis is rejected for the current
 configuration. Do not begin the full square. Isolate rotational image motion
 and verify the camera-to-IMU contract before considering simulated IMU fusion.
-See `reports/cuvslam_corner_exploration_20260731.md`.
+See `simulation/cuvslam/evidence/reports/cuvslam_corner_exploration_20260731.md`.
 
 ## Verified Simulated Stereo Milestone
 
@@ -292,7 +292,7 @@ odometry reported `8.8072 m`. All `1,342` status samples still reported
 estimator-only architecture and process health. Do not increase scene
 complexity until stereo calibration, optical-frame extrinsics, image
 synchronization, and output frame semantics are isolated. Full evidence is in
-`reports/baseline_square_mapping_20260728.md`.
+`simulation/cuvslam/evidence/reports/baseline_square_mapping_20260728.md`.
 
 ## Drift Isolation And Frame Hypothesis
 
@@ -335,7 +335,7 @@ change is retained, but trajectory quality remains unaccepted.
 
 Evidence:
 
-- `reports/cuvslam_drift_isolation_20260729.md`
+- `simulation/cuvslam/evidence/reports/cuvslam_drift_isolation_20260729.md`
 - `docs/CUVSLAM_SIM_CAMERA_FRAME_FIX_DESIGN.md`
 - `/home/tseng/isaac_ros_ws/data/experiments/drift_isolation_20260729_0905`
 - `/home/tseng/isaac_ros_ws/data/experiments/frame_fix_20260729_0925`
@@ -357,7 +357,7 @@ medium runs both populated `/visual_slam/vis/landmarks_cloud` and maintained
 The error changed from distance overestimation to underestimation, so it is
 not a stable scale factor. The 1 m and 2 m stages were skipped, zero velocity
 was published, and sparse visualization was disabled again. See
-`reports/cuvslam_straight_mapping_20260729.md`. Bags are stored at:
+`simulation/cuvslam/evidence/reports/cuvslam_straight_mapping_20260729.md`. Bags are stored at:
 
 ```text
 /home/tseng/isaac_ros_ws/data/experiments/straight_mapping_20260729_1025
@@ -407,8 +407,8 @@ evaluation-only data. It must not be subscribed to by cuVSLAM, localization,
 mapping, costmaps, or Nav2.
 
 The implementation decision, operator procedure, and rollback are recorded in
-`deployment/foxglove/README.md`. Test evidence is in
-`reports/foxglove_mac_simulation_20260728.md`.
+`simulation/cuvslam/deployment/foxglove/README.md`. Test evidence is in
+`simulation/cuvslam/evidence/reports/foxglove_mac_simulation_20260728.md`.
 
 ## Sensor Responsibility
 
@@ -448,8 +448,10 @@ runtime and the old Foxy systems. The recommended simulation domain is `43`.
 - Do not start real-robot motor, serial, or production Nav2 nodes.
 - Do not publish a second `/odom -> base_link` transform.
 - Do not treat a cuVSLAM landmark map as a 2D occupancy map.
-- Keep all replay and generated data under `/home/tseng/isaac_ros_data` or the
-  project `datasets/` directory with a manifest.
+- Keep all replay and generated data under
+  `/home/tseng/isaac_ros_ws/simulation/cuvslam/data` or the project `datasets/`
+  directory with a manifest. `/home/tseng/isaac_ros_data` is reserved for real
+  D435i data.
 
 ## First Simulation Milestone
 

@@ -1,0 +1,13 @@
+# RPLIDAR A2M12 profile for Slamtec sllidar_ros2.
+#
+# The serial path is the stable udev path observed on the Jetson on
+# 2026-08-31.  Override serial_port at launch if the USB adapter changes.
+sllidar_node:
+  ros__parameters:
+    channel_type: serial
+    serial_port: /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_538fdae3c9e4c947b71ec98a5cebbe00-if00-port0
+    serial_baudrate: 256000
+    frame_id: rplidar_link
+    inverted: false
+    angle_compensate: true
+    scan_mode: Sensitivity

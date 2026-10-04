@@ -1,0 +1,3431 @@
+{
+  "command_bounds_pass": true,
+  "completion_reason": "observed_goal_terminal",
+  "duration_observed_s": 45.849936672002514,
+  "duration_requested_s": 80.0,
+  "frame": "base_link_body_twist",
+  "hard_limits_body": [
+    0.3,
+    0.02,
+    0.7
+  ],
+  "max_abs_velocity_body": [
+    0.2849269509315491,
+    0.0,
+    0.4422928988933563
+  ],
+  "nav2_terminal_status": 4,
+  "nonfinite_count": 0,
+  "observed_goal_uuid": "4f41105d79984d8c9258beed633bd730",
+  "overspeed_count": 0,
+  "receipt_interval_max_s": 0.11064991999955964,
+  "receipt_interval_median_s": 0.09997654399921885,
+  "sample_count": 378,
+  "samples": [
+    {
+      "receipt_elapsed_s": 7.958104479999747,
+      "ros_receipt_nanoseconds": 18248907372992,
+      "velocity_body": [
+        0.04027075320482254,
+        0.0,
+        -0.08416090905666351
+      ]
+    },
+    {
+      "receipt_elapsed_s": 8.039129312001023,
+      "ros_receipt_nanoseconds": 18248988392672,
+      "velocity_body": [
+        0.029748311266303062,
+        0.0,
+        -0.1684992015361786
+      ]
+    },
+    {
+      "receipt_elapsed_s": 8.13842083200143,
+      "ros_receipt_nanoseconds": 18249087684928,
+      "velocity_body": [
+        0.07047802954912186,
+        0.0,
+        -0.1759806126356125
+      ]
+    },
+    {
+      "receipt_elapsed_s": 8.236600320000434,
+      "ros_receipt_nanoseconds": 18249185861088,
+      "velocity_body": [
+        0.07197383791208267,
+        0.0,
+        0.012477375566959381
+      ]
+    },
+    {
+      "receipt_elapsed_s": 8.335573600001226,
+      "ros_receipt_nanoseconds": 18249284833984,
+      "velocity_body": [
+        0.20514173805713654,
+        0.0,
+        0.011780602857470512
+      ]
+    },
+    {
+      "receipt_elapsed_s": 8.442229375999887,
+      "ros_receipt_nanoseconds": 18249391493056,
+      "velocity_body": [
+        0.23774872720241547,
+        0.0,
+        -0.08915576338768005
+      ]
+    },
+    {
+      "receipt_elapsed_s": 8.535792992002825,
+      "ros_receipt_nanoseconds": 18249485047232,
+      "velocity_body": [
+        0.272468239068985,
+        0.0,
+        -0.19255492091178894
+      ]
+    },
+    {
+      "receipt_elapsed_s": 8.636735552001483,
+      "ros_receipt_nanoseconds": 18249585997536,
+      "velocity_body": [
+        0.2837919592857361,
+        0.0,
+        -0.17212975025177002
+      ]
+    },
+    {
+      "receipt_elapsed_s": 8.739969280002697,
+      "ros_receipt_nanoseconds": 18249689260384,
+      "velocity_body": [
+        0.2849269509315491,
+        0.0,
+        -0.12801335752010345
+      ]
+    },
+    {
+      "receipt_elapsed_s": 8.844257952001499,
+      "ros_receipt_nanoseconds": 18249793545280,
+      "velocity_body": [
+        0.28295645117759705,
+        0.0,
+        -0.07491795718669891
+      ]
+    },
+    {
+      "receipt_elapsed_s": 8.942462048002199,
+      "ros_receipt_nanoseconds": 18249891753440,
+      "velocity_body": [
+        0.2810228168964386,
+        0.0,
+        -0.024196503683924675
+      ]
+    },
+    {
+      "receipt_elapsed_s": 9.044042495999747,
+      "ros_receipt_nanoseconds": 18249993332576,
+      "velocity_body": [
+        0.28006574511528015,
+        0.0,
+        0.021819669753313065
+      ]
+    },
+    {
+      "receipt_elapsed_s": 9.142993024001044,
+      "ros_receipt_nanoseconds": 18250092254944,
+      "velocity_body": [
+        0.2797854542732239,
+        0.0,
+        0.05912671238183975
+      ]
+    },
+    {
+      "receipt_elapsed_s": 9.245453376002843,
+      "ros_receipt_nanoseconds": 18250194750752,
+      "velocity_body": [
+        0.2798173129558563,
+        0.0,
+        0.08732263743877411
+      ]
+    },
+    {
+      "receipt_elapsed_s": 9.345649152000988,
+      "ros_receipt_nanoseconds": 18250294939680,
+      "velocity_body": [
+        0.2799108922481537,
+        0.0,
+        0.10316219180822372
+      ]
+    },
+    {
+      "receipt_elapsed_s": 9.445399520001956,
+      "ros_receipt_nanoseconds": 18250394696864,
+      "velocity_body": [
+        0.27997687458992004,
+        0.0,
+        0.11951448023319244
+      ]
+    },
+    {
+      "receipt_elapsed_s": 9.546323808001034,
+      "ros_receipt_nanoseconds": 18250495623008,
+      "velocity_body": [
+        0.2812269628047943,
+        0.0,
+        0.12367051839828491
+      ]
+    },
+    {
+      "receipt_elapsed_s": 9.6457333440012,
+      "ros_receipt_nanoseconds": 18250595077376,
+      "velocity_body": [
+        0.2816123068332672,
+        0.0,
+        0.1308678239583969
+      ]
+    },
+    {
+      "receipt_elapsed_s": 9.74300384000162,
+      "ros_receipt_nanoseconds": 18250692296480,
+      "velocity_body": [
+        0.27586764097213745,
+        0.0,
+        0.1340794712305069
+      ]
+    },
+    {
+      "receipt_elapsed_s": 9.84289897599956,
+      "ros_receipt_nanoseconds": 18250792190880,
+      "velocity_body": [
+        0.264607697725296,
+        0.0,
+        0.1356494128704071
+      ]
+    },
+    {
+      "receipt_elapsed_s": 9.942648320000444,
+      "ros_receipt_nanoseconds": 18250891931520,
+      "velocity_body": [
+        0.25062379240989685,
+        0.0,
+        0.1385556310415268
+      ]
+    },
+    {
+      "receipt_elapsed_s": 10.042624863999663,
+      "ros_receipt_nanoseconds": 18250991912608,
+      "velocity_body": [
+        0.24175679683685303,
+        0.0,
+        0.1448957920074463
+      ]
+    },
+    {
+      "receipt_elapsed_s": 10.145142976001807,
+      "ros_receipt_nanoseconds": 18251094429920,
+      "velocity_body": [
+        0.22478041052818298,
+        0.0,
+        0.1687898486852646
+      ]
+    },
+    {
+      "receipt_elapsed_s": 10.242679615999805,
+      "ros_receipt_nanoseconds": 18251191961664,
+      "velocity_body": [
+        0.21852000057697296,
+        0.0,
+        0.179803729057312
+      ]
+    },
+    {
+      "receipt_elapsed_s": 10.342332864001946,
+      "ros_receipt_nanoseconds": 18251291610624,
+      "velocity_body": [
+        0.21200011670589447,
+        0.0,
+        0.18076330423355103
+      ]
+    },
+    {
+      "receipt_elapsed_s": 10.442619392000779,
+      "ros_receipt_nanoseconds": 18251391902208,
+      "velocity_body": [
+        0.2143433392047882,
+        0.0,
+        0.1777314990758896
+      ]
+    },
+    {
+      "receipt_elapsed_s": 10.54273689600086,
+      "ros_receipt_nanoseconds": 18251492027136,
+      "velocity_body": [
+        0.21356403827667236,
+        0.0,
+        0.1786876618862152
+      ]
+    },
+    {
+      "receipt_elapsed_s": 10.642632128001424,
+      "ros_receipt_nanoseconds": 18251591919296,
+      "velocity_body": [
+        0.21052765846252441,
+        0.0,
+        0.16740378737449646
+      ]
+    },
+    {
+      "receipt_elapsed_s": 10.738644095999916,
+      "ros_receipt_nanoseconds": 18251687926880,
+      "velocity_body": [
+        0.20944242179393768,
+        0.0,
+        0.16133111715316772
+      ]
+    },
+    {
+      "receipt_elapsed_s": 10.842178368002351,
+      "ros_receipt_nanoseconds": 18251791439328,
+      "velocity_body": [
+        0.2129916101694107,
+        0.0,
+        0.15099084377288818
+      ]
+    },
+    {
+      "receipt_elapsed_s": 10.934639168001013,
+      "ros_receipt_nanoseconds": 18251883932896,
+      "velocity_body": [
+        0.21578849852085114,
+        0.0,
+        0.14519807696342468
+      ]
+    },
+    {
+      "receipt_elapsed_s": 11.033945824001421,
+      "ros_receipt_nanoseconds": 18251983208448,
+      "velocity_body": [
+        0.22001737356185913,
+        0.0,
+        0.1384807974100113
+      ]
+    },
+    {
+      "receipt_elapsed_s": 11.139356544001203,
+      "ros_receipt_nanoseconds": 18252088645824,
+      "velocity_body": [
+        0.21971434354782104,
+        0.0,
+        0.13594017922878265
+      ]
+    },
+    {
+      "receipt_elapsed_s": 11.241918080002506,
+      "ros_receipt_nanoseconds": 18252191218016,
+      "velocity_body": [
+        0.22211340069770813,
+        0.0,
+        0.13799598813056946
+      ]
+    },
+    {
+      "receipt_elapsed_s": 11.341707168001449,
+      "ros_receipt_nanoseconds": 18252291030240,
+      "velocity_body": [
+        0.22030030190944672,
+        0.0,
+        0.13095809519290924
+      ]
+    },
+    {
+      "receipt_elapsed_s": 11.43360467200182,
+      "ros_receipt_nanoseconds": 18252382891872,
+      "velocity_body": [
+        0.22152578830718994,
+        0.0,
+        0.13920211791992188
+      ]
+    },
+    {
+      "receipt_elapsed_s": 11.542522560001089,
+      "ros_receipt_nanoseconds": 18252491816192,
+      "velocity_body": [
+        0.18897750973701477,
+        0.0,
+        0.17340047657489777
+      ]
+    },
+    {
+      "receipt_elapsed_s": 11.640795872001036,
+      "ros_receipt_nanoseconds": 18252590093408,
+      "velocity_body": [
+        0.19228827953338623,
+        0.0,
+        0.17417342960834503
+      ]
+    },
+    {
+      "receipt_elapsed_s": 11.742790272001002,
+      "ros_receipt_nanoseconds": 18252692093088,
+      "velocity_body": [
+        0.19439420104026794,
+        0.0,
+        0.18150314688682556
+      ]
+    },
+    {
+      "receipt_elapsed_s": 11.842799616002594,
+      "ros_receipt_nanoseconds": 18252792096864,
+      "velocity_body": [
+        0.20283213257789612,
+        0.0,
+        0.15472035109996796
+      ]
+    },
+    {
+      "receipt_elapsed_s": 11.942563136002718,
+      "ros_receipt_nanoseconds": 18252891859520,
+      "velocity_body": [
+        0.21148383617401123,
+        0.0,
+        0.13882893323898315
+      ]
+    },
+    {
+      "receipt_elapsed_s": 12.042468960000406,
+      "ros_receipt_nanoseconds": 18252991754240,
+      "velocity_body": [
+        0.21763472259044647,
+        0.0,
+        0.1285913586616516
+      ]
+    },
+    {
+      "receipt_elapsed_s": 12.142467519999627,
+      "ros_receipt_nanoseconds": 18253091750656,
+      "velocity_body": [
+        0.21800801157951355,
+        0.0,
+        0.12228740006685257
+      ]
+    },
+    {
+      "receipt_elapsed_s": 12.242485664002743,
+      "ros_receipt_nanoseconds": 18253191770656,
+      "velocity_body": [
+        0.21910713613033295,
+        0.0,
+        0.13238395750522614
+      ]
+    },
+    {
+      "receipt_elapsed_s": 12.342381312002544,
+      "ros_receipt_nanoseconds": 18253291672288,
+      "velocity_body": [
+        0.2195340394973755,
+        0.0,
+        0.14253513514995575
+      ]
+    },
+    {
+      "receipt_elapsed_s": 12.442435840002872,
+      "ros_receipt_nanoseconds": 18253391725728,
+      "velocity_body": [
+        0.22237470746040344,
+        0.0,
+        0.14783844351768494
+      ]
+    },
+    {
+      "receipt_elapsed_s": 12.54241737600023,
+      "ros_receipt_nanoseconds": 18253491699072,
+      "velocity_body": [
+        0.2246088683605194,
+        0.0,
+        0.15750043094158173
+      ]
+    },
+    {
+      "receipt_elapsed_s": 12.642631967999478,
+      "ros_receipt_nanoseconds": 18253591915712,
+      "velocity_body": [
+        0.22552984952926636,
+        0.0,
+        0.15225425362586975
+      ]
+    },
+    {
+      "receipt_elapsed_s": 12.744767456002592,
+      "ros_receipt_nanoseconds": 18253694053344,
+      "velocity_body": [
+        0.20608939230442047,
+        0.0,
+        0.18164832890033722
+      ]
+    },
+    {
+      "receipt_elapsed_s": 12.842721312001231,
+      "ros_receipt_nanoseconds": 18253792014240,
+      "velocity_body": [
+        0.2116195261478424,
+        0.0,
+        0.1832355260848999
+      ]
+    },
+    {
+      "receipt_elapsed_s": 12.943839776002278,
+      "ros_receipt_nanoseconds": 18253893120832,
+      "velocity_body": [
+        0.1851441115140915,
+        0.0,
+        0.21931998431682587
+      ]
+    },
+    {
+      "receipt_elapsed_s": 13.042535552001937,
+      "ros_receipt_nanoseconds": 18253991821568,
+      "velocity_body": [
+        0.1988607496023178,
+        0.0,
+        0.2154570072889328
+      ]
+    },
+    {
+      "receipt_elapsed_s": 13.144506848002493,
+      "ros_receipt_nanoseconds": 18254093770752,
+      "velocity_body": [
+        0.18264836072921753,
+        0.0,
+        0.23510144650936127
+      ]
+    },
+    {
+      "receipt_elapsed_s": 13.244183712002268,
+      "ros_receipt_nanoseconds": 18254193449728,
+      "velocity_body": [
+        0.18288962543010712,
+        0.0,
+        0.24584856629371643
+      ]
+    },
+    {
+      "receipt_elapsed_s": 13.334454592000839,
+      "ros_receipt_nanoseconds": 18254283736672,
+      "velocity_body": [
+        0.1963426172733307,
+        0.0,
+        0.23283272981643677
+      ]
+    },
+    {
+      "receipt_elapsed_s": 13.435213471999305,
+      "ros_receipt_nanoseconds": 18254384477728,
+      "velocity_body": [
+        0.19239401817321777,
+        0.0,
+        0.2672307789325714
+      ]
+    },
+    {
+      "receipt_elapsed_s": 13.537134272002731,
+      "ros_receipt_nanoseconds": 18254486400320,
+      "velocity_body": [
+        0.20591668784618378,
+        0.0,
+        0.2521224319934845
+      ]
+    },
+    {
+      "receipt_elapsed_s": 13.643989568001416,
+      "ros_receipt_nanoseconds": 18254593275424,
+      "velocity_body": [
+        0.20188328623771667,
+        0.0,
+        0.2767731547355652
+      ]
+    },
+    {
+      "receipt_elapsed_s": 13.743265728000551,
+      "ros_receipt_nanoseconds": 18254692563520,
+      "velocity_body": [
+        0.20607677102088928,
+        0.0,
+        0.293942928314209
+      ]
+    },
+    {
+      "receipt_elapsed_s": 13.843175840000185,
+      "ros_receipt_nanoseconds": 18254792479552,
+      "velocity_body": [
+        0.20248422026634216,
+        0.0,
+        0.32637903094291687
+      ]
+    },
+    {
+      "receipt_elapsed_s": 13.943728640002519,
+      "ros_receipt_nanoseconds": 18254892992000,
+      "velocity_body": [
+        0.2122664600610733,
+        0.0,
+        0.36107832193374634
+      ]
+    },
+    {
+      "receipt_elapsed_s": 14.04346441600137,
+      "ros_receipt_nanoseconds": 18254992760864,
+      "velocity_body": [
+        0.22083020210266113,
+        0.0,
+        0.38629478216171265
+      ]
+    },
+    {
+      "receipt_elapsed_s": 14.145388960001583,
+      "ros_receipt_nanoseconds": 18255094689344,
+      "velocity_body": [
+        0.2325781136751175,
+        0.0,
+        0.4127334952354431
+      ]
+    },
+    {
+      "receipt_elapsed_s": 14.245505983999465,
+      "ros_receipt_nanoseconds": 18255194799296,
+      "velocity_body": [
+        0.24453237652778625,
+        0.0,
+        0.42371541261672974
+      ]
+    },
+    {
+      "receipt_elapsed_s": 14.3451018880005,
+      "ros_receipt_nanoseconds": 18255294395040,
+      "velocity_body": [
+        0.2556191086769104,
+        0.0,
+        0.4338485896587372
+      ]
+    },
+    {
+      "receipt_elapsed_s": 14.44516496000142,
+      "ros_receipt_nanoseconds": 18255394457920,
+      "velocity_body": [
+        0.2750856280326843,
+        0.0,
+        0.43801525235176086
+      ]
+    },
+    {
+      "receipt_elapsed_s": 14.544653536002443,
+      "ros_receipt_nanoseconds": 18255493939296,
+      "velocity_body": [
+        0.2801915109157562,
+        0.0,
+        0.4422928988933563
+      ]
+    },
+    {
+      "receipt_elapsed_s": 14.64457356800267,
+      "ros_receipt_nanoseconds": 18255593864704,
+      "velocity_body": [
+        0.28217577934265137,
+        0.0,
+        0.42261481285095215
+      ]
+    },
+    {
+      "receipt_elapsed_s": 14.744969983999908,
+      "ros_receipt_nanoseconds": 18255694260256,
+      "velocity_body": [
+        0.2814006507396698,
+        0.0,
+        0.4139346480369568
+      ]
+    },
+    {
+      "receipt_elapsed_s": 14.845706751999387,
+      "ros_receipt_nanoseconds": 18255795045280,
+      "velocity_body": [
+        0.2806204855442047,
+        0.0,
+        0.3865552246570587
+      ]
+    },
+    {
+      "receipt_elapsed_s": 14.946115840000857,
+      "ros_receipt_nanoseconds": 18255895422080,
+      "velocity_body": [
+        0.2801077663898468,
+        0.0,
+        0.35396572947502136
+      ]
+    },
+    {
+      "receipt_elapsed_s": 15.045010656001978,
+      "ros_receipt_nanoseconds": 18255994301024,
+      "velocity_body": [
+        0.2799324691295624,
+        0.0,
+        0.30738046765327454
+      ]
+    },
+    {
+      "receipt_elapsed_s": 15.144821855999908,
+      "ros_receipt_nanoseconds": 18256094109504,
+      "velocity_body": [
+        0.2799183130264282,
+        0.0,
+        0.27033376693725586
+      ]
+    },
+    {
+      "receipt_elapsed_s": 15.245728448000591,
+      "ros_receipt_nanoseconds": 18256195085984,
+      "velocity_body": [
+        0.2799535095691681,
+        0.0,
+        0.23419837653636932
+      ]
+    },
+    {
+      "receipt_elapsed_s": 15.344579008000437,
+      "ros_receipt_nanoseconds": 18256293860512,
+      "velocity_body": [
+        0.27998432517051697,
+        0.0,
+        0.20583291351795197
+      ]
+    },
+    {
+      "receipt_elapsed_s": 15.443979488001787,
+      "ros_receipt_nanoseconds": 18256393266624,
+      "velocity_body": [
+        0.2799995541572571,
+        0.0,
+        0.18083596229553223
+      ]
+    },
+    {
+      "receipt_elapsed_s": 15.539876704002381,
+      "ros_receipt_nanoseconds": 18256489165920,
+      "velocity_body": [
+        0.2800036370754242,
+        0.0,
+        0.14083035290241241
+      ]
+    },
+    {
+      "receipt_elapsed_s": 15.639772000002267,
+      "ros_receipt_nanoseconds": 18256589029216,
+      "velocity_body": [
+        0.2800029516220093,
+        0.0,
+        0.10397686809301376
+      ]
+    },
+    {
+      "receipt_elapsed_s": 15.735447808001481,
+      "ros_receipt_nanoseconds": 18256684730944,
+      "velocity_body": [
+        0.28000137209892273,
+        0.0,
+        0.0626417025923729
+      ]
+    },
+    {
+      "receipt_elapsed_s": 15.83630534400072,
+      "ros_receipt_nanoseconds": 18256785568960,
+      "velocity_body": [
+        0.2801121771335602,
+        0.0,
+        0.025172239169478416
+      ]
+    },
+    {
+      "receipt_elapsed_s": 15.939153440001974,
+      "ros_receipt_nanoseconds": 18256888431808,
+      "velocity_body": [
+        0.2810033857822418,
+        0.0,
+        -0.003079531481489539
+      ]
+    },
+    {
+      "receipt_elapsed_s": 16.043641023999953,
+      "ros_receipt_nanoseconds": 18256992922080,
+      "velocity_body": [
+        0.2805478870868683,
+        0.0,
+        -0.02645363286137581
+      ]
+    },
+    {
+      "receipt_elapsed_s": 16.134686208002677,
+      "ros_receipt_nanoseconds": 18257083975904,
+      "velocity_body": [
+        0.28050675988197327,
+        0.0,
+        -0.052563805133104324
+      ]
+    },
+    {
+      "receipt_elapsed_s": 16.244214239999565,
+      "ros_receipt_nanoseconds": 18257193502560,
+      "velocity_body": [
+        0.27964484691619873,
+        0.0,
+        -0.08985588699579239
+      ]
+    },
+    {
+      "receipt_elapsed_s": 16.344651936000446,
+      "ros_receipt_nanoseconds": 18257293952352,
+      "velocity_body": [
+        0.27172836661338806,
+        0.0,
+        -0.1172703206539154
+      ]
+    },
+    {
+      "receipt_elapsed_s": 16.446621760002017,
+      "ros_receipt_nanoseconds": 18257395911520,
+      "velocity_body": [
+        0.27145129442214966,
+        0.0,
+        -0.1427115797996521
+      ]
+    },
+    {
+      "receipt_elapsed_s": 16.545256448000146,
+      "ros_receipt_nanoseconds": 18257494549632,
+      "velocity_body": [
+        0.2684180736541748,
+        0.0,
+        -0.15956169366836548
+      ]
+    },
+    {
+      "receipt_elapsed_s": 16.645250879999367,
+      "ros_receipt_nanoseconds": 18257594546880,
+      "velocity_body": [
+        0.26165318489074707,
+        0.0,
+        -0.18222586810588837
+      ]
+    },
+    {
+      "receipt_elapsed_s": 16.74492089600244,
+      "ros_receipt_nanoseconds": 18257694210784,
+      "velocity_body": [
+        0.258633553981781,
+        0.0,
+        -0.19103597104549408
+      ]
+    },
+    {
+      "receipt_elapsed_s": 16.845114432002447,
+      "ros_receipt_nanoseconds": 18257794400960,
+      "velocity_body": [
+        0.25523048639297485,
+        0.0,
+        -0.1970982849597931
+      ]
+    },
+    {
+      "receipt_elapsed_s": 16.945134175999556,
+      "ros_receipt_nanoseconds": 18257894428224,
+      "velocity_body": [
+        0.25528496503829956,
+        0.0,
+        -0.21226048469543457
+      ]
+    },
+    {
+      "receipt_elapsed_s": 17.04474131200186,
+      "ros_receipt_nanoseconds": 18257994033536,
+      "velocity_body": [
+        0.2562536299228668,
+        0.0,
+        -0.23562052845954895
+      ]
+    },
+    {
+      "receipt_elapsed_s": 17.14473020800142,
+      "ros_receipt_nanoseconds": 18258094025024,
+      "velocity_body": [
+        0.2551690936088562,
+        0.0,
+        -0.23933720588684082
+      ]
+    },
+    {
+      "receipt_elapsed_s": 17.24420432000261,
+      "ros_receipt_nanoseconds": 18258193493984,
+      "velocity_body": [
+        0.24895089864730835,
+        0.0,
+        -0.25051867961883545
+      ]
+    },
+    {
+      "receipt_elapsed_s": 17.34448486400288,
+      "ros_receipt_nanoseconds": 18258293773856,
+      "velocity_body": [
+        0.25410085916519165,
+        0.0,
+        -0.25066179037094116
+      ]
+    },
+    {
+      "receipt_elapsed_s": 17.444697951999842,
+      "ros_receipt_nanoseconds": 18258393988320,
+      "velocity_body": [
+        0.25623178482055664,
+        0.0,
+        -0.2429400384426117
+      ]
+    },
+    {
+      "receipt_elapsed_s": 17.54470259200025,
+      "ros_receipt_nanoseconds": 18258493986400,
+      "velocity_body": [
+        0.2525714635848999,
+        0.0,
+        -0.23712141811847687
+      ]
+    },
+    {
+      "receipt_elapsed_s": 17.644634784002847,
+      "ros_receipt_nanoseconds": 18258593925664,
+      "velocity_body": [
+        0.25273460149765015,
+        0.0,
+        -0.23368361592292786
+      ]
+    },
+    {
+      "receipt_elapsed_s": 17.744091296000988,
+      "ros_receipt_nanoseconds": 18258693368192,
+      "velocity_body": [
+        0.25017932057380676,
+        0.0,
+        -0.2205629199743271
+      ]
+    },
+    {
+      "receipt_elapsed_s": 17.840926496002794,
+      "ros_receipt_nanoseconds": 18258790209856,
+      "velocity_body": [
+        0.2550482153892517,
+        0.0,
+        -0.21558760106563568
+      ]
+    },
+    {
+      "receipt_elapsed_s": 17.93964643200161,
+      "ros_receipt_nanoseconds": 18258888919328,
+      "velocity_body": [
+        0.2578437626361847,
+        0.0,
+        -0.2096194475889206
+      ]
+    },
+    {
+      "receipt_elapsed_s": 18.037073888001032,
+      "ros_receipt_nanoseconds": 18258986355744,
+      "velocity_body": [
+        0.2627011239528656,
+        0.0,
+        -0.19843214750289917
+      ]
+    },
+    {
+      "receipt_elapsed_s": 18.1355223999999,
+      "ros_receipt_nanoseconds": 18259084802016,
+      "velocity_body": [
+        0.26442480087280273,
+        0.0,
+        -0.1777409464120865
+      ]
+    },
+    {
+      "receipt_elapsed_s": 18.23865081600161,
+      "ros_receipt_nanoseconds": 18259187907360,
+      "velocity_body": [
+        0.2646797299385071,
+        0.0,
+        -0.1482715904712677
+      ]
+    },
+    {
+      "receipt_elapsed_s": 18.337698208000802,
+      "ros_receipt_nanoseconds": 18259286959136,
+      "velocity_body": [
+        0.26280513405799866,
+        0.0,
+        -0.12882225215435028
+      ]
+    },
+    {
+      "receipt_elapsed_s": 18.44235894400117,
+      "ros_receipt_nanoseconds": 18259391640288,
+      "velocity_body": [
+        0.26698169112205505,
+        0.0,
+        -0.11386331915855408
+      ]
+    },
+    {
+      "receipt_elapsed_s": 18.54297676799979,
+      "ros_receipt_nanoseconds": 18259492269088,
+      "velocity_body": [
+        0.2659749388694763,
+        0.0,
+        -0.11135227233171463
+      ]
+    },
+    {
+      "receipt_elapsed_s": 18.643287680002686,
+      "ros_receipt_nanoseconds": 18259592575712,
+      "velocity_body": [
+        0.27371397614479065,
+        0.0,
+        -0.0920126885175705
+      ]
+    },
+    {
+      "receipt_elapsed_s": 18.74463248000029,
+      "ros_receipt_nanoseconds": 18259693917568,
+      "velocity_body": [
+        0.26995229721069336,
+        0.0,
+        -0.07634009420871735
+      ]
+    },
+    {
+      "receipt_elapsed_s": 18.845284064002044,
+      "ros_receipt_nanoseconds": 18259794575136,
+      "velocity_body": [
+        0.2709977924823761,
+        0.0,
+        -0.056620046496391296
+      ]
+    },
+    {
+      "receipt_elapsed_s": 18.944671104000008,
+      "ros_receipt_nanoseconds": 18259893956832,
+      "velocity_body": [
+        0.27345791459083557,
+        0.0,
+        -0.04421130567789078
+      ]
+    },
+    {
+      "receipt_elapsed_s": 19.044548159999977,
+      "ros_receipt_nanoseconds": 18259993837920,
+      "velocity_body": [
+        0.26938867568969727,
+        0.0,
+        -0.03662675991654396
+      ]
+    },
+    {
+      "receipt_elapsed_s": 19.144776000001002,
+      "ros_receipt_nanoseconds": 18260094060960,
+      "velocity_body": [
+        0.2720226049423218,
+        0.0,
+        -0.029605764895677567
+      ]
+    },
+    {
+      "receipt_elapsed_s": 19.244923328002187,
+      "ros_receipt_nanoseconds": 18260194212000,
+      "velocity_body": [
+        0.2696620225906372,
+        0.0,
+        -0.02639002725481987
+      ]
+    },
+    {
+      "receipt_elapsed_s": 19.34465865600214,
+      "ros_receipt_nanoseconds": 18260293946464,
+      "velocity_body": [
+        0.276555597782135,
+        0.0,
+        -0.02172819897532463
+      ]
+    },
+    {
+      "receipt_elapsed_s": 19.445038368001406,
+      "ros_receipt_nanoseconds": 18260394326144,
+      "velocity_body": [
+        0.27727848291397095,
+        0.0,
+        -0.009499434381723404
+      ]
+    },
+    {
+      "receipt_elapsed_s": 19.544677376001346,
+      "ros_receipt_nanoseconds": 18260493959456,
+      "velocity_body": [
+        0.2786826491355896,
+        0.0,
+        -0.008782296441495419
+      ]
+    },
+    {
+      "receipt_elapsed_s": 19.644886784000846,
+      "ros_receipt_nanoseconds": 18260594173536,
+      "velocity_body": [
+        0.27508994936943054,
+        0.0,
+        -0.00813301745802164
+      ]
+    },
+    {
+      "receipt_elapsed_s": 19.744859744001587,
+      "ros_receipt_nanoseconds": 18260694144736,
+      "velocity_body": [
+        0.27241161465644836,
+        0.0,
+        -0.008382145315408707
+      ]
+    },
+    {
+      "receipt_elapsed_s": 19.845579520002502,
+      "ros_receipt_nanoseconds": 18260794867840,
+      "velocity_body": [
+        0.2714719772338867,
+        0.0,
+        -0.00018098880536854267
+      ]
+    },
+    {
+      "receipt_elapsed_s": 19.944891744002234,
+      "ros_receipt_nanoseconds": 18260894174688,
+      "velocity_body": [
+        0.27555394172668457,
+        0.0,
+        -0.005015389062464237
+      ]
+    },
+    {
+      "receipt_elapsed_s": 20.045293952000065,
+      "ros_receipt_nanoseconds": 18260994586368,
+      "velocity_body": [
+        0.2753707766532898,
+        0.0,
+        0.00019742688164114952
+      ]
+    },
+    {
+      "receipt_elapsed_s": 20.14567705599984,
+      "ros_receipt_nanoseconds": 18261094976064,
+      "velocity_body": [
+        0.27189669013023376,
+        0.0,
+        0.007737547159194946
+      ]
+    },
+    {
+      "receipt_elapsed_s": 20.24247504000232,
+      "ros_receipt_nanoseconds": 18261191750048,
+      "velocity_body": [
+        0.27225461602211,
+        0.0,
+        0.010428066365420818
+      ]
+    },
+    {
+      "receipt_elapsed_s": 20.34414268800174,
+      "ros_receipt_nanoseconds": 18261293403072,
+      "velocity_body": [
+        0.2675533592700958,
+        0.0,
+        0.009001368656754494
+      ]
+    },
+    {
+      "receipt_elapsed_s": 20.44405043200095,
+      "ros_receipt_nanoseconds": 18261393312800,
+      "velocity_body": [
+        0.26695120334625244,
+        0.0,
+        0.0062768589705228806
+      ]
+    },
+    {
+      "receipt_elapsed_s": 20.535496735999914,
+      "ros_receipt_nanoseconds": 18261484783072,
+      "velocity_body": [
+        0.2648729383945465,
+        0.0,
+        0.012019626796245575
+      ]
+    },
+    {
+      "receipt_elapsed_s": 20.63428806400043,
+      "ros_receipt_nanoseconds": 18261583545600,
+      "velocity_body": [
+        0.26554661989212036,
+        0.0,
+        0.003707442432641983
+      ]
+    },
+    {
+      "receipt_elapsed_s": 20.737444895999943,
+      "ros_receipt_nanoseconds": 18261686701312,
+      "velocity_body": [
+        0.26558569073677063,
+        0.0,
+        0.00393251096829772
+      ]
+    },
+    {
+      "receipt_elapsed_s": 20.84441744000287,
+      "ros_receipt_nanoseconds": 18261793703200,
+      "velocity_body": [
+        0.2676210403442383,
+        0.0,
+        0.00020231364760547876
+      ]
+    },
+    {
+      "receipt_elapsed_s": 20.94476332799968,
+      "ros_receipt_nanoseconds": 18261894057920,
+      "velocity_body": [
+        0.2700342833995819,
+        0.0,
+        0.0001730534713715315
+      ]
+    },
+    {
+      "receipt_elapsed_s": 21.044685376000416,
+      "ros_receipt_nanoseconds": 18261993981120,
+      "velocity_body": [
+        0.27027878165245056,
+        0.0,
+        0.0005069638136774302
+      ]
+    },
+    {
+      "receipt_elapsed_s": 21.144974591999926,
+      "ros_receipt_nanoseconds": 18262094272384,
+      "velocity_body": [
+        0.2702341377735138,
+        0.0,
+        0.00641640555113554
+      ]
+    },
+    {
+      "receipt_elapsed_s": 21.24587593600154,
+      "ros_receipt_nanoseconds": 18262195173216,
+      "velocity_body": [
+        0.2677743136882782,
+        0.0,
+        0.012834233231842518
+      ]
+    },
+    {
+      "receipt_elapsed_s": 21.34533289600222,
+      "ros_receipt_nanoseconds": 18262294626400,
+      "velocity_body": [
+        0.2693573236465454,
+        0.0,
+        0.005010390654206276
+      ]
+    },
+    {
+      "receipt_elapsed_s": 21.445389216001786,
+      "ros_receipt_nanoseconds": 18262394684576,
+      "velocity_body": [
+        0.26895299553871155,
+        0.0,
+        0.014381556771695614
+      ]
+    },
+    {
+      "receipt_elapsed_s": 21.54513897600191,
+      "ros_receipt_nanoseconds": 18262494429696,
+      "velocity_body": [
+        0.2707206606864929,
+        0.0,
+        0.019323013722896576
+      ]
+    },
+    {
+      "receipt_elapsed_s": 21.64532438400056,
+      "ros_receipt_nanoseconds": 18262594610080,
+      "velocity_body": [
+        0.2716866731643677,
+        0.0,
+        0.016417814418673515
+      ]
+    },
+    {
+      "receipt_elapsed_s": 21.74475484800132,
+      "ros_receipt_nanoseconds": 18262694040544,
+      "velocity_body": [
+        0.2744634449481964,
+        0.0,
+        0.015181678347289562
+      ]
+    },
+    {
+      "receipt_elapsed_s": 21.84483385600106,
+      "ros_receipt_nanoseconds": 18262794115520,
+      "velocity_body": [
+        0.2729320824146271,
+        0.0,
+        0.01397791225463152
+      ]
+    },
+    {
+      "receipt_elapsed_s": 21.944835328002227,
+      "ros_receipt_nanoseconds": 18262894119776,
+      "velocity_body": [
+        0.26932209730148315,
+        0.0,
+        0.005353030748665333
+      ]
+    },
+    {
+      "receipt_elapsed_s": 22.044984960000875,
+      "ros_receipt_nanoseconds": 18262994272832,
+      "velocity_body": [
+        0.2703031301498413,
+        0.0,
+        4.643527790904045e-05
+      ]
+    },
+    {
+      "receipt_elapsed_s": 22.14493558400136,
+      "ros_receipt_nanoseconds": 18263094216256,
+      "velocity_body": [
+        0.27140259742736816,
+        0.0,
+        0.00327049451880157
+      ]
+    },
+    {
+      "receipt_elapsed_s": 22.244884319999983,
+      "ros_receipt_nanoseconds": 18263194173888,
+      "velocity_body": [
+        0.26825007796287537,
+        0.0,
+        0.0012742364779114723
+      ]
+    },
+    {
+      "receipt_elapsed_s": 22.345502399999532,
+      "ros_receipt_nanoseconds": 18263294796832,
+      "velocity_body": [
+        0.27089622616767883,
+        0.0,
+        -0.0017624828033149242
+      ]
+    },
+    {
+      "receipt_elapsed_s": 22.444944672002748,
+      "ros_receipt_nanoseconds": 18263394228384,
+      "velocity_body": [
+        0.27010130882263184,
+        0.0,
+        0.0025612555909901857
+      ]
+    },
+    {
+      "receipt_elapsed_s": 22.545073440000124,
+      "ros_receipt_nanoseconds": 18263494355264,
+      "velocity_body": [
+        0.27072376012802124,
+        0.0,
+        0.0018736482597887516
+      ]
+    },
+    {
+      "receipt_elapsed_s": 22.64497587200094,
+      "ros_receipt_nanoseconds": 18263594260512,
+      "velocity_body": [
+        0.2719101905822754,
+        0.0,
+        0.00038438785122707486
+      ]
+    },
+    {
+      "receipt_elapsed_s": 22.744359904001612,
+      "ros_receipt_nanoseconds": 18263693616960,
+      "velocity_body": [
+        0.268934965133667,
+        0.0,
+        -0.0066425371915102005
+      ]
+    },
+    {
+      "receipt_elapsed_s": 22.844197696002084,
+      "ros_receipt_nanoseconds": 18263793458688,
+      "velocity_body": [
+        0.26831984519958496,
+        0.0,
+        -0.012743865139782429
+      ]
+    },
+    {
+      "receipt_elapsed_s": 22.935429664001276,
+      "ros_receipt_nanoseconds": 18263884712224,
+      "velocity_body": [
+        0.2720637321472168,
+        0.0,
+        -0.015500782988965511
+      ]
+    },
+    {
+      "receipt_elapsed_s": 23.04469641600008,
+      "ros_receipt_nanoseconds": 18263993982304,
+      "velocity_body": [
+        0.2739790976047516,
+        0.0,
+        -0.009360418654978275
+      ]
+    },
+    {
+      "receipt_elapsed_s": 23.139905568001268,
+      "ros_receipt_nanoseconds": 18264089197344,
+      "velocity_body": [
+        0.2750810980796814,
+        0.0,
+        -0.014841441996395588
+      ]
+    },
+    {
+      "receipt_elapsed_s": 23.243385215999297,
+      "ros_receipt_nanoseconds": 18264192656000,
+      "velocity_body": [
+        0.2756688594818115,
+        0.0,
+        0.0010584957199171185
+      ]
+    },
+    {
+      "receipt_elapsed_s": 23.34328483200079,
+      "ros_receipt_nanoseconds": 18264292637248,
+      "velocity_body": [
+        0.27406182885169983,
+        0.0,
+        -0.0048082685098052025
+      ]
+    },
+    {
+      "receipt_elapsed_s": 23.441475232000812,
+      "ros_receipt_nanoseconds": 18264390775616,
+      "velocity_body": [
+        0.27316781878471375,
+        0.0,
+        -0.004466508515179157
+      ]
+    },
+    {
+      "receipt_elapsed_s": 23.54317942399939,
+      "ros_receipt_nanoseconds": 18264492469920,
+      "velocity_body": [
+        0.2700040340423584,
+        0.0,
+        0.005015162751078606
+      ]
+    },
+    {
+      "receipt_elapsed_s": 23.645341792002,
+      "ros_receipt_nanoseconds": 18264594639712,
+      "velocity_body": [
+        0.2686479389667511,
+        0.0,
+        0.012485042214393616
+      ]
+    },
+    {
+      "receipt_elapsed_s": 23.74502243200186,
+      "ros_receipt_nanoseconds": 18264694311296,
+      "velocity_body": [
+        0.26970964670181274,
+        0.0,
+        0.012708691880106926
+      ]
+    },
+    {
+      "receipt_elapsed_s": 23.844778591999784,
+      "ros_receipt_nanoseconds": 18264794072288,
+      "velocity_body": [
+        0.26929977536201477,
+        0.0,
+        0.012468701228499413
+      ]
+    },
+    {
+      "receipt_elapsed_s": 23.94521456000075,
+      "ros_receipt_nanoseconds": 18264894511040,
+      "velocity_body": [
+        0.2705041468143463,
+        0.0,
+        0.006569930352270603
+      ]
+    },
+    {
+      "receipt_elapsed_s": 24.04519478400107,
+      "ros_receipt_nanoseconds": 18264994481600,
+      "velocity_body": [
+        0.2696303725242615,
+        0.0,
+        0.005668575409799814
+      ]
+    },
+    {
+      "receipt_elapsed_s": 24.144959072000347,
+      "ros_receipt_nanoseconds": 18265094253280,
+      "velocity_body": [
+        0.27462834119796753,
+        0.0,
+        0.013930960558354855
+      ]
+    },
+    {
+      "receipt_elapsed_s": 24.244683392000297,
+      "ros_receipt_nanoseconds": 18265193969600,
+      "velocity_body": [
+        0.2734817862510681,
+        0.0,
+        0.010172229260206223
+      ]
+    },
+    {
+      "receipt_elapsed_s": 24.3446632640007,
+      "ros_receipt_nanoseconds": 18265293951584,
+      "velocity_body": [
+        0.27129262685775757,
+        0.0,
+        0.013231171295046806
+      ]
+    },
+    {
+      "receipt_elapsed_s": 24.44482256000265,
+      "ros_receipt_nanoseconds": 18265394111584,
+      "velocity_body": [
+        0.27326369285583496,
+        0.0,
+        0.008960321545600891
+      ]
+    },
+    {
+      "receipt_elapsed_s": 24.544727232001605,
+      "ros_receipt_nanoseconds": 18265494012416,
+      "velocity_body": [
+        0.27242857217788696,
+        0.0,
+        0.004837812855839729
+      ]
+    },
+    {
+      "receipt_elapsed_s": 24.644923968000512,
+      "ros_receipt_nanoseconds": 18265594216064,
+      "velocity_body": [
+        0.2725352942943573,
+        0.0,
+        0.0008196979761123657
+      ]
+    },
+    {
+      "receipt_elapsed_s": 24.744866848002857,
+      "ros_receipt_nanoseconds": 18265694152000,
+      "velocity_body": [
+        0.27225178480148315,
+        0.0,
+        -0.005427958443760872
+      ]
+    },
+    {
+      "receipt_elapsed_s": 24.845572927999456,
+      "ros_receipt_nanoseconds": 18265794866656,
+      "velocity_body": [
+        0.26774463057518005,
+        0.0,
+        -0.003612116677686572
+      ]
+    },
+    {
+      "receipt_elapsed_s": 24.945074432002002,
+      "ros_receipt_nanoseconds": 18265894359136,
+      "velocity_body": [
+        0.2719067633152008,
+        0.0,
+        0.013057232834398746
+      ]
+    },
+    {
+      "receipt_elapsed_s": 25.04450726399955,
+      "ros_receipt_nanoseconds": 18265993767584,
+      "velocity_body": [
+        0.2714368402957916,
+        0.0,
+        0.013655045069754124
+      ]
+    },
+    {
+      "receipt_elapsed_s": 25.144129216001602,
+      "ros_receipt_nanoseconds": 18266093386496,
+      "velocity_body": [
+        0.27114835381507874,
+        0.0,
+        0.004254191182553768
+      ]
+    },
+    {
+      "receipt_elapsed_s": 25.244485504001204,
+      "ros_receipt_nanoseconds": 18266193750304,
+      "velocity_body": [
+        0.2707125246524811,
+        0.0,
+        -0.00951350573450327
+      ]
+    },
+    {
+      "receipt_elapsed_s": 25.33571712000048,
+      "ros_receipt_nanoseconds": 18266285002208,
+      "velocity_body": [
+        0.2721160352230072,
+        0.0,
+        -0.0033260537311434746
+      ]
+    },
+    {
+      "receipt_elapsed_s": 25.440631616002065,
+      "ros_receipt_nanoseconds": 18266389934080,
+      "velocity_body": [
+        0.27123475074768066,
+        0.0,
+        -0.0004660732811316848
+      ]
+    },
+    {
+      "receipt_elapsed_s": 25.540812671999447,
+      "ros_receipt_nanoseconds": 18266490112160,
+      "velocity_body": [
+        0.2692631185054779,
+        0.0,
+        -0.0010489571141079068
+      ]
+    },
+    {
+      "receipt_elapsed_s": 25.64515561600274,
+      "ros_receipt_nanoseconds": 18266594437440,
+      "velocity_body": [
+        0.2690940201282501,
+        0.0,
+        -0.00984189659357071
+      ]
+    },
+    {
+      "receipt_elapsed_s": 25.741714976000367,
+      "ros_receipt_nanoseconds": 18266691036896,
+      "velocity_body": [
+        0.26824629306793213,
+        0.0,
+        -0.01761552505195141
+      ]
+    },
+    {
+      "receipt_elapsed_s": 25.84294633600075,
+      "ros_receipt_nanoseconds": 18266792234624,
+      "velocity_body": [
+        0.2711675465106964,
+        0.0,
+        -0.009801147505640984
+      ]
+    },
+    {
+      "receipt_elapsed_s": 25.942729824000708,
+      "ros_receipt_nanoseconds": 18266892014112,
+      "velocity_body": [
+        0.2707021236419678,
+        0.0,
+        -0.01408747211098671
+      ]
+    },
+    {
+      "receipt_elapsed_s": 26.043942304000666,
+      "ros_receipt_nanoseconds": 18266993235680,
+      "velocity_body": [
+        0.27108171582221985,
+        0.0,
+        -0.00540597178041935
+      ]
+    },
+    {
+      "receipt_elapsed_s": 26.144670464000228,
+      "ros_receipt_nanoseconds": 18267093961888,
+      "velocity_body": [
+        0.2724512219429016,
+        0.0,
+        -0.0011083732824772596
+      ]
+    },
+    {
+      "receipt_elapsed_s": 26.244874496002012,
+      "ros_receipt_nanoseconds": 18267194171424,
+      "velocity_body": [
+        0.27022644877433777,
+        0.0,
+        0.00948302447795868
+      ]
+    },
+    {
+      "receipt_elapsed_s": 26.344778432001476,
+      "ros_receipt_nanoseconds": 18267294071520,
+      "velocity_body": [
+        0.27199387550354004,
+        0.0,
+        0.01281749177724123
+      ]
+    },
+    {
+      "receipt_elapsed_s": 26.44521913599965,
+      "ros_receipt_nanoseconds": 18267394508640,
+      "velocity_body": [
+        0.2735467553138733,
+        0.0,
+        0.008252130821347237
+      ]
+    },
+    {
+      "receipt_elapsed_s": 26.544763072000933,
+      "ros_receipt_nanoseconds": 18267494049632,
+      "velocity_body": [
+        0.26761800050735474,
+        0.0,
+        -0.007846183143556118
+      ]
+    },
+    {
+      "receipt_elapsed_s": 26.644883040000423,
+      "ros_receipt_nanoseconds": 18267594163616,
+      "velocity_body": [
+        0.2694551944732666,
+        0.0,
+        -0.007565996143966913
+      ]
+    },
+    {
+      "receipt_elapsed_s": 26.744760448000306,
+      "ros_receipt_nanoseconds": 18267694040576,
+      "velocity_body": [
+        0.2674790620803833,
+        0.0,
+        -0.007205079309642315
+      ]
+    },
+    {
+      "receipt_elapsed_s": 26.84515430400279,
+      "ros_receipt_nanoseconds": 18267794441792,
+      "velocity_body": [
+        0.26489099860191345,
+        0.0,
+        -0.005782454740256071
+      ]
+    },
+    {
+      "receipt_elapsed_s": 26.944989920000808,
+      "ros_receipt_nanoseconds": 18267894269632,
+      "velocity_body": [
+        0.2660488188266754,
+        0.0,
+        0.00014113326324149966
+      ]
+    },
+    {
+      "receipt_elapsed_s": 27.045348992000072,
+      "ros_receipt_nanoseconds": 18267994630592,
+      "velocity_body": [
+        0.26915404200553894,
+        0.0,
+        -0.0037922444753348827
+      ]
+    },
+    {
+      "receipt_elapsed_s": 27.144912128002034,
+      "ros_receipt_nanoseconds": 18268094199264,
+      "velocity_body": [
+        0.2695617973804474,
+        0.0,
+        0.0005217804573476315
+      ]
+    },
+    {
+      "receipt_elapsed_s": 27.245076480001444,
+      "ros_receipt_nanoseconds": 18268194366912,
+      "velocity_body": [
+        0.2665139436721802,
+        0.0,
+        0.015581866726279259
+      ]
+    },
+    {
+      "receipt_elapsed_s": 27.34445491199949,
+      "ros_receipt_nanoseconds": 18268293737056,
+      "velocity_body": [
+        0.26721256971359253,
+        0.0,
+        0.02153177186846733
+      ]
+    },
+    {
+      "receipt_elapsed_s": 27.44074124799954,
+      "ros_receipt_nanoseconds": 18268390019584,
+      "velocity_body": [
+        0.2705260217189789,
+        0.0,
+        0.014499950222671032
+      ]
+    },
+    {
+      "receipt_elapsed_s": 27.539898655999423,
+      "ros_receipt_nanoseconds": 18268489179168,
+      "velocity_body": [
+        0.2702503204345703,
+        0.0,
+        0.0206998772919178
+      ]
+    },
+    {
+      "receipt_elapsed_s": 27.639767392000067,
+      "ros_receipt_nanoseconds": 18268589042784,
+      "velocity_body": [
+        0.27113017439842224,
+        0.0,
+        0.019395049661397934
+      ]
+    },
+    {
+      "receipt_elapsed_s": 27.7353974079997,
+      "ros_receipt_nanoseconds": 18268684681664,
+      "velocity_body": [
+        0.2724165618419647,
+        0.0,
+        0.019534647464752197
+      ]
+    },
+    {
+      "receipt_elapsed_s": 27.834817856000882,
+      "ros_receipt_nanoseconds": 18268784073984,
+      "velocity_body": [
+        0.271482914686203,
+        0.0,
+        0.017390212044119835
+      ]
+    },
+    {
+      "receipt_elapsed_s": 27.940835167999467,
+      "ros_receipt_nanoseconds": 18268890111520,
+      "velocity_body": [
+        0.27045509219169617,
+        0.0,
+        0.007995018735527992
+      ]
+    },
+    {
+      "receipt_elapsed_s": 28.042884992002655,
+      "ros_receipt_nanoseconds": 18268992168512,
+      "velocity_body": [
+        0.2720795273780823,
+        0.0,
+        0.008318306878209114
+      ]
+    },
+    {
+      "receipt_elapsed_s": 28.14115961599964,
+      "ros_receipt_nanoseconds": 18269090443808,
+      "velocity_body": [
+        0.2763785123825073,
+        0.0,
+        0.000126355211250484
+      ]
+    },
+    {
+      "receipt_elapsed_s": 28.24289203200169,
+      "ros_receipt_nanoseconds": 18269192178496,
+      "velocity_body": [
+        0.27400630712509155,
+        0.0,
+        -0.002156286034733057
+      ]
+    },
+    {
+      "receipt_elapsed_s": 28.34299689600084,
+      "ros_receipt_nanoseconds": 18269292279456,
+      "velocity_body": [
+        0.2724675238132477,
+        0.0,
+        -0.00457852752879262
+      ]
+    },
+    {
+      "receipt_elapsed_s": 28.44346246400164,
+      "ros_receipt_nanoseconds": 18269392751488,
+      "velocity_body": [
+        0.2682305574417114,
+        0.0,
+        -0.007815172895789146
+      ]
+    },
+    {
+      "receipt_elapsed_s": 28.543164927999896,
+      "ros_receipt_nanoseconds": 18269492448992,
+      "velocity_body": [
+        0.2649833858013153,
+        0.0,
+        -0.008607074618339539
+      ]
+    },
+    {
+      "receipt_elapsed_s": 28.645079776000784,
+      "ros_receipt_nanoseconds": 18269594373984,
+      "velocity_body": [
+        0.2642494738101959,
+        0.0,
+        -0.007887105457484722
+      ]
+    },
+    {
+      "receipt_elapsed_s": 28.744255839999823,
+      "ros_receipt_nanoseconds": 18269693540512,
+      "velocity_body": [
+        0.2609095871448517,
+        0.0,
+        -0.007346046157181263
+      ]
+    },
+    {
+      "receipt_elapsed_s": 28.84499599999981,
+      "ros_receipt_nanoseconds": 18269794280960,
+      "velocity_body": [
+        0.26572510600090027,
+        0.0,
+        -0.00918448343873024
+      ]
+    },
+    {
+      "receipt_elapsed_s": 28.94487632000164,
+      "ros_receipt_nanoseconds": 18269894168800,
+      "velocity_body": [
+        0.27098309993743896,
+        0.0,
+        -0.0063915918581187725
+      ]
+    },
+    {
+      "receipt_elapsed_s": 29.04526112000167,
+      "ros_receipt_nanoseconds": 18269994545984,
+      "velocity_body": [
+        0.2717202603816986,
+        0.0,
+        -0.004259157460182905
+      ]
+    },
+    {
+      "receipt_elapsed_s": 29.144936352000514,
+      "ros_receipt_nanoseconds": 18270094222784,
+      "velocity_body": [
+        0.26736506819725037,
+        0.0,
+        -0.0003023075987584889
+      ]
+    },
+    {
+      "receipt_elapsed_s": 29.244700256000215,
+      "ros_receipt_nanoseconds": 18270193986624,
+      "velocity_body": [
+        0.26916515827178955,
+        0.0,
+        0.008241063915193081
+      ]
+    },
+    {
+      "receipt_elapsed_s": 29.34513212800084,
+      "ros_receipt_nanoseconds": 18270294417056,
+      "velocity_body": [
+        0.26432034373283386,
+        0.0,
+        0.0009105071658268571
+      ]
+    },
+    {
+      "receipt_elapsed_s": 29.444839327999944,
+      "ros_receipt_nanoseconds": 18270394130336,
+      "velocity_body": [
+        0.2639625072479248,
+        0.0,
+        0.001914548920467496
+      ]
+    },
+    {
+      "receipt_elapsed_s": 29.545564000000013,
+      "ros_receipt_nanoseconds": 18270494849184,
+      "velocity_body": [
+        0.2687457203865051,
+        0.0,
+        -0.0015233042649924755
+      ]
+    },
+    {
+      "receipt_elapsed_s": 29.645946783999534,
+      "ros_receipt_nanoseconds": 18270595228032,
+      "velocity_body": [
+        0.2706645131111145,
+        0.0,
+        -0.0012093461118638515
+      ]
+    },
+    {
+      "receipt_elapsed_s": 29.745420671999454,
+      "ros_receipt_nanoseconds": 18270694693920,
+      "velocity_body": [
+        0.2705426514148712,
+        0.0,
+        -0.011517251841723919
+      ]
+    },
+    {
+      "receipt_elapsed_s": 29.84533705600188,
+      "ros_receipt_nanoseconds": 18270794627968,
+      "velocity_body": [
+        0.2704692482948303,
+        0.0,
+        -0.011624434031546116
+      ]
+    },
+    {
+      "receipt_elapsed_s": 29.944574463999743,
+      "ros_receipt_nanoseconds": 18270893838080,
+      "velocity_body": [
+        0.2699742913246155,
+        0.0,
+        -0.0043714107014238834
+      ]
+    },
+    {
+      "receipt_elapsed_s": 30.0445560320004,
+      "ros_receipt_nanoseconds": 18270993820032,
+      "velocity_body": [
+        0.2664094865322113,
+        0.0,
+        0.0022031913977116346
+      ]
+    },
+    {
+      "receipt_elapsed_s": 30.13567062400034,
+      "ros_receipt_nanoseconds": 18271084958208,
+      "velocity_body": [
+        0.2659750282764435,
+        0.0,
+        0.01745523326098919
+      ]
+    },
+    {
+      "receipt_elapsed_s": 30.23686144000021,
+      "ros_receipt_nanoseconds": 18271186122048,
+      "velocity_body": [
+        0.26791858673095703,
+        0.0,
+        0.019523708149790764
+      ]
+    },
+    {
+      "receipt_elapsed_s": 30.33430665600099,
+      "ros_receipt_nanoseconds": 18271283561152,
+      "velocity_body": [
+        0.2654798626899719,
+        0.0,
+        0.024295637384057045
+      ]
+    },
+    {
+      "receipt_elapsed_s": 30.444776640000782,
+      "ros_receipt_nanoseconds": 18271394067744,
+      "velocity_body": [
+        0.2685781419277191,
+        0.0,
+        0.008431787602603436
+      ]
+    },
+    {
+      "receipt_elapsed_s": 30.543582816000708,
+      "ros_receipt_nanoseconds": 18271492840192,
+      "velocity_body": [
+        0.2662453353404999,
+        0.0,
+        0.012842195108532906
+      ]
+    },
+    {
+      "receipt_elapsed_s": 30.641421759999503,
+      "ros_receipt_nanoseconds": 18271590682112,
+      "velocity_body": [
+        0.2648537755012512,
+        0.0,
+        0.010141776874661446
+      ]
+    },
+    {
+      "receipt_elapsed_s": 30.74376060800205,
+      "ros_receipt_nanoseconds": 18271693057120,
+      "velocity_body": [
+        0.2656233310699463,
+        0.0,
+        0.004712533205747604
+      ]
+    },
+    {
+      "receipt_elapsed_s": 30.843455040001572,
+      "ros_receipt_nanoseconds": 18271792739392,
+      "velocity_body": [
+        0.2655586898326874,
+        0.0,
+        -0.006723626516759396
+      ]
+    },
+    {
+      "receipt_elapsed_s": 30.944716927999252,
+      "ros_receipt_nanoseconds": 18271894006208,
+      "velocity_body": [
+        0.26751723885536194,
+        0.0,
+        -0.007201972417533398
+      ]
+    },
+    {
+      "receipt_elapsed_s": 31.044415071999538,
+      "ros_receipt_nanoseconds": 18271993699296,
+      "velocity_body": [
+        0.26744651794433594,
+        0.0,
+        -0.018097519874572754
+      ]
+    },
+    {
+      "receipt_elapsed_s": 31.145432544002688,
+      "ros_receipt_nanoseconds": 18272094734176,
+      "velocity_body": [
+        0.2709946930408478,
+        0.0,
+        -0.017600907012820244
+      ]
+    },
+    {
+      "receipt_elapsed_s": 31.244919616001425,
+      "ros_receipt_nanoseconds": 18272194203680,
+      "velocity_body": [
+        0.27293071150779724,
+        0.0,
+        -0.019596420228481293
+      ]
+    },
+    {
+      "receipt_elapsed_s": 31.34561193600166,
+      "ros_receipt_nanoseconds": 18272294894560,
+      "velocity_body": [
+        0.26935097575187683,
+        0.0,
+        -0.0255807526409626
+      ]
+    },
+    {
+      "receipt_elapsed_s": 31.444952800000465,
+      "ros_receipt_nanoseconds": 18272394234112,
+      "velocity_body": [
+        0.26290956139564514,
+        0.0,
+        -0.03354138135910034
+      ]
+    },
+    {
+      "receipt_elapsed_s": 31.544892575999256,
+      "ros_receipt_nanoseconds": 18272494161568,
+      "velocity_body": [
+        0.26401856541633606,
+        0.0,
+        -0.04044822230935097
+      ]
+    },
+    {
+      "receipt_elapsed_s": 31.645046368001204,
+      "ros_receipt_nanoseconds": 18272594329216,
+      "velocity_body": [
+        0.2662140727043152,
+        0.0,
+        -0.049813590943813324
+      ]
+    },
+    {
+      "receipt_elapsed_s": 31.74558688000252,
+      "ros_receipt_nanoseconds": 18272694867648,
+      "velocity_body": [
+        0.26848605275154114,
+        0.0,
+        -0.05403781309723854
+      ]
+    },
+    {
+      "receipt_elapsed_s": 31.845548992001568,
+      "ros_receipt_nanoseconds": 18272794849216,
+      "velocity_body": [
+        0.26816368103027344,
+        0.0,
+        -0.06037279963493347
+      ]
+    },
+    {
+      "receipt_elapsed_s": 31.94574102399929,
+      "ros_receipt_nanoseconds": 18272895066240,
+      "velocity_body": [
+        0.2711302936077118,
+        0.0,
+        -0.04967312142252922
+      ]
+    },
+    {
+      "receipt_elapsed_s": 32.04551958400043,
+      "ros_receipt_nanoseconds": 18272994804576,
+      "velocity_body": [
+        0.27183037996292114,
+        0.0,
+        -0.04569535329937935
+      ]
+    },
+    {
+      "receipt_elapsed_s": 32.144320928000525,
+      "ros_receipt_nanoseconds": 18273093600736,
+      "velocity_body": [
+        0.272415429353714,
+        0.0,
+        -0.048941828310489655
+      ]
+    },
+    {
+      "receipt_elapsed_s": 32.243508896001,
+      "ros_receipt_nanoseconds": 18273192798688,
+      "velocity_body": [
+        0.27170097827911377,
+        0.0,
+        -0.027910716831684113
+      ]
+    },
+    {
+      "receipt_elapsed_s": 32.344347328002186,
+      "ros_receipt_nanoseconds": 18273293609856,
+      "velocity_body": [
+        0.2676456570625305,
+        0.0,
+        -0.03064952977001667
+      ]
+    },
+    {
+      "receipt_elapsed_s": 32.44436889600183,
+      "ros_receipt_nanoseconds": 18273393630304,
+      "velocity_body": [
+        0.2677401304244995,
+        0.0,
+        -0.029431605711579323
+      ]
+    },
+    {
+      "receipt_elapsed_s": 32.53553804799958,
+      "ros_receipt_nanoseconds": 18273484818720,
+      "velocity_body": [
+        0.2610253393650055,
+        0.0,
+        -0.024190843105316162
+      ]
+    },
+    {
+      "receipt_elapsed_s": 32.63436326400188,
+      "ros_receipt_nanoseconds": 18273583616480,
+      "velocity_body": [
+        0.2626233398914337,
+        0.0,
+        -0.02622605301439762
+      ]
+    },
+    {
+      "receipt_elapsed_s": 32.74029248000079,
+      "ros_receipt_nanoseconds": 18273689571456,
+      "velocity_body": [
+        0.2569772005081177,
+        0.0,
+        -0.020904166623950005
+      ]
+    },
+    {
+      "receipt_elapsed_s": 32.839865728001314,
+      "ros_receipt_nanoseconds": 18273789148416,
+      "velocity_body": [
+        0.2586025893688202,
+        0.0,
+        -0.021957267075777054
+      ]
+    },
+    {
+      "receipt_elapsed_s": 32.94149628800005,
+      "ros_receipt_nanoseconds": 18273890779456,
+      "velocity_body": [
+        0.26188358664512634,
+        0.0,
+        -0.020782046020030975
+      ]
+    },
+    {
+      "receipt_elapsed_s": 33.04233068800022,
+      "ros_receipt_nanoseconds": 18273991621664,
+      "velocity_body": [
+        0.26532623171806335,
+        0.0,
+        -0.019115891307592392
+      ]
+    },
+    {
+      "receipt_elapsed_s": 33.14371932799986,
+      "ros_receipt_nanoseconds": 18274093006432,
+      "velocity_body": [
+        0.26758038997650146,
+        0.0,
+        -0.015363750979304314
+      ]
+    },
+    {
+      "receipt_elapsed_s": 33.24441296000077,
+      "ros_receipt_nanoseconds": 18274193699200,
+      "velocity_body": [
+        0.27470627427101135,
+        0.0,
+        -0.01440143771469593
+      ]
+    },
+    {
+      "receipt_elapsed_s": 33.344966176002345,
+      "ros_receipt_nanoseconds": 18274294252352,
+      "velocity_body": [
+        0.27211934328079224,
+        0.0,
+        -0.015911497175693512
+      ]
+    },
+    {
+      "receipt_elapsed_s": 33.44537577600204,
+      "ros_receipt_nanoseconds": 18274394678624,
+      "velocity_body": [
+        0.2751050591468811,
+        0.0,
+        -0.01853441633284092
+      ]
+    },
+    {
+      "receipt_elapsed_s": 33.544835807999334,
+      "ros_receipt_nanoseconds": 18274494124576,
+      "velocity_body": [
+        0.27251365780830383,
+        0.0,
+        -0.0050462172366678715
+      ]
+    },
+    {
+      "receipt_elapsed_s": 33.644952832000854,
+      "ros_receipt_nanoseconds": 18274594235552,
+      "velocity_body": [
+        0.2638098895549774,
+        0.0,
+        -0.004439014010131359
+      ]
+    },
+    {
+      "receipt_elapsed_s": 33.74529110400181,
+      "ros_receipt_nanoseconds": 18274694582368,
+      "velocity_body": [
+        0.26074323058128357,
+        0.0,
+        0.000763827352784574
+      ]
+    },
+    {
+      "receipt_elapsed_s": 33.84489065600064,
+      "ros_receipt_nanoseconds": 18274794175264,
+      "velocity_body": [
+        0.2665870189666748,
+        0.0,
+        -0.010291951708495617
+      ]
+    },
+    {
+      "receipt_elapsed_s": 33.94509449600082,
+      "ros_receipt_nanoseconds": 18274894381344,
+      "velocity_body": [
+        0.26497146487236023,
+        0.0,
+        -0.0036553246900439262
+      ]
+    },
+    {
+      "receipt_elapsed_s": 34.044906048002304,
+      "ros_receipt_nanoseconds": 18274994192288,
+      "velocity_body": [
+        0.2683103084564209,
+        0.0,
+        0.0018013009103015065
+      ]
+    },
+    {
+      "receipt_elapsed_s": 34.14519647999987,
+      "ros_receipt_nanoseconds": 18275094477376,
+      "velocity_body": [
+        0.266987144947052,
+        0.0,
+        0.00022315909154713154
+      ]
+    },
+    {
+      "receipt_elapsed_s": 34.24483494400192,
+      "ros_receipt_nanoseconds": 18275194120672,
+      "velocity_body": [
+        0.26379552483558655,
+        0.0,
+        -0.002477548085153103
+      ]
+    },
+    {
+      "receipt_elapsed_s": 34.34535555200273,
+      "ros_receipt_nanoseconds": 18275294654240,
+      "velocity_body": [
+        0.26452764868736267,
+        0.0,
+        -0.0010036858730018139
+      ]
+    },
+    {
+      "receipt_elapsed_s": 34.44638044800013,
+      "ros_receipt_nanoseconds": 18275395675456,
+      "velocity_body": [
+        0.268634170293808,
+        0.0,
+        0.006261376664042473
+      ]
+    },
+    {
+      "receipt_elapsed_s": 34.54453430400099,
+      "ros_receipt_nanoseconds": 18275493823040,
+      "velocity_body": [
+        0.2648501694202423,
+        0.0,
+        0.004767170175909996
+      ]
+    },
+    {
+      "receipt_elapsed_s": 34.64486201600084,
+      "ros_receipt_nanoseconds": 18275594149120,
+      "velocity_body": [
+        0.2611512541770935,
+        0.0,
+        0.008493619039654732
+      ]
+    },
+    {
+      "receipt_elapsed_s": 34.74420998400092,
+      "ros_receipt_nanoseconds": 18275693462656,
+      "velocity_body": [
+        0.26420876383781433,
+        0.0,
+        0.0018666265532374382
+      ]
+    },
+    {
+      "receipt_elapsed_s": 34.84478643200055,
+      "ros_receipt_nanoseconds": 18275794046976,
+      "velocity_body": [
+        0.27150759100914,
+        0.0,
+        -0.005321902222931385
+      ]
+    },
+    {
+      "receipt_elapsed_s": 34.93564355200215,
+      "ros_receipt_nanoseconds": 18275884896832,
+      "velocity_body": [
+        0.26712197065353394,
+        0.0,
+        -0.01436575036495924
+      ]
+    },
+    {
+      "receipt_elapsed_s": 35.03509737599961,
+      "ros_receipt_nanoseconds": 18275984352768,
+      "velocity_body": [
+        0.26880624890327454,
+        0.0,
+        -0.01836795173585415
+      ]
+    },
+    {
+      "receipt_elapsed_s": 35.13783756799967,
+      "ros_receipt_nanoseconds": 18276087095232,
+      "velocity_body": [
+        0.2653075158596039,
+        0.0,
+        -0.00560250598937273
+      ]
+    },
+    {
+      "receipt_elapsed_s": 35.242830560000584,
+      "ros_receipt_nanoseconds": 18276192120544,
+      "velocity_body": [
+        0.26469698548316956,
+        0.0,
+        0.00166962924413383
+      ]
+    },
+    {
+      "receipt_elapsed_s": 35.343820096000854,
+      "ros_receipt_nanoseconds": 18276293110432,
+      "velocity_body": [
+        0.2607390284538269,
+        0.0,
+        0.006629284005612135
+      ]
+    },
+    {
+      "receipt_elapsed_s": 35.44224483200014,
+      "ros_receipt_nanoseconds": 18276391549728,
+      "velocity_body": [
+        0.2627759575843811,
+        0.0,
+        0.0066031296737492085
+      ]
+    },
+    {
+      "receipt_elapsed_s": 35.54291411200029,
+      "ros_receipt_nanoseconds": 18276492209472,
+      "velocity_body": [
+        0.2619287669658661,
+        0.0,
+        0.015408535487949848
+      ]
+    },
+    {
+      "receipt_elapsed_s": 35.643187936002505,
+      "ros_receipt_nanoseconds": 18276592480224,
+      "velocity_body": [
+        0.2658664584159851,
+        0.0,
+        0.009361928328871727
+      ]
+    },
+    {
+      "receipt_elapsed_s": 35.743578879999404,
+      "ros_receipt_nanoseconds": 18276692871872,
+      "velocity_body": [
+        0.27220994234085083,
+        0.0,
+        0.01698448695242405
+      ]
+    },
+    {
+      "receipt_elapsed_s": 35.84503868799948,
+      "ros_receipt_nanoseconds": 18276794328320,
+      "velocity_body": [
+        0.27205321192741394,
+        0.0,
+        0.017171619459986687
+      ]
+    },
+    {
+      "receipt_elapsed_s": 35.94514268800049,
+      "ros_receipt_nanoseconds": 18276894439008,
+      "velocity_body": [
+        0.2722945511341095,
+        0.0,
+        0.0062351105734705925
+      ]
+    },
+    {
+      "receipt_elapsed_s": 36.0452230080009,
+      "ros_receipt_nanoseconds": 18276994513472,
+      "velocity_body": [
+        0.2729114294052124,
+        0.0,
+        0.0014391710283234715
+      ]
+    },
+    {
+      "receipt_elapsed_s": 36.14512739199927,
+      "ros_receipt_nanoseconds": 18277094422560,
+      "velocity_body": [
+        0.2734612822532654,
+        0.0,
+        -0.0035604266449809074
+      ]
+    },
+    {
+      "receipt_elapsed_s": 36.244990240000334,
+      "ros_receipt_nanoseconds": 18277194281152,
+      "velocity_body": [
+        0.27472540736198425,
+        0.0,
+        0.0003278893418610096
+      ]
+    },
+    {
+      "receipt_elapsed_s": 36.34612652800206,
+      "ros_receipt_nanoseconds": 18277295418528,
+      "velocity_body": [
+        0.2740316390991211,
+        0.0,
+        -0.00767494784668088
+      ]
+    },
+    {
+      "receipt_elapsed_s": 36.445297056001436,
+      "ros_receipt_nanoseconds": 18277394590816,
+      "velocity_body": [
+        0.26987236738204956,
+        0.0,
+        -0.005010704975575209
+      ]
+    },
+    {
+      "receipt_elapsed_s": 36.545010112000455,
+      "ros_receipt_nanoseconds": 18277494293664,
+      "velocity_body": [
+        0.268724650144577,
+        0.0,
+        -0.007774088531732559
+      ]
+    },
+    {
+      "receipt_elapsed_s": 36.64515465600198,
+      "ros_receipt_nanoseconds": 18277594454976,
+      "velocity_body": [
+        0.2650337219238281,
+        0.0,
+        -0.0028645270504057407
+      ]
+    },
+    {
+      "receipt_elapsed_s": 36.74543500800064,
+      "ros_receipt_nanoseconds": 18277694720352,
+      "velocity_body": [
+        0.26277458667755127,
+        0.0,
+        -0.001203323365189135
+      ]
+    },
+    {
+      "receipt_elapsed_s": 36.845047360002354,
+      "ros_receipt_nanoseconds": 18277794340864,
+      "velocity_body": [
+        0.2676107585430145,
+        0.0,
+        0.000553803751245141
+      ]
+    },
+    {
+      "receipt_elapsed_s": 36.94457488000262,
+      "ros_receipt_nanoseconds": 18277893858240,
+      "velocity_body": [
+        0.269316166639328,
+        0.0,
+        -0.006730074994266033
+      ]
+    },
+    {
+      "receipt_elapsed_s": 37.040369599999394,
+      "ros_receipt_nanoseconds": 18277989649472,
+      "velocity_body": [
+        0.2699180841445923,
+        0.0,
+        -0.01633567363023758
+      ]
+    },
+    {
+      "receipt_elapsed_s": 37.1397081920004,
+      "ros_receipt_nanoseconds": 18278088990048,
+      "velocity_body": [
+        0.2718333303928375,
+        0.0,
+        -0.019247490912675858
+      ]
+    },
+    {
+      "receipt_elapsed_s": 37.24434675200246,
+      "ros_receipt_nanoseconds": 18278193605856,
+      "velocity_body": [
+        0.2714010775089264,
+        0.0,
+        -0.012562660500407219
+      ]
+    },
+    {
+      "receipt_elapsed_s": 37.33546140800172,
+      "ros_receipt_nanoseconds": 18278284745824,
+      "velocity_body": [
+        0.2714793384075165,
+        0.0,
+        -0.005440134089440107
+      ]
+    },
+    {
+      "receipt_elapsed_s": 37.43897798400212,
+      "ros_receipt_nanoseconds": 18278388251776,
+      "velocity_body": [
+        0.2686174213886261,
+        0.0,
+        0.0036995478440076113
+      ]
+    },
+    {
+      "receipt_elapsed_s": 37.538883008000994,
+      "ros_receipt_nanoseconds": 18278488144224,
+      "velocity_body": [
+        0.2685782313346863,
+        0.0,
+        0.010954085737466812
+      ]
+    },
+    {
+      "receipt_elapsed_s": 37.64416438400076,
+      "ros_receipt_nanoseconds": 18278593445440,
+      "velocity_body": [
+        0.2674556374549866,
+        0.0,
+        0.006832971703261137
+      ]
+    },
+    {
+      "receipt_elapsed_s": 37.74491792000117,
+      "ros_receipt_nanoseconds": 18278694212896,
+      "velocity_body": [
+        0.266704797744751,
+        0.0,
+        0.005256908945739269
+      ]
+    },
+    {
+      "receipt_elapsed_s": 37.84144377600023,
+      "ros_receipt_nanoseconds": 18278790704064,
+      "velocity_body": [
+        0.2694883644580841,
+        0.0,
+        0.006582824978977442
+      ]
+    },
+    {
+      "receipt_elapsed_s": 37.94283024000106,
+      "ros_receipt_nanoseconds": 18278892120416,
+      "velocity_body": [
+        0.2713644206523895,
+        0.0,
+        0.010333126410841942
+      ]
+    },
+    {
+      "receipt_elapsed_s": 38.04349958400053,
+      "ros_receipt_nanoseconds": 18278992794368,
+      "velocity_body": [
+        0.2664278745651245,
+        0.0,
+        0.0003086637007072568
+      ]
+    },
+    {
+      "receipt_elapsed_s": 38.143577631999506,
+      "ros_receipt_nanoseconds": 18279092867968,
+      "velocity_body": [
+        0.27016115188598633,
+        0.0,
+        -0.0063703628256917
+      ]
+    },
+    {
+      "receipt_elapsed_s": 38.24499772800118,
+      "ros_receipt_nanoseconds": 18279194285824,
+      "velocity_body": [
+        0.26343268156051636,
+        0.0,
+        -0.0017360688652843237
+      ]
+    },
+    {
+      "receipt_elapsed_s": 38.3447578560008,
+      "ros_receipt_nanoseconds": 18279294049280,
+      "velocity_body": [
+        0.26861441135406494,
+        0.0,
+        -0.00036310876021161675
+      ]
+    },
+    {
+      "receipt_elapsed_s": 38.44526534400211,
+      "ros_receipt_nanoseconds": 18279394563968,
+      "velocity_body": [
+        0.2713475227355957,
+        0.0,
+        -0.009757393039762974
+      ]
+    },
+    {
+      "receipt_elapsed_s": 38.54500159999952,
+      "ros_receipt_nanoseconds": 18279494286528,
+      "velocity_body": [
+        0.2733162045478821,
+        0.0,
+        -0.018290866166353226
+      ]
+    },
+    {
+      "receipt_elapsed_s": 38.64492991999941,
+      "ros_receipt_nanoseconds": 18279594214944,
+      "velocity_body": [
+        0.2741991877555847,
+        0.0,
+        -0.008437883108854294
+      ]
+    },
+    {
+      "receipt_elapsed_s": 38.74476131200208,
+      "ros_receipt_nanoseconds": 18279694042176,
+      "velocity_body": [
+        0.2733136713504791,
+        0.0,
+        -0.0058693899773061275
+      ]
+    },
+    {
+      "receipt_elapsed_s": 38.84489193600166,
+      "ros_receipt_nanoseconds": 18279794179648,
+      "velocity_body": [
+        0.2710379660129547,
+        0.0,
+        0.0010870666010305285
+      ]
+    },
+    {
+      "receipt_elapsed_s": 38.94522911999957,
+      "ros_receipt_nanoseconds": 18279894517184,
+      "velocity_body": [
+        0.2658775746822357,
+        0.0,
+        0.00254936795681715
+      ]
+    },
+    {
+      "receipt_elapsed_s": 39.04477081600271,
+      "ros_receipt_nanoseconds": 18279994280736,
+      "velocity_body": [
+        0.2668740153312683,
+        0.0,
+        0.0002542223082855344
+      ]
+    },
+    {
+      "receipt_elapsed_s": 39.14521363200038,
+      "ros_receipt_nanoseconds": 18280094502848,
+      "velocity_body": [
+        0.26558926701545715,
+        0.0,
+        -0.002364394022151828
+      ]
+    },
+    {
+      "receipt_elapsed_s": 39.24540438400072,
+      "ros_receipt_nanoseconds": 18280194698432,
+      "velocity_body": [
+        0.2672479748725891,
+        0.0,
+        0.0011890667956322432
+      ]
+    },
+    {
+      "receipt_elapsed_s": 39.34567856000285,
+      "ros_receipt_nanoseconds": 18280294959744,
+      "velocity_body": [
+        0.2748017907142639,
+        0.0,
+        -0.00813277531415224
+      ]
+    },
+    {
+      "receipt_elapsed_s": 39.44327248000263,
+      "ros_receipt_nanoseconds": 18280392563552,
+      "velocity_body": [
+        0.27507996559143066,
+        0.0,
+        -0.009822155348956585
+      ]
+    },
+    {
+      "receipt_elapsed_s": 39.54353206400265,
+      "ros_receipt_nanoseconds": 18280492824800,
+      "velocity_body": [
+        0.27373793721199036,
+        0.0,
+        -0.009901280514895916
+      ]
+    },
+    {
+      "receipt_elapsed_s": 39.64142099200035,
+      "ros_receipt_nanoseconds": 18280590678304,
+      "velocity_body": [
+        0.2759696841239929,
+        0.0,
+        -0.004836085252463818
+      ]
+    },
+    {
+      "receipt_elapsed_s": 39.73572556799991,
+      "ros_receipt_nanoseconds": 18280685011776,
+      "velocity_body": [
+        0.2780512273311615,
+        0.0,
+        0.0019262195564806461
+      ]
+    },
+    {
+      "receipt_elapsed_s": 39.83895932800078,
+      "ros_receipt_nanoseconds": 18280788220224,
+      "velocity_body": [
+        0.2724464237689972,
+        0.0,
+        0.0042408485896885395
+      ]
+    },
+    {
+      "receipt_elapsed_s": 39.93814150400067,
+      "ros_receipt_nanoseconds": 18280887402048,
+      "velocity_body": [
+        0.2735603153705597,
+        0.0,
+        0.010923321358859539
+      ]
+    },
+    {
+      "receipt_elapsed_s": 40.0433781440006,
+      "ros_receipt_nanoseconds": 18280992660096,
+      "velocity_body": [
+        0.2690596580505371,
+        0.0,
+        0.00434188824146986
+      ]
+    },
+    {
+      "receipt_elapsed_s": 40.14263222400041,
+      "ros_receipt_nanoseconds": 18281091938144,
+      "velocity_body": [
+        0.26938682794570923,
+        0.0,
+        -0.002289055846631527
+      ]
+    },
+    {
+      "receipt_elapsed_s": 40.24270864000209,
+      "ros_receipt_nanoseconds": 18281191972864,
+      "velocity_body": [
+        0.269554078578949,
+        0.0,
+        -0.017650196328759193
+      ]
+    },
+    {
+      "receipt_elapsed_s": 40.34561817600115,
+      "ros_receipt_nanoseconds": 18281294921568,
+      "velocity_body": [
+        0.27339473366737366,
+        0.0,
+        -0.01691378466784954
+      ]
+    },
+    {
+      "receipt_elapsed_s": 40.44490214400139,
+      "ros_receipt_nanoseconds": 18281394193760,
+      "velocity_body": [
+        0.2697373032569885,
+        0.0,
+        -0.01916038990020752
+      ]
+    },
+    {
+      "receipt_elapsed_s": 40.545023872000456,
+      "ros_receipt_nanoseconds": 18281494313856,
+      "velocity_body": [
+        0.27105385065078735,
+        0.0,
+        -0.009696656838059425
+      ]
+    },
+    {
+      "receipt_elapsed_s": 40.645161216001725,
+      "ros_receipt_nanoseconds": 18281594450912,
+      "velocity_body": [
+        0.2689756453037262,
+        0.0,
+        -0.00968137662857771
+      ]
+    },
+    {
+      "receipt_elapsed_s": 40.74505859200144,
+      "ros_receipt_nanoseconds": 18281694351296,
+      "velocity_body": [
+        0.26907584071159363,
+        0.0,
+        0.0015478621935471892
+      ]
+    },
+    {
+      "receipt_elapsed_s": 40.84536380800273,
+      "ros_receipt_nanoseconds": 18281794653760,
+      "velocity_body": [
+        0.264635294675827,
+        0.0,
+        -0.008267018012702465
+      ]
+    },
+    {
+      "receipt_elapsed_s": 40.94515900800252,
+      "ros_receipt_nanoseconds": 18281894454016,
+      "velocity_body": [
+        0.2668952941894531,
+        0.0,
+        -0.007862850092351437
+      ]
+    },
+    {
+      "receipt_elapsed_s": 41.045420448001096,
+      "ros_receipt_nanoseconds": 18281994708896,
+      "velocity_body": [
+        0.2661571204662323,
+        0.0,
+        -0.015381173230707645
+      ]
+    },
+    {
+      "receipt_elapsed_s": 41.14493702400068,
+      "ros_receipt_nanoseconds": 18282094217184,
+      "velocity_body": [
+        0.2688570022583008,
+        0.0,
+        -0.0205717533826828
+      ]
+    },
+    {
+      "receipt_elapsed_s": 41.24484809600108,
+      "ros_receipt_nanoseconds": 18282194131840,
+      "velocity_body": [
+        0.2695160210132599,
+        0.0,
+        -0.02384432964026928
+      ]
+    },
+    {
+      "receipt_elapsed_s": 41.34517625599983,
+      "ros_receipt_nanoseconds": 18282294457920,
+      "velocity_body": [
+        0.2624094486236572,
+        0.0,
+        -0.021632973104715347
+      ]
+    },
+    {
+      "receipt_elapsed_s": 41.444893152001896,
+      "ros_receipt_nanoseconds": 18282394174720,
+      "velocity_body": [
+        0.25764572620391846,
+        0.0,
+        -0.013362301513552666
+      ]
+    },
+    {
+      "receipt_elapsed_s": 41.545217536000564,
+      "ros_receipt_nanoseconds": 18282494837152,
+      "velocity_body": [
+        0.2630411684513092,
+        0.0,
+        -0.003391641890630126
+      ]
+    },
+    {
+      "receipt_elapsed_s": 41.64501833599934,
+      "ros_receipt_nanoseconds": 18282594314144,
+      "velocity_body": [
+        0.2638099789619446,
+        0.0,
+        0.004685067571699619
+      ]
+    },
+    {
+      "receipt_elapsed_s": 41.74424060800084,
+      "ros_receipt_nanoseconds": 18282693528128,
+      "velocity_body": [
+        0.2637377381324768,
+        0.0,
+        0.006943682674318552
+      ]
+    },
+    {
+      "receipt_elapsed_s": 41.842310624000675,
+      "ros_receipt_nanoseconds": 18282791598560,
+      "velocity_body": [
+        0.26384949684143066,
+        0.0,
+        0.007322268560528755
+      ]
+    },
+    {
+      "receipt_elapsed_s": 41.93952927999999,
+      "ros_receipt_nanoseconds": 18282888814944,
+      "velocity_body": [
+        0.26597702503204346,
+        0.0,
+        0.004271258600056171
+      ]
+    },
+    {
+      "receipt_elapsed_s": 42.038312640001095,
+      "ros_receipt_nanoseconds": 18282987597056,
+      "velocity_body": [
+        0.270985871553421,
+        0.0,
+        0.010970847681164742
+      ]
+    },
+    {
+      "receipt_elapsed_s": 42.135697215999244,
+      "ros_receipt_nanoseconds": 18283084981952,
+      "velocity_body": [
+        0.2691202759742737,
+        0.0,
+        0.010085872374475002
+      ]
+    },
+    {
+      "receipt_elapsed_s": 42.240141696001956,
+      "ros_receipt_nanoseconds": 18283189426592,
+      "velocity_body": [
+        0.26991385221481323,
+        0.0,
+        0.0031031982507556677
+      ]
+    },
+    {
+      "receipt_elapsed_s": 42.33814867200272,
+      "ros_receipt_nanoseconds": 18283287411456,
+      "velocity_body": [
+        0.26809340715408325,
+        0.0,
+        -0.0031412816606462
+      ]
+    },
+    {
+      "receipt_elapsed_s": 42.44347702400046,
+      "ros_receipt_nanoseconds": 18283392760224,
+      "velocity_body": [
+        0.2683444917201996,
+        0.0,
+        -0.007963373325765133
+      ]
+    },
+    {
+      "receipt_elapsed_s": 42.54192246400271,
+      "ros_receipt_nanoseconds": 18283491212640,
+      "velocity_body": [
+        0.26489534974098206,
+        0.0,
+        -0.008815193548798561
+      ]
+    },
+    {
+      "receipt_elapsed_s": 42.64163766400088,
+      "ros_receipt_nanoseconds": 18283590925440,
+      "velocity_body": [
+        0.25986626744270325,
+        0.0,
+        -0.017891354858875275
+      ]
+    },
+    {
+      "receipt_elapsed_s": 42.74208329600151,
+      "ros_receipt_nanoseconds": 18283691345856,
+      "velocity_body": [
+        0.26275569200515747,
+        0.0,
+        -0.02757609263062477
+      ]
+    },
+    {
+      "receipt_elapsed_s": 42.84431695999956,
+      "ros_receipt_nanoseconds": 18283793608384,
+      "velocity_body": [
+        0.2672400176525116,
+        0.0,
+        -0.029020968824625015
+      ]
+    },
+    {
+      "receipt_elapsed_s": 42.94449795200126,
+      "ros_receipt_nanoseconds": 18283893785440,
+      "velocity_body": [
+        0.2671077847480774,
+        0.0,
+        -0.032872945070266724
+      ]
+    },
+    {
+      "receipt_elapsed_s": 43.044389856000635,
+      "ros_receipt_nanoseconds": 18283993673408,
+      "velocity_body": [
+        0.27119049429893494,
+        0.0,
+        -0.03415675833821297
+      ]
+    },
+    {
+      "receipt_elapsed_s": 43.14423190399975,
+      "ros_receipt_nanoseconds": 18284093512736,
+      "velocity_body": [
+        0.2705135941505432,
+        0.0,
+        -0.039635252207517624
+      ]
+    },
+    {
+      "receipt_elapsed_s": 43.244096255999466,
+      "ros_receipt_nanoseconds": 18284193377824,
+      "velocity_body": [
+        0.26637670397758484,
+        0.0,
+        -0.04601985588669777
+      ]
+    },
+    {
+      "receipt_elapsed_s": 43.333872224000515,
+      "ros_receipt_nanoseconds": 18284283132736,
+      "velocity_body": [
+        0.26684731245040894,
+        0.0,
+        -0.05074760690331459
+      ]
+    },
+    {
+      "receipt_elapsed_s": 43.444522144000075,
+      "ros_receipt_nanoseconds": 18284393813856,
+      "velocity_body": [
+        0.2669868767261505,
+        0.0,
+        -0.0482260100543499
+      ]
+    },
+    {
+      "receipt_elapsed_s": 43.54406102400026,
+      "ros_receipt_nanoseconds": 18284493349344,
+      "velocity_body": [
+        0.27158111333847046,
+        0.0,
+        -0.05541222169995308
+      ]
+    },
+    {
+      "receipt_elapsed_s": 43.643939264002256,
+      "ros_receipt_nanoseconds": 18284593231488,
+      "velocity_body": [
+        0.26657742261886597,
+        0.0,
+        -0.06503430008888245
+      ]
+    },
+    {
+      "receipt_elapsed_s": 43.74402985599954,
+      "ros_receipt_nanoseconds": 18284693320832,
+      "velocity_body": [
+        0.2654554545879364,
+        0.0,
+        -0.06947855651378632
+      ]
+    },
+    {
+      "receipt_elapsed_s": 43.8421835520021,
+      "ros_receipt_nanoseconds": 18284791482944,
+      "velocity_body": [
+        0.264835387468338,
+        0.0,
+        -0.06016881391406059
+      ]
+    },
+    {
+      "receipt_elapsed_s": 43.94248272000186,
+      "ros_receipt_nanoseconds": 18284891773536,
+      "velocity_body": [
+        0.2651783525943756,
+        0.0,
+        -0.06142119690775871
+      ]
+    },
+    {
+      "receipt_elapsed_s": 44.04238448000251,
+      "ros_receipt_nanoseconds": 18284991677280,
+      "velocity_body": [
+        0.2624727487564087,
+        0.0,
+        -0.06389858573675156
+      ]
+    },
+    {
+      "receipt_elapsed_s": 44.143742047999694,
+      "ros_receipt_nanoseconds": 18285093029920,
+      "velocity_body": [
+        0.2570340931415558,
+        0.0,
+        -0.06690796464681625
+      ]
+    },
+    {
+      "receipt_elapsed_s": 44.24274316800074,
+      "ros_receipt_nanoseconds": 18285192032768,
+      "velocity_body": [
+        0.256144255399704,
+        0.0,
+        -0.05655010789632797
+      ]
+    },
+    {
+      "receipt_elapsed_s": 44.34335008000198,
+      "ros_receipt_nanoseconds": 18285292613824,
+      "velocity_body": [
+        0.25285282731056213,
+        0.0,
+        -0.052695680409669876
+      ]
+    },
+    {
+      "receipt_elapsed_s": 44.442634432001796,
+      "ros_receipt_nanoseconds": 18285391897888,
+      "velocity_body": [
+        0.25220152735710144,
+        0.0,
+        -0.054581139236688614
+      ]
+    },
+    {
+      "receipt_elapsed_s": 44.534974144000444,
+      "ros_receipt_nanoseconds": 18285484260544,
+      "velocity_body": [
+        0.24875982105731964,
+        0.0,
+        -0.05501668155193329
+      ]
+    },
+    {
+      "receipt_elapsed_s": 44.63433110400001,
+      "ros_receipt_nanoseconds": 18285583592736,
+      "velocity_body": [
+        0.23864956200122833,
+        0.0,
+        -0.0687011256814003
+      ]
+    },
+    {
+      "receipt_elapsed_s": 44.73548844800098,
+      "ros_receipt_nanoseconds": 18285684750752,
+      "velocity_body": [
+        0.2366456389427185,
+        0.0,
+        -0.01703876070678234
+      ]
+    },
+    {
+      "receipt_elapsed_s": 44.84070268800133,
+      "ros_receipt_nanoseconds": 18285789987904,
+      "velocity_body": [
+        0.23144294321537018,
+        0.0,
+        0.024059215560555458
+      ]
+    },
+    {
+      "receipt_elapsed_s": 44.93383152000024,
+      "ros_receipt_nanoseconds": 18285883118592,
+      "velocity_body": [
+        0.23636406660079956,
+        0.0,
+        0.06645748764276505
+      ]
+    },
+    {
+      "receipt_elapsed_s": 45.042616000002454,
+      "ros_receipt_nanoseconds": 18285991904192,
+      "velocity_body": [
+        0.23487798869609833,
+        0.0,
+        0.0978938490152359
+      ]
+    },
+    {
+      "receipt_elapsed_s": 45.14205040000161,
+      "ros_receipt_nanoseconds": 18286091310464,
+      "velocity_body": [
+        0.22630657255649567,
+        0.0,
+        0.1137990802526474
+      ]
+    },
+    {
+      "receipt_elapsed_s": 45.24279254400244,
+      "ros_receipt_nanoseconds": 18286192078976,
+      "velocity_body": [
+        0.21837814152240753,
+        0.0,
+        0.11793075501918793
+      ]
+    },
+    {
+      "receipt_elapsed_s": 45.342779072001576,
+      "ros_receipt_nanoseconds": 18286292060640,
+      "velocity_body": [
+        0.20770178735256195,
+        0.0,
+        0.10428978502750397
+      ]
+    },
+    {
+      "receipt_elapsed_s": 45.4427057920002,
+      "ros_receipt_nanoseconds": 18286392000704,
+      "velocity_body": [
+        0.20072168111801147,
+        0.0,
+        0.09753232449293137
+      ]
+    },
+    {
+      "receipt_elapsed_s": 45.54093120000107,
+      "ros_receipt_nanoseconds": 18286490231168,
+      "velocity_body": [
+        0.1858631670475006,
+        0.0,
+        0.09064678102731705
+      ]
+    },
+    {
+      "receipt_elapsed_s": 45.542535008000414,
+      "ros_receipt_nanoseconds": 18286491782496,
+      "velocity_body": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "scene_id": "reset10042_scene1369567760",
+  "timestamps": "receipt times; Twist has no source header",
+  "topic": "/cmd_vel"
+}

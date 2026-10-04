@@ -13,6 +13,8 @@
 !.env.example
 config/local.env
 config/local.*.env
+**/local.env
+**/local.*.env
 **/.local.env
 **/.local.*.env
 
@@ -58,8 +60,15 @@ research/papers/
 
 # Generated model bundle; keep the readable URDF/package sources instead
 models/d1_edu/d1_edu_official_urdf.zip
+simulation/path_planning/models/d1_edu/d1_edu_official_urdf.zip
 
 # High-volume runtime traces and downloaded R2 data
 logs/**/*.jsonl
 logs/**/*_session.json
 logs/real_d435i_r2_downloads/
+**/evidence/**/*.jsonl
+**/evidence/**/*_session.json
+**/evidence/**/*.log
+**/evidence/**/*.bin
+**/evidence/**/gz_dynamic_pose*.txt
+**/evidence/logs/real_d435i_r2_downloads/

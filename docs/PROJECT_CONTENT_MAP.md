@@ -1,12 +1,12 @@
 # Project content map
 
-Updated: 2026-08-28 (Asia/Taipei)
+Updated: 2026-08-31 (Asia/Taipei)
 
-This file classifies the repository by workstream. The current working paths
-are intentionally kept stable: the macOS GUI, Jetson launchers, deployment
-files, and historical reports refer to these paths directly. Classification is
-therefore done by an explicit map and reading order instead of a mass move that
-could break the running experiment workflow.
+This file classifies the repository by workstream. On 2026-08-31 the active
+source, configuration, tools, models, maps, and evidence were physically
+separated into real-robot, cuVSLAM simulation, path-planning simulation,
+research, and shared partitions. Root `.command` launchers remain as small
+compatibility entry points. Historical evidence was moved, not deleted.
 
 ## A. Real cuVSLAM / D435i mainline
 
@@ -14,22 +14,22 @@ This is the primary workstream for the current project goal: run cuVSLAM with
 the physical Intel RealSense D435i on Jetson and obtain reliable odometry,
 mapping, and later localization.
 
-- `calibration/` — camera, IMU, TF, timestamp, and hardware records.
-- `config/real_d435i_mapping.rviz` — shareable RViz layout.
+- `real_robot/cuvslam/calibration/` — camera, IMU, TF, timestamp, and hardware records.
+- `real_robot/cuvslam/config/real_d435i_mapping.rviz` — shareable RViz layout.
 - `docs/REAL_D435I_MAPPING_HANDOFF_20260817.md` — real-camera procedure and
   operating boundaries.
 - `docs/CUVSLAM_CURRENT_STATUS_20260825.md` — current real-camera status and
   next-test entry point.
 - `docs/sensor_and_frame_contract.md` — input, frame, TF, and CameraInfo
   contract.
-- `deployment/isaac_ros/isaac_ros_visual_slam_d435i_real.launch.py` — real
+- `real_robot/cuvslam/deployment/isaac_ros/isaac_ros_visual_slam_d435i_real.launch.py` — real
   camera Isaac ROS launch boundary.
-- `tools/real_d435i_*` — Jetson launch, inspection, recording, GUI, and
+- `real_robot/cuvslam/tools/real_d435i_*` — Jetson launch, inspection, recording, GUI, and
   analysis tools.
-- `tools/collect_real_d435i_*`, `tools/inspect_real_d435i_*`,
-  `tools/measure_real_d435i_*`, `tools/run_real_d435i_*` — repeatable real
+- `real_robot/cuvslam/tools/collect_real_d435i_*`, `real_robot/cuvslam/tools/inspect_real_d435i_*`,
+  `real_robot/cuvslam/tools/measure_real_d435i_*`, `real_robot/cuvslam/tools/run_real_d435i_*` — repeatable real
   hardware checks.
-- `logs/real_d435i_quality/` and `reports/real_d435i_*` — real-camera
+- `real_robot/cuvslam/evidence/logs/real_d435i_quality/` and `real_robot/cuvslam/evidence/reports/real_d435i_*` — real-camera
   evidence, correction records, and acceptance reports.
 
 Current baseline: official `640x360x30`, IMU fusion enabled, denoise enabled,
@@ -44,16 +44,18 @@ This workstream is used to validate ROS contracts, frame conventions,
 timestamping, observability, and estimator behavior before or alongside real
 hardware work. It is not a substitute for real D435i accuracy.
 
-- `deployment/isaac_ros/` — Isaac ROS container and launch support, including
+- `simulation/cuvslam/deployment/isaac_ros/` — Isaac ROS container and launch support, including
   simulation/replay adapters.
-- `deployment/slam_gazebo/` — Gazebo simulation boundary.
-- `tools/simulation_*`, `tools/validate_*`, `tools/analyze_*`, and
-  `tools/evaluate_*` except the `d1` tools — simulation/replay diagnostics.
+- `simulation/cuvslam/deployment/slam_gazebo/` — Gazebo simulation boundary.
+- `simulation/cuvslam/tools/simulation_*`, `simulation/cuvslam/tools/validate_*`,
+  `simulation/cuvslam/tools/analyze_*`, and `simulation/cuvslam/tools/evaluate_*` — simulation/replay diagnostics.
 - `docs/SIMULATION_HANDOFF.md`, `docs/CUVSLAM_*`, `docs/FRAME_AWARE_*`,
   `docs/STATIC_TF_*` — simulation, frame, and estimator design records.
-- `reports/cuvslam_*`, `reports/nvidia_*`, `reports/stage*`,
-  `reports/frame_*`, `reports/tf_*`, and `reports/static_tf_*` — simulation
+- `simulation/cuvslam/evidence/reports/cuvslam_*`, `simulation/cuvslam/evidence/reports/nvidia_*`, `simulation/cuvslam/evidence/reports/stage*`,
+  `simulation/cuvslam/evidence/reports/frame_*`, `simulation/cuvslam/evidence/reports/tf_*`, and `simulation/cuvslam/evidence/reports/static_tf_*` — simulation
   and NVIDIA reference evidence.
+- `research/cuvslam/` — cuVSLAM hypotheses, experiment plans, and cross-run
+  interpretations; it does not replace runtime evidence.
 
 Simulation truth, wheel odometry, and world overlays are valid for controlled
 comparisons only. They must not be quoted as physical-camera measurements.
@@ -64,17 +66,18 @@ This is the independent D1 Edu / navigation research workstream requested for
 path planning and navigation simulation. It is not yet the real D435i mapping
 or Nav2 integration path.
 
-- `models/d1_edu/` — D1 Edu robot description and meshes.
-- `tools/d1_edu_*`, `tools/run_d1_*`, `tools/generate_d1_*`,
-  `tools/evaluate_d1_*`, `tools/train_d1_*`, `tools/trace_d1_*` — D1
+- `simulation/path_planning/models/d1_edu/` — D1 Edu robot description and meshes.
+- `simulation/path_planning/maps/` — curated 2D navigation maps used by Nav2 simulation and evaluation.
+- `simulation/path_planning/tools/d1_edu_*`, `simulation/path_planning/tools/run_d1_*`, `simulation/path_planning/tools/generate_d1_*`,
+  `simulation/path_planning/tools/evaluate_d1_*`, `simulation/path_planning/tools/train_d1_*`, `simulation/path_planning/tools/trace_d1_*` — D1
   simulation, trajectory generation, training, and evaluation.
-- `tools/mac_d1_monitor.py` — macOS-side D1 monitoring helper.
-- `tools/build_mppi_annotation.py` and
-  `tools/generate_sb3_ppo_trajectory_data.py` — path-planning/training data
+- `simulation/path_planning/tools/mac_d1_monitor.py` — macOS-side D1 monitoring helper.
+- `simulation/path_planning/tools/build_mppi_annotation.py` and
+  `simulation/path_planning/tools/generate_sb3_ppo_trajectory_data.py` — path-planning/training data
   preparation.
-- `docs/RESEARCH_PROGRESS_2026-08-06.md`,
-  `docs/PPO_BALANCED_SAFE_300K_SUMMARY.md`, and
-  `docs/IMM_TRAINING_HANDOFF_2026-08-07.md` — PPO, IMM, MPPI, obstacle, and
+- `research/path_planning/RESEARCH_PROGRESS_2026-08-06.md`,
+  `research/path_planning/PPO_BALANCED_SAFE_300K_SUMMARY.md`, and
+  `research/path_planning/IMM_TRAINING_HANDOFF_2026-08-07.md` — PPO, IMM, MPPI, obstacle, and
   navigation research notes.
 - `external/`, `output/`, `research/papers/`, `tmp/`, and the whole-body
   research artifacts — supporting or generated material; most are ignored by
@@ -100,11 +103,12 @@ interface is ready.
 - `ENGINEERING_GUIDELINES.md` — repository operating rules.
 - `docs/README.md` — document reading index.
 - `docs/GITHUB_REPOSITORY_GUIDE.md` — GitHub upload and credential policy.
-- `logs/`, `reports/`, `datasets/`, and `evaluation/` — evidence and analysis
-  shared by more than one workstream.
-- `tools/jetson_connection_*`, `Jetson Connection.command`, and
-  `tools/Foxglove Simulation.command` — connection and visualization helpers.
-- `deployment/foxglove/` — Foxglove visualization support.
+- `shared/tools/jetson_connection_*`, `Jetson Connection.command`, and
+  `Foxglove Simulation.command` — connection and visualization helpers.
+- `shared/deployment/` — cross-workstream Isaac ROS deployment helpers.
+- `simulation/cuvslam/deployment/foxglove/` — simulation Foxglove support.
+- `real_robot/cuvslam/evidence/` and `simulation/cuvslam/evidence/` — evidence
+  owned by the corresponding runtime; raw logs are not shared implicitly.
 
 Runtime recordings and generated outputs stay local by default. The GitHub
 repository keeps source, configuration examples, curated reports, and the
@@ -115,9 +119,10 @@ are excluded by `.gitignore`.
 
 1. `PROJECT_HANDOFF.md`
 2. `docs/CUVSLAM_CURRENT_STATUS_20260825.md`
-3. `docs/PROJECT_CONTENT_MAP.md` (this file)
-4. `docs/REAL_D435I_MAPPING_HANDOFF_20260817.md`
-5. `docs/GITHUB_REPOSITORY_GUIDE.md`
+3. `docs/PROJECT_LAYOUT.md` — physical folder boundaries
+4. `docs/PROJECT_CONTENT_MAP.md` (this file)
+5. `docs/REAL_D435I_MAPPING_HANDOFF_20260817.md`
+6. `docs/GITHUB_REPOSITORY_GUIDE.md`
 
 If the next task is path planning or navigation simulation, read the D1 files
 under section C after the cuVSLAM status is understood.

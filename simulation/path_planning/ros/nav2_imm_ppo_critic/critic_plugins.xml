@@ -1,0 +1,7 @@
+<library path="nav2_imm_ppo_interaction_critic">
+  <class name="mppi::critics::InteractionCritic"
+         type="mppi::critics::InteractionCritic"
+         base_class_type="mppi::critics::CriticFunction">
+    <description>Simulation-only time-aligned fused human tubes and bounded PPO preferences.</description>
+  </class>
+</library>

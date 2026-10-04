@@ -1,0 +1,18 @@
+{
+  "action": "follow_path",
+  "cancel_requested": false,
+  "controller_id": "FollowPath",
+  "goal_xy": [
+    -8.445,
+    -5.545
+  ],
+  "path_file": "/workspace/results/20261002_nav2_mppi_boundary_path_seed10042.json",
+  "path_point_count": 407,
+  "result_status": 4,
+  "scene_id": "reset10042_scene1369567760",
+  "start_xy": [
+    -1.4199998472630977,
+    1.0800002548098568
+  ],
+  "status": "succeeded"
+}

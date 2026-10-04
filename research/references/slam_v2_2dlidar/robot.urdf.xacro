@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot name="slam_lidar_platform" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:arg name="laser_x" default="0.0"/>
+  <xacro:arg name="laser_y" default="0.0"/>
+  <xacro:arg name="laser_z" default="0.10"/>
+  <xacro:arg name="laser_yaw" default="0.0"/>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.30 0.22 0.08"/>
+      </geometry>
+      <material name="base_gray">
+        <color rgba="0.45 0.45 0.45 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <link name="laser_frame">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.04" length="0.035"/>
+      </geometry>
+      <material name="lidar_blue">
+        <color rgba="0.1 0.35 0.9 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_laser" type="fixed">
+    <parent link="base_link"/>
+    <child link="laser_frame"/>
+    <origin xyz="$(arg laser_x) $(arg laser_y) $(arg laser_z)" rpy="0 0 $(arg laser_yaw)"/>
+  </joint>
+</robot>

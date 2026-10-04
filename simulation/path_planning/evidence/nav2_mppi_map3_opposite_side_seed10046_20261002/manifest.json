@@ -1,0 +1,36 @@
+{
+  "height": 924,
+  "map_pgm_sha256": "67bfcd7de84096ae6d92b22c10ba11c92a2476e44e7ca485d016d8fe1564d702",
+  "map_yaml_sha256": "ff5cd429ccb86783e6e39ce6017e2c40f1ec71a4e01c364e8b9799ad2f63a33e",
+  "nav2_free_thresh": 0.19,
+  "nav2_trinary_class_validation": "all_unique_pixels_match_candidate_classes",
+  "origin": [
+    -11.67,
+    -16.02,
+    0.0
+  ],
+  "rasterization": "nearest_neighbor_cell_replication",
+  "read_back_validation": "all_pixels_and_metadata_exact",
+  "resolution": 0.05,
+  "scene_id": "reset10046_scene1158153928",
+  "scene_scale": 3,
+  "source_free_thresh": 0.25,
+  "source_pgm_sha256": "41e913c872bd118fc971b313024339f78e23247aec94fde00a18e51aa62efd74",
+  "source_yaml": "/Users/tsengpochien/Desktop/cuvslam_project/real_robot/cuvslam/evidence/maps/20260924_092630_current_cuvslam_a2m12/map.yaml",
+  "source_yaml_sha256": "be42f16b9730106c54f0bb75e83b04ec48b7c2c69f49e12c4fb4183ca21feb5d",
+  "static_box": {
+    "half_length": 0.25,
+    "half_width": 0.25,
+    "x": 0.605,
+    "y": 9.515
+  },
+  "static_box_cells": {
+    "bottom": 418,
+    "left": 240,
+    "occupied_cells_added": 121,
+    "right": 250,
+    "top": 408
+  },
+  "status": "map_export_only_not_nav2_validated",
+  "width": 597
+}

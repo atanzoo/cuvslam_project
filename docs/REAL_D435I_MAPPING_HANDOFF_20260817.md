@@ -1,12 +1,12 @@
 # Real D435i cuVSLAM Mapping Handoff
 
-Updated: 2026-08-28 (Asia/Taipei)
+Updated: 2026-08-31 (Asia/Taipei)
 
 > This is the original real-camera R0–R3 handoff and remains useful for the
 > procedure. The current real D435i result, IMU-fusion decision, R2 metrics and
 > correction record are maintained in
 > `docs/CUVSLAM_CURRENT_STATUS_20260825.md` and
-> `logs/real_d435i_quality/20260825_r2_correction_log.md`.
+> `real_robot/cuvslam/evidence/logs/real_d435i_quality/20260825_r2_correction_log.md`.
 
 For the next conversation, read `PROJECT_HANDOFF.md` first, then the current
 status document. This file remains the detailed real-camera procedure; the
@@ -50,9 +50,9 @@ real-robot velocity control are out of scope for this first run.
 
 Primary files:
 
-- `deployment/isaac_ros/README.md`
-- `deployment/isaac_ros/current_host_inventory.md`
-- `deployment/isaac_ros/run.sh`
+- `shared/deployment/isaac_ros/README.md`
+- `shared/deployment/isaac_ros/current_host_inventory.md`
+- `shared/deployment/isaac_ros/run.sh`
 - `docs/SIMULATION_HANDOFF.md`
 - `PROJECT_HANDOFF.md`
 
@@ -93,10 +93,10 @@ adapter to real data.
 
 Implementation:
 
-- `deployment/isaac_ros/cuvslam_sim_sensor_adapter/`
-- `deployment/isaac_ros/isaac_ros_visual_slam_d435i_sim.launch.py`
-- `tools/validate_stereo_geometry.py`
-- `tools/validate_sim_camera_intrinsics.py`
+- `simulation/cuvslam/deployment/isaac_ros/cuvslam_sim_sensor_adapter/`
+- `simulation/cuvslam/deployment/isaac_ros/isaac_ros_visual_slam_d435i_sim.launch.py`
+- `simulation/cuvslam/tools/validate_stereo_geometry.py`
+- `simulation/cuvslam/tools/validate_sim_camera_intrinsics.py`
 - `docs/CUVSLAM_STAGE1_INTRINSICS_AUDIT_DESIGN.md`
 - `docs/CUVSLAM_STAGE2_STEREO_GEOMETRY_DESIGN.md`
 
@@ -109,11 +109,11 @@ observability-only and does not provide camera truth or localization input.
 Main entry points:
 
 - `Jetson Connection.command`
-- `tools/jetson_connection_gui.py`
+- `shared/tools/jetson_connection_gui.py`
 - `Foxglove Simulation.command`
-- `deployment/foxglove/README.md`
-- `deployment/slam_gazebo/launch/gz_bridge_portable.launch.py`
-- `deployment/isaac_ros/isaac_ros_visual_slam_d435i_sim.launch.py`
+- `simulation/cuvslam/deployment/foxglove/README.md`
+- `simulation/cuvslam/deployment/slam_gazebo/launch/gz_bridge_portable.launch.py`
+- `simulation/cuvslam/deployment/isaac_ros/isaac_ros_visual_slam_d435i_sim.launch.py`
 
 ## 3. Simulation Evidence And Limits
 
@@ -141,14 +141,14 @@ Main entry points:
 
 Key reports:
 
-- `reports/cuvslam_d435i_sim_integration_20260727.md`
-- `reports/cuvslam_observable_world_repeatability_20260731.md`
-- `reports/cuvslam_first_observable_straight_mapping_20260731.md`
-- `reports/cuvslam_triangulation_and_roundtrip_20260731.md`
-- `reports/cuvslam_in_place_turn_pose_fix_20260731.md`
-- `reports/cuvslam_initial_dense_v3_mapping_20260731.md`
-- `reports/cuvslam_d435i_imu_corner_audit_20260731.md`
-- `reports/cuvslam_stage4_official_input_contract_20260730.md`
+- `simulation/cuvslam/evidence/reports/cuvslam_d435i_sim_integration_20260727.md`
+- `simulation/cuvslam/evidence/reports/cuvslam_observable_world_repeatability_20260731.md`
+- `simulation/cuvslam/evidence/reports/cuvslam_first_observable_straight_mapping_20260731.md`
+- `simulation/cuvslam/evidence/reports/cuvslam_triangulation_and_roundtrip_20260731.md`
+- `simulation/cuvslam/evidence/reports/cuvslam_in_place_turn_pose_fix_20260731.md`
+- `simulation/cuvslam/evidence/reports/cuvslam_initial_dense_v3_mapping_20260731.md`
+- `simulation/cuvslam/evidence/reports/cuvslam_d435i_imu_corner_audit_20260731.md`
+- `simulation/cuvslam/evidence/reports/cuvslam_stage4_official_input_contract_20260730.md`
 
 ## 4. Real D435i Readiness Gap
 
@@ -187,7 +187,8 @@ ros2 run tf2_tools view_frames
 Use the actual deployed topic names; the commands above are a checklist, not
 an assumption that the real driver uses the simulation `/d435i/*` namespace.
 
-Record the output in a new experiment directory under `logs/` or `datasets/`
+Record the output in a new experiment directory under
+`real_robot/cuvslam/evidence/logs/` or `datasets/`
 with the device serial and timestamp.
 
 ### Stage R1: Static stereo contract
@@ -244,7 +245,8 @@ thesis baseline.
 The real R2 GUI now keeps IMU fusion selectable and adds an image-side lighting
 diagnostic for both infrared streams: mean/std, dark and saturated pixel
 percentages, gradient proxy, image rate, and timestamp gap. Motion recordings
-save these values with the odometry metrics under `logs/real_d435i_quality/`.
+save these values with the odometry metrics under
+`real_robot/cuvslam/evidence/logs/real_d435i_quality/`.
 
 The current formal profile is:
 
@@ -256,7 +258,8 @@ IR projector = on
 profile = 640x360x30
 ```
 
-This is called `official` in `tools/run_real_d435i_r2.sh`. `robust` keeps
+This is called `official` in `real_robot/cuvslam/tools/run_real_d435i_r2.sh`.
+`robust` keeps
 auto exposure and denoising but disables the IR projector for diagnostic
 comparison; `low_light` is retained as an alias of `official`.
 Fixed manual exposure was tested and rejected because it reduced image
@@ -292,15 +295,15 @@ exact test route.
 | Mandatory engineering process | `ENGINEERING_GUIDELINES.md` |
 | Simulation/replay boundary | `docs/SIMULATION_HANDOFF.md` |
 | Frame definitions and ownership | `docs/sensor_and_frame_contract.md` |
-| NVIDIA-native cuVSLAM launch | `deployment/isaac_ros/isaac_ros_visual_slam_d435i_sim.launch.py` |
-| Jetson container setup | `deployment/isaac_ros/README.md`, `deployment/isaac_ros/run.sh` |
-| Mac GUI and one-button workflow | `tools/jetson_connection_gui.py`, `Jetson Connection.command` |
-| Foxglove tunnel/viewer | `deployment/foxglove/README.md`, `Foxglove Simulation.command` |
-| Stereo validation tools | `tools/validate_stereo_geometry.py`, `tools/evaluate_stereo_bag.py` |
-| Odometry evaluation | `tools/evaluate_odometry_bag.py`, `tools/evaluate_trajectory_geometry_bag.py` |
-| TF evaluation | `tools/evaluate_frame_contract_bag.py`, `tools/validate_static_tf_targets.py` |
-| Existing experiment evidence | `reports/` |
-| Camera and calibration records | `calibration/README.md`, `calibration/` |
+| NVIDIA-native cuVSLAM launch | `simulation/cuvslam/deployment/isaac_ros/isaac_ros_visual_slam_d435i_sim.launch.py` |
+| Jetson container setup | `shared/deployment/isaac_ros/README.md`, `shared/deployment/isaac_ros/run.sh` |
+| Mac GUI and one-button workflow | `shared/tools/jetson_connection_gui.py`, `Jetson Connection.command` |
+| Foxglove tunnel/viewer | `simulation/cuvslam/deployment/foxglove/README.md`, `Foxglove Simulation.command` |
+| Stereo validation tools | `simulation/cuvslam/tools/validate_stereo_geometry.py`, `simulation/cuvslam/tools/evaluate_stereo_bag.py` |
+| Odometry evaluation | `simulation/cuvslam/tools/evaluate_odometry_bag.py`, `simulation/cuvslam/tools/evaluate_trajectory_geometry_bag.py` |
+| TF evaluation | `simulation/cuvslam/tools/evaluate_frame_contract_bag.py`, `simulation/cuvslam/tools/validate_static_tf_targets.py` |
+| Existing experiment evidence | `real_robot/cuvslam/evidence/` and `simulation/cuvslam/evidence/` |
+| Camera and calibration records | `real_robot/cuvslam/calibration/README.md`, `real_robot/cuvslam/calibration/` |
 
 ## 8. Explicit Non-Goals For The Next Task
 

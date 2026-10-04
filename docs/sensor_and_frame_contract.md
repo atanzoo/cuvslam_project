@@ -132,14 +132,14 @@ Exactly one component owns each edge. In particular:
 ## 5. Numeric Extrinsic Contract
 
 Values below come from
-`deployment/slam_gazebo/worlds/cuvslam_mapping_simple.sdf`.
+`simulation/cuvslam/deployment/slam_gazebo/worlds/cuvslam_mapping_simple.sdf`.
 
 For the Baseline world, the same sensor values were independently verified
 against `indoor_gz_sim.sdf` using three absolute stationary targets and three
 fresh validator processes on 2026-07-30. All 72 target/frame comparisons
 passed with zero residual at the reported precision. These static numeric
 values are **LOCKED** for the current SDF versions. See
-`reports/static_tf_target_validation_20260730.md`.
+`simulation/cuvslam/evidence/reports/static_tf_target_validation_20260730.md`.
 
 The project launch contains this locked static geometry. Jetson runtime
 activation and the three-run motion acceptance test are still required before
@@ -239,7 +239,7 @@ semantics do not satisfy this contract.
 
 The valid camera lever arm explains part of the turn translation, but its
 expected 0.1207 m arc cannot explain the observed 1.1374 m magnitude. See
-`reports/frame_contract_motion_audit_20260730.md`.
+`simulation/cuvslam/evidence/reports/frame_contract_motion_audit_20260730.md`.
 
 ## 7. Historical Gazebo, Bridge, cuVSLAM, and Foxglove Cross-check
 

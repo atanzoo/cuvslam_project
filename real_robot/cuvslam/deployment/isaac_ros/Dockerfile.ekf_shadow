@@ -1,0 +1,20 @@
+# Persistent runtime layer for the real D435i + RPLIDAR shadow estimator.
+#
+# Build context must contain the pinned GeographicLib source directory.  The
+# Jetson is intentionally built offline because its container cannot resolve
+# external package repositories during deployment.
+FROM isaac_ros_dev-aarch64:fixed
+
+COPY geographiclib /tmp/geographiclib
+
+RUN cmake -S /tmp/geographiclib -B /tmp/geographiclib-build \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/opt/geographiclib \
+        -DBUILD_DOCUMENTATION=OFF \
+        -DUSE_BOOST=OFF \
+    && cmake --build /tmp/geographiclib-build --parallel 2 \
+    && cmake --install /tmp/geographiclib-build \
+    && rm -rf /tmp/geographiclib /tmp/geographiclib-build
+
+ENV CMAKE_PREFIX_PATH=/opt/geographiclib
+ENV LD_LIBRARY_PATH=/opt/geographiclib/lib:${LD_LIBRARY_PATH}

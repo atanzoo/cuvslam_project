@@ -1,0 +1,17 @@
+# Diagnostic-only RPLIDAR A2M12 local odometry.
+#
+# The node is started only when the integrated launch receives
+# enable_lidar_odom:=true.  It must publish a topic but no TF: the first
+# phase keeps cuVSLAM as the sole odom -> base_link owner.
+#
+# Dependency: rf2o_laser_odometry must be available in the Jetson ROS 2
+# environment.  This file does not install or vendor that external package.
+rf2o_laser_odometry:
+  ros__parameters:
+    laser_scan_topic: /scan
+    odom_topic: /lidar/odom
+    publish_tf: false
+    base_frame_id: base_link
+    odom_frame_id: odom
+    init_pose_from_topic: ""
+    freq: 15.0
