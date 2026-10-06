@@ -1,7 +1,7 @@
 # 四足機器人導航與視覺慣性里程計研究
 ## Quadruped Navigation & Visual–Inertial Odometry Research
 
-**研究者：Po-Chien Tseng ｜ 工研院實習研究專案**
+**研究者：Po-Chien Tseng**
 
 本專案以四足機器人的自主導航為出發點，探討如何建立可觀測、可驗證的定位與導航系統。
 由於四足平台沒有輪速計，本研究以 Intel RealSense D435i 的雙目影像與 IMU，
